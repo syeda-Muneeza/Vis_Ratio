@@ -67,11 +67,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AMCs.aspx" />
+    <Content Include="Banks.aspx" />
+    <Content Include="Brokerage.aspx" />
     <Content Include="Corporate.aspx" />
+    <Content Include="Funds.aspx" />
     <Content Include="Insurance.aspx" />
+    <Content Include="Investment.aspx" />
+    <Content Include="Leasing.aspx" />
+    <Content Include="Microfinance.aspx" />
+    <Content Include="Modarabas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AMCs.aspx.cs">
+      <DependentUpon>AMCs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMCs.aspx.designer.cs">
+      <DependentUpon>AMCs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Banks.aspx.cs">
+      <DependentUpon>Banks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Banks.aspx.designer.cs">
+      <DependentUpon>Banks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Brokerage.aspx.cs">
+      <DependentUpon>Brokerage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Brokerage.aspx.designer.cs">
+      <DependentUpon>Brokerage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Corporate.aspx.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -79,12 +108,47 @@
     <Compile Include="Corporate.aspx.designer.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Funds.aspx.cs">
+      <DependentUpon>Funds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funds.aspx.designer.cs">
+      <DependentUpon>Funds.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Insurance.aspx.cs">
       <DependentUpon>Insurance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Insurance.aspx.designer.cs">
       <DependentUpon>Insurance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Investment.aspx.cs">
+      <DependentUpon>Investment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Investment.aspx.designer.cs">
+      <DependentUpon>Investment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Leasing.aspx.cs">
+      <DependentUpon>Leasing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Leasing.aspx.designer.cs">
+      <DependentUpon>Leasing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Microfinance.aspx.cs">
+      <DependentUpon>Microfinance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Microfinance.aspx.designer.cs">
+      <DependentUpon>Microfinance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modarabas.aspx.cs">
+      <DependentUpon>Modarabas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modarabas.aspx.designer.cs">
+      <DependentUpon>Modarabas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RatioForm.Master.cs">
