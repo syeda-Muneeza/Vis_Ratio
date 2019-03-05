@@ -12,19 +12,36 @@
     <form id="form1" runat="server">
         <div>
             <div class="Top-menu">
-<ul>
-    <li><a ></a></li>
-     <li><a ></a></li>
-     <li><a ></a></li>
-     <li><a ></a></li>
-     <li><a ></a></li>
-     <li><a ></a></li>
-     <li><a ></a></li>
-     <li><a ></a></li>
-     <li><a ></a></li>
-     <li><a ></a></li>
 
-</ul>
+
+<%--<ul>--%>
+    <asp:Menu ID="Menu1" runat="server" orientation="Horizontal">
+
+    <items>
+        <asp:MenuItem Text="AMCs" Value="AMCs" NavigateUrl="~/AMCs.aspx"></asp:MenuItem>
+         <asp:MenuItem Text="Banks/DFIs" Value="Banks/DFIs" NavigateUrl="~/Banks.aspx"></asp:MenuItem>
+         <asp:MenuItem Text="Brokerages" Value="Brokerages" NavigateUrl="~/Brokerage.aspx"></asp:MenuItem>
+         <asp:MenuItem Text="Corporates" Value="Corporates" NavigateUrl="~/Corporate.aspx"></asp:MenuItem>
+         <asp:MenuItem Text="Funds" Value="Funds" NavigateUrl="~/Funds.aspx"></asp:MenuItem>
+         <asp:MenuItem Text="Insurance" Value="Insurance" NavigateUrl="~/Insurance.aspx"></asp:MenuItem>
+         <asp:MenuItem Text="Investment Companies" Value="Investment Companies" NavigateUrl="~/Investment.aspx"></asp:MenuItem>
+         <asp:MenuItem Text="Leasing Companies" Value="Leasing Companies" NavigateUrl="~/Leasing.aspx"></asp:MenuItem>
+         <asp:MenuItem Text="Microfinance" Value="Microfinance" NavigateUrl="~/Microfinance.aspx"></asp:MenuItem>
+         <asp:MenuItem Text="Modarabas" Value="Modarabas" NavigateUrl="~/Modarabas.aspx"></asp:MenuItem>
+    </items>
+    </asp:Menu>
+   <%-- <li><a href="AMCs.aspx">AMCs</a></li>
+     <li><a href="Banks.aspx">Banks/DFIs</a></li>
+     <li><a href="Brokerage.aspx">Brokerages</a></li>
+     <li><a href="Corporate.aspx">Corporates</a></li>
+     <li><a href="Funds.aspx">Funds</a></li>
+     <li><a href="Insurance.aspx">Insurance</a></li>
+     <li><a href="Investment.aspx">Investment Companies</a></li>
+     <li><a href="Leasing.aspx">Leasing Companies</a></li> 
+     <li><a href="Microfinance.aspx">Microfinance</a></li>
+     <li><a href="Modarabas.aspx">Modarabas</a></li>
+
+</ul>--%>
 
 
 
