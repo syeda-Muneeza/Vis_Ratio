@@ -7,26 +7,23 @@
 <div>
    <table id="example" class="display"   style="width:100%; border: 1px solid black">
        
-   <caption></caption>
-     <tbody>
+   <caption>AMCs</caption>
+   
             <tr>
-                <th colspan="2">AMCs</th>
+                <th>AUMs and Market position</th>
+                <th></th>
+                <th>AUM Profile</th>
+                <th></th>
             
                 
             </tr>
          
-         <tr>
-             <th>AUMs and Market position</th> 
-            <th>AUM Profile</th> 
-
-
-         </tr>
+         
          <tr>
              
             
                 <td><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></td>
-                <td>
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></td>
                 <td>  <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
                     
