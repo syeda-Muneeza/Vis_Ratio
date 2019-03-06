@@ -14,8 +14,25 @@
             <div class="Top-menu">
 
 
-<%--<ul>--%>
-    <asp:Menu ID="Menu1" runat="server" orientation="Horizontal">
+<ul>
+<li><a href="AMCs.aspx">AMCs</a></li>
+     <li><a href="Banks.aspx">Banks/DFIs</a></li>
+     <li><a href="Brokerage.aspx">Brokerages</a></li>
+     <li><a href="Corporate.aspx">Corporates</a></li>
+     <li><a href="Funds.aspx">Funds</a></li>
+     <li><a href="Insurance.aspx">Insurance</a></li>
+     <li><a href="Investment.aspx">Investment Companies</a></li>
+     <li><a href="Leasing.aspx">Leasing Companies</a></li> 
+     <li><a href="Microfinance.aspx">Microfinance</a></li>
+     <li><a href="Modarabas.aspx">Modarabas</a></li>
+
+</ul>
+
+
+
+<%--ASP-Menu-Control--%>
+
+   <%-- <asp:Menu ID="Menu1" runat="server" orientation="Horizontal">
 
     <items>
         <asp:MenuItem Text="AMCs" Value="AMCs" NavigateUrl="~/AMCs.aspx"></asp:MenuItem>
@@ -29,19 +46,8 @@
          <asp:MenuItem Text="Microfinance" Value="Microfinance" NavigateUrl="~/Microfinance.aspx"></asp:MenuItem>
          <asp:MenuItem Text="Modarabas" Value="Modarabas" NavigateUrl="~/Modarabas.aspx"></asp:MenuItem>
     </items>
-    </asp:Menu>
-   <%-- <li><a href="AMCs.aspx">AMCs</a></li>
-     <li><a href="Banks.aspx">Banks/DFIs</a></li>
-     <li><a href="Brokerage.aspx">Brokerages</a></li>
-     <li><a href="Corporate.aspx">Corporates</a></li>
-     <li><a href="Funds.aspx">Funds</a></li>
-     <li><a href="Insurance.aspx">Insurance</a></li>
-     <li><a href="Investment.aspx">Investment Companies</a></li>
-     <li><a href="Leasing.aspx">Leasing Companies</a></li> 
-     <li><a href="Microfinance.aspx">Microfinance</a></li>
-     <li><a href="Modarabas.aspx">Modarabas</a></li>
+    </asp:Menu>--%>
 
-</ul>--%>
 
 
 
