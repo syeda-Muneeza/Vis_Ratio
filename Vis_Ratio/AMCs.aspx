@@ -13,8 +13,7 @@
                 <th colspan="2">AUMs and Market position</th>
                        <th colspan="2">AUM Profile</th>
                
-            
-                
+                           
             </tr>
          
          
