@@ -107,15 +107,20 @@
             </tr>
          <tr>
                 <td><asp:Label ID="Label21" runat="server" Text="Long term debt"></asp:Label></td>
-                <td>
-                <asp:TextBox ID="TextBox21" runat="server"></asp:TextBox></td>
-                                    
+                <td><asp:TextBox ID="TextBox21" runat="server"></asp:TextBox></td>
             </tr>
          <tr>
                 <td><asp:Label ID="Label23" runat="server" Text="Total Debt"></asp:Label></td>
                 <td>
                 <asp:TextBox ID="TextBox23" runat="server"></asp:TextBox></td>
-               
+                            <td><asp:Button ID="Button1" runat="server" Text="Button" />
+                 <asp:Button ID="Button2" runat="server" Text="Button" />
+<asp:Button ID="Button3" runat="server" Text="Button" />
+                     <asp:Button ID="Button4" runat="server" Text="Button" />
+
+           
+                 </td>                   
+
                     
             </tr>
          <tr>
