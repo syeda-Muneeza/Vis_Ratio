@@ -5,13 +5,17 @@
 
 
 <div>
-   <table   style="width:100%; border: 1px solid black">
+   <table   style=" border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  /*border-collapse: collapse;*/">
        
    <caption>AMCs</caption>
    
             <tr>
                 <th colspan="2">AUMs and Market position</th>
-                       <th colspan="2">AUM Profile</th>
+                <th colspan="2">AUM Profile</th>
                
                            
             </tr>
