@@ -28,7 +28,7 @@
                 <td><asp:TextBox ID="TotalAssets" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label2" runat="server" Text="NPLs"></asp:Label></td>
                 <td>  <asp:TextBox ID="NPLs" runat="server"></asp:TextBox></td>
-             <td><asp:Label ID="Label3" runat="server" Text="Deposits"></asp:Label></td>
+                <td><asp:Label ID="Label3" runat="server" Text="Deposits"></asp:Label></td>
                 <td>  <asp:TextBox ID="Deposits" runat="server"></asp:TextBox></td>
                     
             </tr>
@@ -70,13 +70,12 @@
 
        <tr>
               
-            
                 <td><asp:Label ID="Label13" runat="server" Text="PIBs as a % of Deposits"></asp:Label></td>
                 <td><asp:TextBox ID="PIBsDeposits" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label14" runat="server" Text="Net Infection"></asp:Label></td>
-                <td>  <asp:TextBox ID="NetInfection" runat="server"></asp:TextBox></td>
-             <td><asp:Label ID="Label15" runat="server" Text="Cost of Funding"></asp:Label></td>
-                <td>  <asp:TextBox ID="CostFunding" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="NetInfection" runat="server"></asp:TextBox></td>
+                <td><asp:Label ID="Label15" runat="server" Text="Cost of Funding"></asp:Label></td>
+                <td><asp:TextBox ID="CostFunding" runat="server"></asp:TextBox></td>
                     
             </tr>
 
@@ -86,12 +85,13 @@
                 <td><asp:Label ID="Label16" runat="server" Text="PIBs % of Total Investments"></asp:Label></td>
                 <td><asp:TextBox ID="PIBsInvest" runat="server"></asp:TextBox></td>
                 <td></td>
-                <td> </td>
-             <td><asp:Label ID="Label18" runat="server" Text="Cost of Funding"></asp:Label></td>
-                <td>  <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></td>
+                <td></td>
+                <td><asp:Label ID="Label18" runat="server" Text="LCR"></asp:Label></td>
+                <td><asp:TextBox ID="LCR" runat="server"></asp:TextBox></td>
                     
-            </tr>
-   </table>
+            </tr> 
+  
+       </table>
   
 
 
