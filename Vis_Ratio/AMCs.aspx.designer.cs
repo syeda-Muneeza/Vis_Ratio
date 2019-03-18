@@ -409,40 +409,40 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox TextBox23;
         
         /// <summary>
-        /// Button1 control.
+        /// Save control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button Save;
         
         /// <summary>
-        /// Button2 control.
+        /// Edit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button Edit;
         
         /// <summary>
-        /// Button3 control.
+        /// Delete control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+        protected global::System.Web.UI.WebControls.Button Delete;
         
         /// <summary>
-        /// Button4 control.
+        /// Add control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button4;
+        protected global::System.Web.UI.WebControls.Button Add;
         
         /// <summary>
         /// Label25 control.

@@ -117,10 +117,10 @@
                 <td><asp:Label ID="Label23" runat="server" Text="Total Debt"></asp:Label></td>
                 <td>
                 <asp:TextBox ID="TextBox23" runat="server"></asp:TextBox></td>
-                            <td><asp:Button ID="Button1" runat="server" Text="Button" />
-                 <asp:Button ID="Button2" runat="server" Text="Button" />
-<asp:Button ID="Button3" runat="server" Text="Button" />
-                     <asp:Button ID="Button4" runat="server" Text="Button" />
+                            <td><asp:Button ID="Save" runat="server" Text="Save" />
+                 <asp:Button ID="Edit" runat="server" Text="Edit" />
+<asp:Button ID="Delete" runat="server" Text="Delete" />
+                     <asp:Button ID="Add" runat="server" Text="Add" />
 
            
                  </td>                   
