@@ -26,7 +26,6 @@
                 <td><asp:Label ID="Label1" runat="server" Text="Total Investments"></asp:Label></td>
                 <td><asp:TextBox ID="TotalInvestments" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label2" runat="server" Text="Net Mark-up Income"></asp:Label></td>
-
                 <td>  <asp:TextBox ID="NetMark" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label3" runat="server" Text="Gross Infection (%)"></asp:Label></td>
                 <td>  <asp:TextBox ID="GrossInfection" runat="server"></asp:TextBox></td>
@@ -52,39 +51,40 @@
                 <td><asp:TextBox ID="TotalAssets" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label8" runat="server" Text="Profit (Loss) Before Tax"></asp:Label></td>
                 <td>  <asp:TextBox ID="ProfitTax" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label9" runat="server" Text="Efficiency (%)"></asp:Label></td>
-                <td>  <asp:TextBox ID="Efficiency" runat="server"></asp:TextBox></td>
+                <td><asp:Label ID="Label9" runat="server" Text="Net Infection (%)"></asp:Label></td>
+                <td>  <asp:TextBox ID="NetInfection" runat="server"></asp:TextBox></td>
                     
-            </tr> 
+        </tr> 
 
-       <tr>
+        <tr>
               
-            
                 <td><asp:Label ID="Label10" runat="server" Text="Lease Key money"></asp:Label></td>
                 <td><asp:TextBox ID="Leasemoney" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label11" runat="server" Text="Profit (Loss)  After Tax"></asp:Label></td>
                 <td><asp:TextBox ID="ProfitAfter" runat="server"></asp:TextBox></td>
-               <td><asp:Label ID="Label12" runat="server" Text="ROAA (%)"></asp:Label></td>
-                <td>  <asp:TextBox ID="ROAA" runat="server"></asp:TextBox></td>
+                <td><asp:Label ID="Label12" runat="server" Text="Efficiency (%)"></asp:Label></td>
+                <td>  <asp:TextBox ID="Efficiency" runat="server"></asp:TextBox></td>
                     
-            </tr>
+          </tr>
        
-       <tr>
+          <tr>
               
                 <td><asp:Label ID="Label13" runat="server" Text="Borrowings"></asp:Label></td>
                 <td><asp:TextBox ID="Borrowings" runat="server"></asp:TextBox></td>  
-               <td></td>
-           <td></td>     
-           <td><asp:Label ID="Label15" runat="server" Text="ROAE (%)"></asp:Label></td>
-                <td><asp:TextBox ID="ROAE" runat="server"></asp:TextBox></td>
+                <td></td>
+                <td></td>     
+                <td><asp:Label ID="Label15" runat="server" Text="ROAA (%)"></asp:Label></td>
+                <td><asp:TextBox ID="ROAA" runat="server"></asp:TextBox></td>
                     
-            </tr>
+          </tr>
 
-     <tr>
+          <tr>
               
-                <td><asp:Label ID="Label16" runat="server" Text="COIs"></asp:Label></td>
-                <td><asp:TextBox ID="coi" runat="server"></asp:TextBox></td>  
+                <td><asp:Label ID="Label16" runat="server" Text="COIs"></asp:Label></td> 
+                <td><asp:TextBox ID="coi" runat="server"></asp:TextBox></td> 
+              
                 <td><asp:Button ID="Save" runat="server" Text="Save" />
+
                 <asp:Button ID="Edit" runat="server" Text="Edit" />
                 <asp:Button ID="Delete" runat="server" Text="Delete" />
                 <asp:Button ID="Add" runat="server" Text="Add" />
@@ -92,8 +92,9 @@
            
                 </td>
                 <td></td>   
-                <td><asp:Label ID="Label18" runat="server" Text="Current Ratio (x)"></asp:Label></td>
-                <td><asp:TextBox ID="Current" runat="server"></asp:TextBox></td>
+               <td><asp:Label ID="Label14" runat="server" Text="ROAE (%)"></asp:Label></td>
+                <td><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+               
                     
             </tr>
             <tr>
@@ -102,22 +103,23 @@
             <td><asp:TextBox ID="Tier1" runat="server"></asp:TextBox></td>  
 
             <td></td>
-            <td></td>   
+                <td></td>   
             
-            <td><asp:Label ID="Label21" runat="server" Text="Leverage"></asp:Label></td>
-             <td><asp:TextBox ID="TextBox6" runat="server"></asp:TextBox></td>
+                <td><asp:Label ID="Label18" runat="server" Text="Current Ratio (x)"></asp:Label></td>
+                <td><asp:TextBox ID="Current" runat="server"></asp:TextBox></td>
                     
-            </tr>
-        <tr>
+                </tr>
+
+                <tr>
               
                 <td><asp:Label ID="Label22" runat="server" Text="Net Worth"></asp:Label></td>
                 <td><asp:TextBox ID="networth" runat="server"></asp:TextBox></td>  
-               <td></td>
-           <td></td>   
-                <td><asp:Label ID="Label24" runat="server" Text="Leverage"></asp:Label></td>
-                <td><asp:TextBox ID="TextBox9" runat="server"></asp:TextBox></td>
+                <td></td>
+                <td></td>   
+                <td></td>
+                <td></td>   
                     
-            </tr>
+               </tr>
        
       
     </table>
