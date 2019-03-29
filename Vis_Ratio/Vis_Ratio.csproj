@@ -101,6 +101,7 @@
     <Compile Include="Brokerage.aspx.designer.cs">
       <DependentUpon>Brokerage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Clsratiodata.cs" />
     <Compile Include="Corporate.aspx.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

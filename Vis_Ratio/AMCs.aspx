@@ -22,8 +22,7 @@
          
          
          <tr>
-             
-            
+                        
                 <td><asp:Label ID="Label1" runat="server" Text="AUMs  (Rs. in billions)"></asp:Label></td>
                 <td><asp:TextBox ID="AUMs" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label2" runat="server" Text="Retail AUMs (Rs. in millions)"></asp:Label></td>
@@ -98,10 +97,10 @@
                 <td>
                 <asp:TextBox ID="Efficiency" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label18" runat="server" Text="IC Composition"></asp:Label></td>
-                <td>  <asp:TextBox ID="ICComposition" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="ICComposition" runat="server"></asp:TextBox></td>
                     
             </tr>
-         <tr>
+            <tr>
                 <td><asp:Label ID="Label19" runat="server" Text="Total Equity"></asp:Label></td>
                 <td>
                 <asp:TextBox ID="TotalEquity" runat="server"></asp:TextBox></td>
@@ -110,18 +109,21 @@
                     
             </tr>
          <tr>
+         
                 <td><asp:Label ID="Label21" runat="server" Text="Long term debt"></asp:Label></td>
                 <td><asp:TextBox ID="Longdebt" runat="server"></asp:TextBox></td>
-            </tr>
+
+         </tr>
          <tr>
                 <td><asp:Label ID="Label23" runat="server" Text="Total Debt"></asp:Label></td>
                 <td>
-                <asp:TextBox ID="TotalDebt" runat="server"></asp:TextBox></td>
-                            <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" />
-                 <asp:Button ID="Edit" runat="server" Text="Edit" OnClick="Edit_Click" />
-<asp:Button ID="Delete" runat="server" Text="Delete" />
-                     <asp:Button ID="Add" runat="server" Text="Add" />
 
+                 <asp:TextBox ID="TotalDebt" runat="server"></asp:TextBox></td>
+                 <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" />
+                 <asp:Button ID="Edit" runat="server" Text="Edit" OnClick="Edit_Click" />
+                 <asp:Button ID="Delete" runat="server" Text="Delete" />
+                 <asp:Button ID="Add" runat="server" Text="Add" />
+                                  
            
                  </td>                   
 
