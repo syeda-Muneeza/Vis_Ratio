@@ -418,33 +418,6 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.Button Save;
         
         /// <summary>
-        /// Edit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Edit;
-        
-        /// <summary>
-        /// Delete control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Delete;
-        
-        /// <summary>
-        /// Add control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Add;
-        
-        /// <summary>
         /// Label25 control.
         /// </summary>
         /// <remarks>

@@ -77,7 +77,9 @@
     <Content Include="Leasing.aspx" />
     <Content Include="Microfinance.aspx" />
     <Content Include="Modarabas.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AMCs.aspx.cs">
@@ -101,7 +103,6 @@
     <Compile Include="Brokerage.aspx.designer.cs">
       <DependentUpon>Brokerage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Clsratiodata.cs" />
     <Compile Include="Corporate.aspx.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -161,6 +162,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Copy of Ratios.xlsx" />
     <None Include="packages.config" />
     <Content Include="RatioForm.Master" />
     <None Include="Web.Debug.config">
