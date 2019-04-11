@@ -2,7 +2,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="AMC" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="css/table.css" rel="stylesheet" />
+    <script type="text/javascript" language="javascript">
+    $(function () {
+        //initialise the datepicker with the date format specified
+        $(".datepicker").datepicker();
+    });
+</script>
 
 <div>
    <table   style=" border: 1px solid #1C6EA4;
@@ -10,6 +20,8 @@
   width: 100%;
   text-align: left;
   /*border-collapse: collapse;*/">
+
+ 
        
    <caption>AMCs</caption>
    
@@ -21,35 +33,37 @@
          
          
          <tr>
-                        
-                <td><asp:Label ID="Label1" runat="server" Text="AUMs  (Rs. in billions)"></asp:Label></td>
+           
+                   
+             
+                <td><asp:label ID="label1" runat="server" Text="AUMs  (Rs. in billions)"></asp:label></td>
                 <td><asp:TextBox ID="AUMs" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label2" runat="server" Text="Retail AUMs (Rs. in millions)"></asp:Label></td>
+                <td><asp:label ID="label2" runat="server" Text="Retail AUMs (Rs. in millions)"></asp:label></td>
                 <td>  <asp:TextBox ID="RetailAUMs" runat="server"></asp:TextBox></td>
                     
             </tr>
      <tr>
-                <td><asp:Label ID="Label3" runat="server" Text="AUM in SMAs (Rs. in billions)"></asp:Label></td>
+                <td><asp:label ID="label3" runat="server" Text="AUM in SMAs (Rs. in billions)"></asp:label></td>
                 <td>
                 <asp:TextBox ID="AUMinSMAs" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label4" runat="server" Text="Retail (%)"></asp:Label></td>
+                <td><asp:label ID="label4" runat="server" Text="Retail (%)"></asp:label></td>
                 <td>  <asp:TextBox ID="Retail" runat="server"></asp:TextBox></td>
                     
             </tr>
 
          <tr>
-                <td><asp:Label ID="Label5" runat="server" Text="No. of SMAs"></asp:Label></td>
+                <td><asp:label ID="label5" runat="server" Text="No. of SMAs"></asp:label></td>
                 <td>
                 <asp:TextBox ID="SMAs" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label6" runat="server" Text="Associates (%)"></asp:Label></td>
+                <td><asp:label ID="label6" runat="server" Text="Associates (%)"></asp:label></td>
                 <td>  <asp:TextBox ID="Associates" runat="server"></asp:TextBox></td>
                     
             </tr>
          <tr>
-                <td><asp:Label ID="Label7" runat="server" Text="Market Share"></asp:Label></td>
+                <td><asp:label ID="label7" runat="server" Text="Market Share"></asp:label></td>
                 <td>
                 <asp:TextBox ID="MarketShare" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label8" runat="server" Text="Number of Investors"></asp:Label></td>
+                <td><asp:label ID="label8" runat="server" Text="Number of Investors"></asp:label></td>
                 <td>  <asp:TextBox ID="NumberofInvestors" runat="server"></asp:TextBox></td>
                     
             </tr>
@@ -60,87 +74,92 @@
 
 
          <tr>
-                <td><asp:Label ID="Label9" runat="server" Text="Management Fees"></asp:Label></td>
+                <td><asp:label ID="label9" runat="server" Text="Management Fees"></asp:label></td>
                 <td>
                 <asp:TextBox ID="ManagementFees" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label10" runat="server" Text="Number of Independent Directors"></asp:Label></td>
+                <td><asp:label ID="label10" runat="server" Text="Number of Independent Directors"></asp:label></td>
                 <td>  <asp:TextBox ID="IndependentDirectors" runat="server"></asp:TextBox></td>
                     
             </tr>
          <tr>
-                <td><asp:Label ID="Label11" runat="server" Text="Core revenue"></asp:Label></td>
+                <td><asp:label ID="label11" runat="server" Text="Core revenue"></asp:label></td>
                 <td>
                 <asp:TextBox ID="Corerevenue" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label12" runat="server" Text="Number of Board Members"></asp:Label></td>
+                <td><asp:label ID="label12" runat="server" Text="Number of Board Members"></asp:label></td>
                 <td>  <asp:TextBox ID="BoardMembers" runat="server"></asp:TextBox></td>
                     
             </tr>
          <tr>
-                <td><asp:Label ID="Label13" runat="server" Text="Adminstrative expenses"></asp:Label></td>
+                <td><asp:label ID="label13" runat="server" Text="Adminstrative expenses"></asp:label></td>
                 <td>
                 <asp:TextBox ID="Adminstrative" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label14" runat="server" Text="Board Committees"></asp:Label></td>
+                <td><asp:label ID="label14" runat="server" Text="Board Committees"></asp:label></td>
                 <td>  <asp:TextBox ID="BoardCommittees" runat="server"></asp:TextBox></td>
                     
                 </tr>
                 <tr>
-                <td><asp:Label ID="Label15" runat="server" Text="Operating Profit"></asp:Label></td>
+                <td><asp:label ID="label15" runat="server" Text="Operating Profit"></asp:label></td>
                 <td>
                 <asp:TextBox ID="OperatingProfit" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label16" runat="server" Text="Management Committees"></asp:Label></td>
+                <td><asp:label ID="label16" runat="server" Text="Management Committees"></asp:label></td>
                 <td>  <asp:TextBox ID="ManagementCommittees" runat="server"></asp:TextBox></td>
                     
                 </tr>
                 <tr>
-                <td><asp:Label ID="Label17" runat="server" Text="Efficiency"></asp:Label></td>
+                <td><asp:label ID="label17" runat="server" Text="Efficiency"></asp:label></td>
                 <td><asp:TextBox ID="Efficiency" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label18" runat="server" Text="IC Composition"></asp:Label></td>
+                <td><asp:label ID="label18" runat="server" Text="IC Composition"></asp:label></td>
                 <td><asp:TextBox ID="ICComposition" runat="server"></asp:TextBox></td>
                     
             </tr>
             <tr>
-                <td><asp:Label ID="Label19" runat="server" Text="Total Equity"></asp:Label></td>
+                <td><asp:label ID="label19" runat="server" Text="Total Equity"></asp:label></td>
                 <td>
                 <asp:TextBox ID="TotalEquity" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label20" runat="server" Text="Shared Functions"></asp:Label></td>
+                <td><asp:label ID="label20" runat="server" Text="Shared Functions"></asp:label></td>
                 <td>  <asp:TextBox ID="SharedFunctions" runat="server"></asp:TextBox></td>
                     
             </tr>
          <tr>
          
-                <td><asp:Label ID="Label21" runat="server" Text="Long term debt"></asp:Label></td>
+                <td><asp:label ID="label21" runat="server" Text="Long term debt"></asp:label></td>
                 <td><asp:TextBox ID="Longdebt" runat="server"></asp:TextBox></td>
-
+               <td><asp:label ID="label26" runat="server" Text="Date"></asp:label></td>
+             <td>   <asp:TextBox ID="txtMyDate" CssClass="datepicker" runat="server"></asp:TextBox></td>
          </tr>
          <tr>
-                <td><asp:Label ID="Label23" runat="server" Text="Total Debt"></asp:Label></td>
+                <td><asp:label ID="label23" runat="server" Text="Total Debt"></asp:label></td>
                 <td>
 
                  <asp:TextBox ID="TotalDebt" runat="server"></asp:TextBox></td>
-                 <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" />
+            <td></td>
+             <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click1" />
                 
                                   
            
-                 </td>                   
+                 </td>
+                                    
 
                     
             </tr>
          <tr>
-                <td><asp:Label ID="Label25" runat="server" Text="Number of Funds"></asp:Label></td>
+                <td><asp:label ID="label25" runat="server" Text="Number of Funds"></asp:label></td>
                 <td>
                 <asp:TextBox ID="NumberFunds" runat="server"></asp:TextBox></td>
+             <td></td>
+            
                 
                     
             </tr>
        <tr>
-                <td><asp:Label ID="Label22" runat="server" Text="Types of Funds not covered in portfolio"></asp:Label></td>
+                <td><asp:label ID="label22" runat="server" Text="Types of Funds not covered in portfolio"></asp:label></td>
                 <td>
                 <asp:TextBox ID="portfolio" runat="server"></asp:TextBox></td>
                 
                     
             </tr>
        <tr>
-                <td><asp:Label ID="Label24" runat="server" Text="Total Assets"></asp:Label></td>
+                <td><asp:label ID="label24" runat="server" Text="Total Assets"></asp:label></td>
                 <td>
                 <asp:TextBox ID="TotalAssets" runat="server"></asp:TextBox></td>
                 
@@ -150,8 +169,6 @@
     
    
    </table>
-  
-
 
    
 </div>

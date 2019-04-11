@@ -6,6 +6,19 @@
 
 <asp:Content ID="Banks" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link href="css/table.css" rel="stylesheet" /> 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+    <script type="text/javascript" language="javascript">
+    $(function () {
+        //initialise the datepicker with the date format specified
+        $(".datepicker").datepicker();
+    });
+</script>
+
     <div>
   
     <table style=" border: 1px solid #1C6EA4;
@@ -129,7 +142,7 @@
               
            
                 <td><asp:Label ID="Label22" runat="server" Text="Return on Earning Assets"></asp:Label></td>
-                <td><asp:TextBox ID="Return" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="Return1" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label24" runat="server" Text="Revaluation Surplus on Investments"></asp:Label></td>
                 <td><asp:TextBox ID="Revalnvestments" runat="server"></asp:TextBox></td>
                  <th colspan="2">Others </th>
@@ -166,7 +179,7 @@
               
             
                 <td><asp:Label ID="Label31" runat="server" Text="Efficiency"></asp:Label></td>
-                <td><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="Efficiency" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label32" runat="server" Text="CAR"></asp:Label></td>
                 <td><asp:TextBox ID="CAR" runat="server"></asp:TextBox></td>
                <td><asp:Label ID="Label33" runat="server" Text="Employee related costs"></asp:Label></td>
@@ -201,8 +214,8 @@
 
                 <td><asp:Label ID="Label41" runat="server" Text="ROAA"></asp:Label></td>
                 <td><asp:TextBox ID="ROAA" runat="server"></asp:TextBox></td>
-            <td></td>
-            <td></td>
+           <td><asp:Label ID="Label45" runat="server" Text="Date"></asp:Label></td>
+             <td><asp:TextBox ID="bankdate" CssClass="datepicker" runat="server"></asp:TextBox></td>
                <td><asp:Label ID="Label42" runat="server" Text="Employees per branch"></asp:Label></td>
                 <td>  <asp:TextBox ID="Emplobranch" runat="server"></asp:TextBox></td>
                     
@@ -216,14 +229,13 @@
                 <td><asp:TextBox ID="ROAE" runat="server"></asp:TextBox></td>
                        <td></td>     
     <td></td>   
-       <td><asp:Button ID="Save" runat="server" Text="Save" />
-                 <asp:Button ID="Edit" runat="server" Text="Edit" />
-<asp:Button ID="Delete" runat="server" Text="Delete" />
-                     <asp:Button ID="Add" runat="server" Text="Add" />
+      
+        <td></td>
+         <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" />
+       
 
            
                  </td>
-        <td></td>
     </tr>
     <tr>
               
@@ -231,10 +243,7 @@
           
                 <td><asp:Label ID="Label43" runat="server" Text="Operating Profit / (Loss)"></asp:Label></td>
                 <td><asp:TextBox ID="OperaLoss" runat="server"></asp:TextBox></td>
-                <td></td>     
-    <td></td> 
-        <td></td>
-        <td></td>
+          
     </tr>
         <tr>
               
@@ -242,10 +251,7 @@
                 <td><asp:Label ID="Label44" runat="server" Text="Profit/ (loss) after Tax"></asp:Label></td>
                 <td><asp:TextBox ID="ProfitTax" runat="server"></asp:TextBox></td>
                 
-          <td></td>     
-    <td></td>
-        <td></td>
-        <td></td>
+       
     </tr>
     </table>
   

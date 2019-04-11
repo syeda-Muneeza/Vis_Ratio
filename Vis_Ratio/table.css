@@ -1,0 +1,18 @@
+﻿body {
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #1C6EA4;
+   background-color: #EEEEEE;
+    width: 98%;
+    text-align: left;
+    table-layout: fixed;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    height: 40px;
+}

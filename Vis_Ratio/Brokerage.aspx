@@ -2,16 +2,21 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Brokerage" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link href="css/table.css" rel="stylesheet" /> 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" language="javascript">
+    $(function () {
+        //initialise the datepicker with the date format specified
+        $(".datepicker").datepicker();
+    });
+</script>
     <table   style="width:100%; border: 1px solid black">
        
    <caption>Brokerage</caption>
-         <tr>
-                  <th></th>
-             <th></th>
-             <th></th>
-             <th></th>
-           </tr>       
+              
         
    
                                                                     
@@ -151,20 +156,17 @@
                 <td><asp:TextBox ID="Gearing" runat="server"></asp:TextBox></td>
       
           <td><asp:Label ID="Label32" runat="server" Text="(Short Term investment +Long Term investment) / Equity"></asp:Label></td>
-                <td><asp:TextBox ID="Short" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="Short1" runat="server"></asp:TextBox></td>
 
            </tr>
         <tr>
-              <td></td>
-                  <td>
-
-                  </td>
+              <td><asp:Label ID="Label33" runat="server" Text="Date"></asp:Label></td>
+             <td colspan="2">   <asp:TextBox ID="txtMyDate" CssClass="datepicker" runat="server"></asp:TextBox></td>
+     
             
             
-          <td><asp:Button ID="Save" runat="server" Text="Save" />
-                 <asp:Button ID="Edit" runat="server" Text="Edit" />
-<asp:Button ID="Delete" runat="server" Text="Delete" />
-                     <asp:Button ID="Add" runat="server" Text="Add" />
+          <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" />
+        
 
            
                  </td>         
@@ -173,6 +175,8 @@
             </tr>
 
    </table>
+
+
 
 
 

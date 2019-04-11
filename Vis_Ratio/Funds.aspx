@@ -2,6 +2,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Funds" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link href="css/table.css" rel="stylesheet" /> 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" language="javascript">
+    $(function () {
+        //initialise the datepicker with the date format specified
+        $(".datepicker").datepicker();
+    });
+</script>
+    
     <div>
   
     <table style=" border: 1px solid #1C6EA4;
@@ -21,7 +33,7 @@
              
        <tr>
           <td><asp:Label ID="Label1" runat="server" Text="Return (%)" ></asp:Label></td>
-                <td><asp:TextBox ID="Return" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="Return1" runat="server"></asp:TextBox></td>
        
          </tr>
         <tr>
@@ -61,15 +73,17 @@
         <tr> <td><asp:Label ID="Label10" runat="server" Text="Fund Stability Rating"></asp:Label></td>
                 <td><asp:TextBox ID="FundRating" runat="server"></asp:TextBox></td></tr>
         
+         <tr>  <td><asp:Label ID="Label19" runat="server" Text="Date"></asp:Label></td>
+             <td>   <asp:TextBox ID="txtMyDate" CssClass="datepicker" runat="server"></asp:TextBox></td>
+            </tr>
+
       <tr>
           <td></td>
         
             
             
-          <td><asp:Button ID="Save" runat="server" Text="Save" />
-                 <asp:Button ID="Edit" runat="server" Text="Edit" />
-<asp:Button ID="Delete" runat="server" Text="Delete" />
-                     <asp:Button ID="Add" runat="server" Text="Add" />
+          <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" />
+
 
            
                  </td>         
