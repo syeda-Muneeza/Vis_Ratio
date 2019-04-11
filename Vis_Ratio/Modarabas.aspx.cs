@@ -20,7 +20,6 @@ namespace Vis_Ratio
 
         }
         private void emptybox()
-
         {
             IjarahRentals.Text = "";
         IjarahAssets.Text = "";
@@ -45,7 +44,6 @@ namespace Vis_Ratio
         ROAA.Text = "";
         ROAE.Text = "";
         txtMyDate.Text = "";
-
                 }
 
         protected void Save_Click(object sender, EventArgs e)
