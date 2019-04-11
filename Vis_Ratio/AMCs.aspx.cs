@@ -20,11 +20,43 @@ namespace Vis_Ratio
 
         }
 
+
+        private void emptybox()
+        {
+            AUMs.Text = "";
+            AUMinSMAs.Text = "";
+            SMAs.Text = "";
+            MarketShare.Text = "";
+            RetailAUMs.Text = "";
+            Retail.Text = "";
+            Associates.Text = "";
+            NumberofInvestors.Text = "";
+            ManagementFees.Text = "";
+            Corerevenue.Text = "";
+            Adminstrative.Text = "";
+            OperatingProfit.Text = "";
+            Efficiency.Text = "";
+            TotalEquity.Text = "";
+            Longdebt.Text = "";
+            TotalDebt.Text = "";
+            NumberFunds.Text = "";
+            portfolio.Text = "";
+            TotalAssets.Text = "";
+            IndependentDirectors.Text = "";
+            BoardMembers.Text = "";
+            BoardCommittees.Text = "";
+            ManagementCommittees.Text = "";
+            ICComposition.Text = "";
+            SharedFunctions.Text = "";
+            txtMyDate.Text = "";
+
+}
+
         //protected void Save_Click(object sender, EventArgs e)
 
         //{
         //    //string con = @"Data Source=DESKTOP-2BV215M\SQLEXPRESS;Initial Catalog=Vis_Ratio;Integrated Security=True";
-          
+
         //    //dtamcdata.Rows(0)("AUMs") = AUMs.Text;
         //    //dtamcdata.Rows(0)("AUMinSMAs") = AUMinSMAs.Text;
         //    //dtamcdata.Rows(0)("NoofSMAs") = SMAs.Text;

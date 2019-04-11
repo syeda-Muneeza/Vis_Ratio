@@ -19,6 +19,27 @@ namespace Vis_Ratio
 
         }
 
+        private void emptybox()
+        {
+            Adjustedequity.Text = "";
+            NetFinancial.Text = "";
+            OperatingLeverage.Text = "";
+            InsurancDebt.Text = "";
+            CombinedRatio.Text = "";
+            ROAE.Text = "";
+            UnderwritingRatio.Text = "";
+            GrossClaimsRatio.Text = "";
+            NetRatio.Text = "";
+            Underwriting.Text = "";
+            UnderwritingPremium.Text = "";
+            NetProfit.Text = "";
+            MotorPremium.Text = "";
+            ReinsuranceCeded.Text = "";
+            GrossPremium.Text = "";
+            NetRevenue.Text = "";
+            txtMyDate.Text = "";
+                }
+
         protected void Save_Click(object sender, EventArgs e)
         {
             {

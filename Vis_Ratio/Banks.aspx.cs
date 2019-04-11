@@ -16,6 +16,54 @@ namespace Vis_Ratio
         {
 
         }
+       private void emptybox()
+        {
+            TotalAssets.Text = "";
+            GrossAdv.Text = "";
+            TotalInvest.Text = "";
+            PIBsDeposits.Text = "";
+            PIBsInvest.Text = "";
+            NPLs.Text = "";
+            GrossInfection.Text = "";
+            Specific.Text = "";
+            TotalCoverage.Text = "";
+            NetInfection.Text = "";
+            Deposits.Text = "";
+            MarketDepo.Text = "";
+            GrossDeposit.Text = "";
+            CostDeposits.Text = "";
+            CostFunding.Text = "";
+            LCR.Text = "";
+            NSFR.Text = "";
+            LiquidBorrowings.Text = "";
+            TierEquity.Text = "";
+            Shareholder.Text = "";
+            Revalnvestments.Text = "";
+            Netcapital.Text = "";
+            TTierCAR.Text = "";
+            CAR.Text = "";
+            Leverage.Text = "";
+            TotalSharehol.Text = "";
+            Net.Text = "";
+            Return1.Text = "";
+            Spreads.Text = "";
+            Adminexpenses.Text = "";
+            Efficiency.Text = "";
+            Overheads.Text = "";
+            ROAA.Text = "";
+            ROAE.Text = "";
+            OperaLoss.Text = "";
+            ProfitTax.Text = "";
+            Staffoutsourced.Text = "";
+            Branches.Text = "";
+            Employeecosts.Text = "";
+            Percost.Text = "";
+            Perdeposit.Text = "";
+            Emplobranch.Text = "";
+            bankdate.Text = "";
+            PrROAA.Text = "";
+
+    }
 
         protected void Save_Click(object sender, EventArgs e)
         {

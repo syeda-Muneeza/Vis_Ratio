@@ -72,7 +72,7 @@
                 <td><asp:TextBox ID="ShortTerm" runat="server"></asp:TextBox></td>
       
           <td><asp:Label ID="Label14" runat="server" Text="Long Term Investments"></asp:Label></td>
-                <td><asp:TextBox ID="Long" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="Long1" runat="server"></asp:TextBox></td>
        </tr>
            <tr>
 

@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
+
 namespace Vis_Ratio
 {
     public partial class Brokerage : System.Web.UI.Page
@@ -17,7 +18,44 @@ namespace Vis_Ratio
         {
 
         }
+        private void emptybox()
+        {
 
+            BrokerIncome.Text = "";
+            Corpinance.Text = "";
+            MTSIncome.Text = "";
+            LeverIncome.Text = "";
+            OtherIncome.Text = "";
+            DividendIncome.Text = "";
+            RecurringRevenue.Text = "";
+            Capitalnvest.Text = "";
+            Fair.Text = "";
+            NetProfit.Text = "";
+            Administrativeexpenses.Text = "";
+            FinanceCost.Text = "";
+            ShortTerm.Text = "";
+        Long1.Text = "";
+        TradeDebts.Text = "";
+        TotalAssets.Text = "";
+        Totalliabil.Text = "";
+        TotalEquity.Text = "";
+        Surplus.Text = "";
+        Equityless.Text = "";
+        LiquidAssets.Text = "";
+        InterestBearing.Text = "";
+        MarketShare.Text = "";
+        Marketvalue.Text = "";
+        ROAA.Text = "";
+        ROAE.Text = "";
+        Efficiency.Text = "";
+        LiquidAss.Text = "";
+        Liquidiabil.Text = "";
+        Leverage.Text = "";
+        Gearing.Text = "";
+        Short1.Text = "";
+        txtMyDate.Text = "";
+
+        }
         protected void Save_Click(object sender, EventArgs e)
         {
             {

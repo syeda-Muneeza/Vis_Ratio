@@ -18,6 +18,23 @@ namespace Vis_Ratio
 
         }
 
+        private void emptybox()
+        {
+            Return1.Text = "";
+            Benchmark.Text = "";
+            PeerAverage.Text = "";
+            RelativeRanking.Text = "";
+            FundSize.Text = "";
+            Retail.Text = "";
+            Associates.Text = "";
+            NumberInvestors.Text = "";
+            TopInvestors.Text = "";
+            FundRating.Text = "";
+            txtMyDate.Text = "";
+
+        }
+
+
         protected void Save_Click(object sender, EventArgs e)
         {
             {

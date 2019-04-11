@@ -19,6 +19,33 @@ namespace Vis_Ratio
         {
 
         }
+        private void emptybox()
+        {
+            IjarahRentals.Text = "";
+        IjarahAssets.Text = "";
+        Currentportion.Text = "";
+        Longtermportion.Text = "";
+        TotalAssets.Text = "";
+        CreditorsAccrued.Text = "";
+        Borrowings.Text = "";
+        LeaseKeyMoney.Text = "";
+        Totalliabilities.Text = "";
+        Equity.Text = "";
+        IncomeDiminishing.Text = "";
+        IncomeIjarah.Text = "";
+        IncomeBank.Text = "";
+        OperatingExpenses.Text = "";
+        Otherincome.Text = "";
+        ProfitTax.Text = "";
+        Efficiency1.Text = "";
+        Gearing.Text = "";
+        Leverage.Text = "";
+
+        ROAA.Text = "";
+        ROAE.Text = "";
+        txtMyDate.Text = "";
+
+                }
 
         protected void Save_Click(object sender, EventArgs e)
         {

@@ -17,7 +17,45 @@ namespace Vis_Ratio
         {
 
         }
+        private void emptybox()
+        {
+            TotalAssets.Text = "";
+            GrossAdv.Text = "";
+            Marketshare.Text = "";
+            GrossInfectionPAR30.Text = "";
+            Incremental.Text = "";
+            NetInfection.Text = "";
+            Deposits.Text = "";
+            GrossAdvancesto.Text = "";
+            NetAdvancesto.Text = "";
+            CostofFunds.Text = "";
+            LiquidAssets.Text = "";
+            Networth.Text = "";
+            CapitalAdequacy.Text = "";
+            CoverageRatio.Text = "";
+            Leverage.Text = "";
+            EquityGLP.Text = "";
+            GLPtotalassets.Text = "";
+            Spreads.Text = "";
+            Overheads.Text = "";
 
+            ProfitafterTax.Text = "";
+            OSS.Text = "";
+            FSS.Text = "";
+            InternalRatio.Text = "";
+            EquityGrowth.Text = "";
+            GrantIncome.Text = "";
+            ROAA.Text = "";
+            ROAE.Text = "";
+            NumberofBranches.Text = "";
+
+            Numberofficers.Text = "";
+            Activeclients.Text = "";
+            Averageloansize.Text = "";
+            Activeclients.Text = "";
+            Averageloanamount.Text = "";
+            txtMyDate.Text = "";
+}
         protected void Save_Click(object sender, EventArgs e)
         {
             {

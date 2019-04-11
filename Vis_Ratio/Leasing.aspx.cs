@@ -19,6 +19,32 @@ namespace Vis_Ratio
 
         }
 
+        private void emptybox()
+        {
+            TotalInvestments.Text = "";
+            NetInvestment.Text = "";
+            TotalAssets.Text = "";
+            Leasemoney.Text = "";
+            Borrowings.Text = "";
+            coi.Text = "";
+            Tier1.Text = "";
+            networth.Text = "";
+            NetMark.Text = "";
+            Operating.Text = "";
+            ProfitTax.Text = "";
+            ProfitAfter.Text = "";
+            GrossInfection.Text = "";
+            Provisioning.Text = "";
+            NetInfection.Text = "";
+            Efficiency.Text = "";
+            ROAA.Text = "";
+            ROAE.Text = "";
+            Current.Text = "";
+            txtMyDate.Text = "";
+
+
+
+        }
         protected void Save_Click(object sender, EventArgs e)
         {
             {

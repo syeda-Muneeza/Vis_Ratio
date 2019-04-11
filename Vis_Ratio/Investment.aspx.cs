@@ -18,6 +18,32 @@ namespace Vis_Ratio
 
         }
 
+        private void emptybox()
+        {
+            CashbBalances.Text = "";
+            TotalInvestments.Text = "";
+            TotalAssets.Text = "";
+            Tier.Text = "";
+            networth.Text = "";
+            Revenueop.Text = "";
+            Operating.Text = "";
+            ProfitTax.Text = "";
+            ProfitAfter.Text = "";
+            Average.Text = "";
+            DividendPayout.Text = "";
+            Efficiency.Text = "";
+            Gearing.Text = "";
+            Leverage.Text = "";
+            currentratio.Text = "";
+            ROAA.Text = "";
+            ROAE.Text = "";
+            Liquid.Text = "";
+            txtMyDate.Text = "";
+
+
+
+        }
+
         protected void Save_Click(object sender, EventArgs e)
         {
             {
