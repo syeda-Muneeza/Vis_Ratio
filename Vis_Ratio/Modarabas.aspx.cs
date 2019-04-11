@@ -20,6 +20,7 @@ namespace Vis_Ratio
 
         }
         private void emptybox()
+
         {
             IjarahRentals.Text = "";
         IjarahAssets.Text = "";
