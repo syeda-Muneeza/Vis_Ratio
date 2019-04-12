@@ -51,17 +51,17 @@ namespace Vis_Ratio
                 db.Open();
                 string insert = "Insert into[Vis_Ratio].[dbo].[Investment](CashBank,TotaInvestments,TotaAssets,TierEquity,NetWorth,RevenueOpe,OperatingExpenses,ProfitBeforeTax,ProfitAfterTax,AveReturnEquity,DividendPayout,Efficiency,Gearing,Leverage,CurrentRatio,ROAA,ROAE,TotaLiabilities,investdate) values('" + CashbBalances.Text + "','" + TotalInvestments.Text + "','" + TotalAssets.Text + "','" + Tier.Text + "','" + networth.Text + "','" + Revenueop.Text + "','" + Operating.Text + "','" + ProfitTax.Text + "','" + ProfitAfter.Text + "','" + Average.Text + "','" + DividendPayout.Text + "','" + Efficiency.Text + "','" + Gearing.Text + "','" + Leverage.Text + "','" + currentratio.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + Liquid.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
-                int m = cmd.ExecuteNonQuery();
-                if (m != 0)
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script >");
-                }
-                else
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script > ");
-                }
+                cmd.ExecuteNonQuery();
+                //if (m != 0)
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script >");
+                //}
+                //else
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script > ");
+                //}
                 db.Close();
-
+                emptybox();
             }
         }
     }

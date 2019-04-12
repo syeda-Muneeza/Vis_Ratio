@@ -16,3 +16,34 @@ table, th, td {
     border: 1px solid black;
     height: 40px;
 }
+
+caption {
+    font-size: 34px;
+    margin: 8px auto;   
+}
+
+input[type=submit] {
+    background-color: #353835;
+    border: none;
+    color: white;
+    padding: 7px 12px 7px 12px;
+    font-size: 20px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 8px;
+    float:right
+
+}
+
+input[type=text] {
+    width: 93%;
+    padding: 6px 2px;
+    margin: 0 4px 0px 4px;
+    display: inline-block;
+    border: 1px solid #100c0c;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+input[type=Label] {
+    margin: 0 0 0 12px;
+}

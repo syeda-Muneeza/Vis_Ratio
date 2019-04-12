@@ -52,17 +52,17 @@ namespace Vis_Ratio
                 db.Open();
                 string insert = "Insert into[Vis_Ratio].[dbo].[LeasingCompanies](TotalInvestments,NetInvestment,TotalAssets,Lease,Borrowings,COIs,TierEquity,NetWorth,NetMark,OperatingExpenses,ProfitBeforeTax,ProfitAfteTax,GrossInfection,ProvisioningCoverage,NetInfection,Efficiency,ROAA,ROAE,CurrentRatio,leasedate) values('" + TotalInvestments.Text + "','" + NetInvestment.Text + "','" + TotalAssets.Text + "','" + Leasemoney.Text + "','" + Borrowings.Text + "','" + coi.Text + "','" + Tier1.Text + "','" + networth.Text + "','" + NetMark.Text + "','" + Operating.Text + "','" + ProfitTax.Text + "','" + ProfitAfter.Text + "','" + GrossInfection.Text + "','" + Provisioning.Text + "','" + NetInfection.Text + "','" + Efficiency.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + Current.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
-                int m = cmd.ExecuteNonQuery();
-                if (m != 0)
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script >");
-                }
-                else
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script > ");
-                }
+                 cmd.ExecuteNonQuery();
+                //if (m != 0)
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script >");
+                //}
+                //else
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script > ");
+                //}
                 db.Close();
-
+                emptybox();
             }
         }
     }

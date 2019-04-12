@@ -18,7 +18,7 @@ namespace Vis_Ratio
         {
 
         }
-        private void emptybox()
+        private void Emptybox()
         {
 
             BrokerIncome.Text = "";
@@ -61,19 +61,19 @@ namespace Vis_Ratio
             {
                 SqlConnection db = new SqlConnection(con);
                 db.Open();
-                string insert = "Insert into[Vis_Ratio].[dbo].[Brokerage](BrokerageIncome,FinanceIncome,MTSMFS,LeverageFinancing,RecurringIncome,DividendIncome,RecurringRevenue,Capitalgain,Fairvaluegain,NeProfit,Administrativeexpenses,FinanceCost,ShortTermInvestments,LongTermInvestments,TradeDebts,TotalAssets,Totalliabilities,INCLSurplus,Surplus,EquitySurplus,LiquiAssets,InterestBearing,MarketSharevolumes,MarketSharevalue,ROAA,ROAE,Efficiency,Liabilities,Assets,Leverage,Gearing,Equity,brkdate) values('" + BrokerIncome.Text + "','" + Corpinance.Text + "','" + MTSIncome.Text + "','" + LeverIncome.Text + "','" + OtherIncome.Text + "','" + DividendIncome.Text + "','" + RecurringRevenue.Text + "','" + Capitalnvest.Text + "','" + Fair.Text + "','" + NetProfit.Text + "','" + Administrativeexpenses.Text + "','" + FinanceCost.Text + "','" + ShortTerm.Text + "','" + [Long].Text + "','" + TradeDebts.Text + "','" +TotalAssets.Text + "','" + Totalliabil.Text + "','" + TotalEquity.Text + "','" + Surplus.Text + "','" + Equityless.Text + "','" + LiquidAssets.Text + "','" + InterestBearing.Text + "','" + MarketShare.Text + "','" + Marketvalue.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + Efficiency.Text + "','" + LiquidAss.Text + "','" + Liquidiabil.Text + "','" + Leverage.Text + "','" + Gearing.Text + "','" + Short1.Text + "','" + txtMyDate.Text + "')";
+                string insert = "Insert into[Vis_Ratio].[dbo].[Brokerage](BrokerageIncome,FinanceIncome,MTSMFS,LeverageFinancing,RecurringIncome,DividendIncome,RecurringRevenue,Capitalgain,Fairvaluegain,NeProfit,Administrativeexpenses,FinanceCost,ShortTermInvestments,LongTermInvestments,TradeDebts,TotalAssets,Totalliabilities,INCLSurplus,Surplus,EquitySurplus,LiquiAssets,InterestBearing,MarketSharevolumes,MarketSharevalue,ROAA,ROAE,Efficiency,Liabilities,Assets,Leverage,Gearing,Equity,brkdate) values('" + BrokerIncome.Text + "','" + Corpinance.Text + "','" + MTSIncome.Text + "','" + LeverIncome.Text + "','" + OtherIncome.Text + "','" + DividendIncome.Text + "','" + RecurringRevenue.Text + "','" + Capitalnvest.Text + "','" + Fair.Text + "','" + NetProfit.Text + "','" + Administrativeexpenses.Text + "','" + FinanceCost.Text + "','" + ShortTerm.Text + "','" + Long1.Text + "','" + TradeDebts.Text + "','" +TotalAssets.Text + "','" + Totalliabil.Text + "','" + TotalEquity.Text + "','" + Surplus.Text + "','" + Equityless.Text + "','" + LiquidAssets.Text + "','" + InterestBearing.Text + "','" + MarketShare.Text + "','" + Marketvalue.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + Efficiency.Text + "','" + LiquidAss.Text + "','" + Liquidiabil.Text + "','" + Leverage.Text + "','" + Gearing.Text + "','" + Short1.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
-                int m = cmd.ExecuteNonQuery();
-                if (m != 0)
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script >");
-                }
-                else
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script > ");
-                }
+                 cmd.ExecuteNonQuery();
+                //if (m != 0)
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script >");
+                //}
+                //else
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script > ");
+                //}
                 db.Close();
-
+                Emptybox();
             }
         }
     }

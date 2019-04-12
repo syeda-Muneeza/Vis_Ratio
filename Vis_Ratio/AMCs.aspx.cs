@@ -91,17 +91,17 @@ namespace Vis_Ratio
             db.Open();
             string insert = "Insert into[Vis_Ratio].[dbo].[AMCs](AUMs,AUMinSMAs,NoofSMAs,MarketShare,RetailAUMs,Retail,Associates,NoInvestors,ManagementFees,Corerevenue,Adminexpenses,OperatingProfit,Efficiency,TotalEquity,Longtermdebt,TotalDebt,NumberofFunds,portfolio,Assets,IndependentDirectors,BoardMembers,BoardCommittees,ManagementCommittees,ICComposition,SharedFunctions,amcdate) values('" + AUMs.Text + "','" + AUMinSMAs.Text + "','" + SMAs.Text + "','" + MarketShare.Text + "','" + RetailAUMs.Text + "','" + Retail.Text + "','" + Associates.Text + "','" + NumberofInvestors.Text + "','" + ManagementFees.Text + "','" + Corerevenue.Text + "','" + Adminstrative.Text + "','" + OperatingProfit.Text + "','" + Efficiency.Text + "','" + TotalEquity.Text + "','" + Longdebt.Text + "','" + TotalDebt.Text + "','" + NumberFunds.Text + "','" + portfolio.Text + "','" + TotalAssets.Text + "','" + IndependentDirectors.Text + "','" + BoardMembers.Text + "','" + BoardCommittees.Text + "','" + ManagementCommittees.Text + "','" + ICComposition.Text + "','" + SharedFunctions.Text + "','" + txtMyDate.Text + "')";
             SqlCommand cmd = new SqlCommand(insert, db);
-            int m = cmd.ExecuteNonQuery();
-            if (m != 0)
-            {
-                Response.Write("< script > alert('Data Inserted !!') </ script >");
-            }
-            else
-            {
-                Response.Write("< script > alert('Data Inserted !!') </ script > ");
-            }
+           cmd.ExecuteNonQuery();
+            //if (m != 0)
+            //{
+            //    Response.Write("< script > alert('Data Inserted !!') </ script >");
+            //}
+            //else
+            //{
+            //    Response.Write("< script > alert('Data Inserted !!') </ script > ");
+            //}
             db.Close();
-
+            emptybox();
          }
         //private void Fillamcdata()
 

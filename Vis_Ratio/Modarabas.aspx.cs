@@ -19,32 +19,33 @@ namespace Vis_Ratio
         {
 
         }
-        private void emptybox()
+        private void Emptybox()
+
         {
             IjarahRentals.Text = "";
-        IjarahAssets.Text = "";
-        Currentportion.Text = "";
-        Longtermportion.Text = "";
-        TotalAssets.Text = "";
-        CreditorsAccrued.Text = "";
-        Borrowings.Text = "";
-        LeaseKeyMoney.Text = "";
-        Totalliabilities.Text = "";
-        Equity.Text = "";
-        IncomeDiminishing.Text = "";
-        IncomeIjarah.Text = "";
-        IncomeBank.Text = "";
-        OperatingExpenses.Text = "";
-        Otherincome.Text = "";
-        ProfitTax.Text = "";
-        Efficiency1.Text = "";
-        Gearing.Text = "";
-        Leverage.Text = "";
+            IjarahAssets.Text = "";
+            Currentportion.Text = "";
+            Longtermportion.Text = "";
+            TotalAssets.Text = "";
+            CreditorsAccrued.Text = "";
+            Borrowings.Text = "";
+            LeaseKeyMoney.Text = "";
+            Totalliabilities.Text = "";
+            Equity.Text = "";
+            IncomeDiminishing.Text = "";
+            IncomeIjarah.Text = "";
+            IncomeBank.Text = "";
+            OperatingExpenses.Text = "";
+            Otherincome.Text = "";
+            ProfitTax.Text = "";
+            Efficiency1.Text = "";
+            Gearing.Text = "";
+            Leverage.Text = "";
+            ROAA.Text = "";
+            ROAE.Text = "";
+            txtMyDate.Text = "";
 
-        ROAA.Text = "";
-        ROAE.Text = "";
-        txtMyDate.Text = "";
-                }
+        }
 
         protected void Save_Click(object sender, EventArgs e)
         {
@@ -53,17 +54,17 @@ namespace Vis_Ratio
                 db.Open();
                 string insert = "Insert into[Vis_Ratio].[dbo].[Modarabas](IjarahRental,IjarahAssets,DiminishingMusharaka,LongtermPortion,TotalAssets,OtherLiabilities,Borrowings,LeaseKeyMoney,Totalliabilities,Equity,IncomeDiminMusharaka,IncomeIjarahrental,IncomeBankdep,OperatingExpenses,Otherincome,ProfitBeforeAfter,Efficiency,Gearing,Leverage,ROAA,ROAE,modarbadate) values('" + IjarahRentals.Text + "','" + IjarahAssets.Text + "','" + Currentportion.Text + "','" + Longtermportion.Text + "','" + TotalAssets.Text + "','" + CreditorsAccrued.Text + "','" + Borrowings.Text + "','" + LeaseKeyMoney.Text + "','" + Totalliabilities.Text + "','" + Equity.Text + "','" + IncomeDiminishing.Text + "','" + IncomeIjarah.Text + "','" + IncomeBank.Text + "','" + OperatingExpenses.Text + "','" + Otherincome.Text + "','" + ProfitTax.Text + "','" + Efficiency1.Text + "','" + Gearing.Text + "','" + Leverage.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
-                int m  = cmd.ExecuteNonQuery();
-                if (m != 0)
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script >");
-                }
-                else
-                {  
-                    Response.Write("< script > alert('Data Inserted !!') </ script > ");
-                }
+               cmd.ExecuteNonQuery();
+                //if (m != 0)
+                //{
+                //    Response.Write("<script language=javascript>alert('ERROR');</script>");
+                //}
+                //else
+                //{
+                //    Response.Write("<script language=javascript>alert('ERROR');</script>");
+                //}
                 db.Close();
-
+                Emptybox();
             }
         }
     }

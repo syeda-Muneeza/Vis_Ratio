@@ -218,7 +218,7 @@
                 <td>  <asp:TextBox ID="Averageloanamount" runat="server"></asp:TextBox></td>
               
            <td></td>
-            <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" />
+            <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" CssClass="button"/>
                  
            
                  </td>

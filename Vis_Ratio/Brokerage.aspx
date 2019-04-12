@@ -161,11 +161,11 @@
            </tr>
         <tr>
               <td><asp:Label ID="Label33" runat="server" Text="Date"></asp:Label></td>
-             <td colspan="2">   <asp:TextBox ID="txtMyDate" CssClass="datepicker" runat="server"></asp:TextBox></td>
+             <td>   <asp:TextBox ID="txtMyDate" CssClass="datepicker" runat="server"></asp:TextBox></td>
      
             
             
-          <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" />
+          <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" CssClass="button" />
         
 
            

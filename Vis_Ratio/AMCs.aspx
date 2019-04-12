@@ -4,9 +4,11 @@
 <asp:Content ID="AMC" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
          <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="css/table.css" rel="stylesheet" />
+
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link href="css/table.css" rel="stylesheet" />
+   
     <script type="text/javascript" language="javascript">
     $(function () {
         //initialise the datepicker with the date format specified
@@ -15,11 +17,7 @@
 </script>
 
 <div>
-   <table   style=" border: 1px solid #1C6EA4;
-  background-color: #EEEEEE;
-  width: 100%;
-  text-align: left;
-  /*border-collapse: collapse;*/">
+   <table>
 
  
        

@@ -18,7 +18,7 @@ namespace Vis_Ratio
 
         }
 
-        private void emptybox()
+        private void Emptybox()
         {
             Return1.Text = "";
             Benchmark.Text = "";
@@ -42,17 +42,17 @@ namespace Vis_Ratio
                 db.Open();
                 string insert = "Insert  into[Vis_Ratio].[dbo].[Funds](Return1,Benchmark,PeerAverage,RelativeRanking,FundSize,Retail,Associates,Numbernvestors,Investors,FundStability,funddate) values('" + Return1.Text + "','" + Benchmark.Text + "','" +PeerAverage.Text + "','" + RelativeRanking.Text + "','" + FundSize.Text + "','" + Retail.Text + "','" + Associates.Text + "','" + NumberInvestors.Text + "','" + TopInvestors.Text + "','" + FundRating.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
-                int m = cmd.ExecuteNonQuery();
-                if (m != 0)
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script >");
-                }
-                else
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script > ");
-                }
+                cmd.ExecuteNonQuery();
+                //if (m != 0)
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script >");
+                //}
+                //else
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script > ");
+                //}
                 db.Close();
-
+                Emptybox();
             }
         }
     }

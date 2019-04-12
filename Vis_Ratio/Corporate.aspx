@@ -106,7 +106,7 @@
         <tr>
               
                 <td><asp:Label ID="Label17" runat="server" Text="Trade and Other Payables"></asp:Label></td>
-                <td colspan="3"><asp:TextBox ID="Trade" runat="server"></asp:TextBox></td>  
+                <td><asp:TextBox ID="Trade" runat="server"></asp:TextBox></td>  
                 
                 <td><asp:Label ID="Label20" runat="server" Text="ROAE (%)"></asp:Label></td>
                 <td><asp:TextBox ID="ROAE" runat="server"></asp:TextBox></td>
@@ -119,7 +119,7 @@
         <tr>
               
                 <td><asp:Label ID="Label21" runat="server" Text="Long Term Debt"></asp:Label></td>
-                <td colspan="3"><asp:TextBox ID="LongDebt" runat="server"></asp:TextBox></td>  
+                <td><asp:TextBox ID="LongDebt" runat="server"></asp:TextBox></td>  
                 
                 <td><asp:Label ID="Label23" runat="server" Text="Gearing"></asp:Label></td>
                 <td><asp:TextBox ID="Gearing" runat="server"></asp:TextBox></td>
@@ -128,7 +128,7 @@
         <tr>
               
                 <td><asp:Label ID="Label24" runat="server" Text="Short Term Debt"></asp:Label></td>
-                <td colspan="3"><asp:TextBox ID="ShortDebt" runat="server"></asp:TextBox></td>  
+                <td><asp:TextBox ID="ShortDebt" runat="server"></asp:TextBox></td>  
                 
                 <td><asp:Label ID="Label26" runat="server" Text="Leverage"></asp:Label></td>
                 <td><asp:TextBox ID="Leverage" runat="server"></asp:TextBox></td>
@@ -137,7 +137,7 @@
         <tr>
               
                 <td><asp:Label ID="Label27" runat="server" Text="Total Debt"></asp:Label></td>
-                <td colspan="3"><asp:TextBox ID="TotalDebt" runat="server"></asp:TextBox></td>  
+                <td><asp:TextBox ID="TotalDebt" runat="server"></asp:TextBox></td>  
                  
                 <td><asp:Label ID="Label29" runat="server" Text="(Stock in Trade + Trade Debts)/ Short Term Borrowings"></asp:Label></td>
                 <td><asp:TextBox ID="Stock" runat="server"></asp:TextBox></td>
@@ -146,7 +146,7 @@
         <tr>
               
                 <td><asp:Label ID="Label30" runat="server" Text="Total Liabilities"></asp:Label></td>
-                <td colspan="3"><asp:TextBox ID="TotalLiabilities" runat="server"></asp:TextBox></td>  
+                <td><asp:TextBox ID="TotalLiabilities" runat="server"></asp:TextBox></td>  
                 
                 <td><asp:Label ID="Label32" runat="server" Text="Current Ratio"></asp:Label></td>
                 <td><asp:TextBox ID="CurrentRatio" runat="server"></asp:TextBox></td>
@@ -155,11 +155,11 @@
         <tr>
               
                 <td><asp:Label ID="Label33" runat="server" Text="Total Equity"></asp:Label></td>
-                <td colspan="4"><asp:TextBox ID="TotalEquity" runat="server"></asp:TextBox></td>  
-                
+                <td><asp:TextBox ID="TotalEquity" runat="server"></asp:TextBox></td>  
+                <td></td>
          
                   
-                     <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" /></td>
+                     <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" CssClass="button"/></td>
             </tr>
       
     </table>

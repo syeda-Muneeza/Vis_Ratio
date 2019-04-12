@@ -47,17 +47,17 @@ namespace Vis_Ratio
                 db.Open();
                 string insert = "Insert into[Vis_Ratio].[dbo].[Insurance](Adjustedequity,NetFinancialLever,OperatingLeverage,InsuranceDebt,CombinedRatio,ROAE,UnderwritingExpense,GrossClaims,NetClaims,UnderwritingProfit,GrossPremium,NetProfit,MotorPremium,ReinsuranceCeded,GrossPrem,NetPremiumRevenue,insdate) values('" + Adjustedequity.Text + "','" + NetFinancial.Text + "','" + OperatingLeverage.Text + "','" + InsurancDebt.Text + "','" + CombinedRatio.Text + "','" + ROAE.Text + "','" + UnderwritingRatio.Text + "','" + GrossClaimsRatio.Text + "','" + NetRatio.Text + "','" + Underwriting.Text + "','" + UnderwritingPremium.Text + "','" + NetProfit.Text + "','" + MotorPremium.Text + "','" + ReinsuranceCeded.Text + "','" + GrossPremium.Text + "','" + NetRevenue.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
-                int m = cmd.ExecuteNonQuery();
-                if (m != 0)
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script >");
-                }
-                else
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script > ");
-                }
+                 cmd.ExecuteNonQuery();
+                //if (m != 0)
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script >");
+                //}
+                //else
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script > ");
+                //}
                 db.Close();
-
+                emptybox();
             }
         }
     }

@@ -98,7 +98,7 @@
                 <td><asp:Label ID="Label18" runat="server" Text="Underwriting Profit (Rs. 000s)"></asp:Label></td>
                 <td><asp:TextBox ID="Underwriting" runat="server"></asp:TextBox></td>
                <td></td>
-                <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" />
+                <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" CssClass="button"/>
                 </td>
           
            </tr> 

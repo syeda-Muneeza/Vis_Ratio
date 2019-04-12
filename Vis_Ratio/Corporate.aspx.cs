@@ -18,7 +18,7 @@ namespace Vis_Ratio
 
         }
 
-        private void emptybox()
+        private void Emptybox()
         {
             FixedAssets.Text = "";
             LongDeposits.Text = "";
@@ -63,17 +63,17 @@ namespace Vis_Ratio
                 db.Open();
                 string insert = "Insert into[Vis_Ratio].[dbo].[Corporates](FixedAssets,Longterm,StockTrade,TradeDebts,CashBank,TotalAssets,TradePayables,LongTermDebt,ShortTermDebt,TotalDebt,TotalLiabilities,TotalEquity,INCOMECASHFLOW,NetSales,GrossProfit,ProfitBeforeTax,ProfitafterTax,FFO,RATIOANALYSIS,GrossMargin,NetMargin,FFOTotalDebt,FFOtoLongDebt,ServicingCoverage,ROAA,ROAE,Gearing,Leverage,ShortTermBorrowings,CurrentRatio,cordate) values('" + FixedAssets.Text + "','" + LongDeposits.Text + "','" + Stocktrade.Text + "','" + TradeDebts.Text + "','" + CashBalances.Text + "','" + TotalAssets.Text + "','" + TradeDebts.Text + "','" + LongDebt.Text + "','" + ShortDebt.Text + "','" + TotalDebt.Text + "','" + TotalLiabilities.Text + "','" + TotalEquity.Text + "','" + NeSales.Text + "','" + GrossProfit.Text + "','" + ProfitTax.Text + "','" + ProfitAfter.Text + "','" + FFO.Text + "','" + GrossMargin.Text + "','" + NetMargin.Text + "','" + FFODebt.Text + "','" + FFOTermDebt.Text + "','" + Debtoverage.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + Gearing.Text + "','" + Leverage.Text + "','" + Stock.Text + "','" + CurrentRatio.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
-                int m = cmd.ExecuteNonQuery();
-                if (m != 0)
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script >");
-                }
-                else
-                {
-                    Response.Write("< script > alert('Data Inserted !!') </ script > ");
-                }
+                cmd.ExecuteNonQuery();
+                //if (m != 0)
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script >");
+                //}
+                //else
+                //{
+                //    Response.Write("< script > alert('Data Inserted !!') </ script > ");
+                //}
                 db.Close();
-
+                Emptybox();
             }
         }
     }

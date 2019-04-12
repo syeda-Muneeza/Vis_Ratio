@@ -71,6 +71,7 @@
     <Content Include="Banks.aspx" />
     <Content Include="Brokerage.aspx" />
     <Content Include="Corporate.aspx" />
+    <Content Include="css\master.css" />
     <Content Include="css\table.css" />
     <Content Include="Funds.aspx" />
     <Content Include="Insurance.aspx" />
