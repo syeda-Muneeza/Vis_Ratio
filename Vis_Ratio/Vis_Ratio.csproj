@@ -164,6 +164,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Insert into.docx" />
     <None Include="packages.config" />
     <Content Include="RatioForm.Master" />
     <None Include="Web.Debug.config">
