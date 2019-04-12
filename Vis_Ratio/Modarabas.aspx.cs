@@ -59,7 +59,7 @@ namespace Vis_Ratio
                     Response.Write("< script > alert('Data Inserted !!') </ script >");
                 }
                 else
-                {
+                {  
                     Response.Write("< script > alert('Data Inserted !!') </ script > ");
                 }
                 db.Close();
