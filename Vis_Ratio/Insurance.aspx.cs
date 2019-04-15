@@ -12,6 +12,7 @@ namespace Vis_Ratio
 {
     public partial class Insurance : System.Web.UI.Page
     {
+
         string con = System.Configuration.ConfigurationManager.ConnectionStrings["conStr"].ToString();
 
         protected void Page_Load(object sender, EventArgs e)
@@ -38,7 +39,7 @@ namespace Vis_Ratio
             GrossPremium.Text = "";
             NetRevenue.Text = "";
             txtMyDate.Text = "";
-                }
+         }
 
         protected void Save_Click(object sender, EventArgs e)
         {
@@ -50,11 +51,11 @@ namespace Vis_Ratio
                  cmd.ExecuteNonQuery();
                 //if (m != 0)
                 //{
-                //    Response.Write("< script > alert('Data Inserted !!') </ script >");
+                //Response.Write("<script> alert('Data Inserted !!') </script>");
                 //}
                 //else
                 //{
-                //    Response.Write("< script > alert('Data Inserted !!') </ script > ");
+                //Response.Write("<script> alert('Data Inserted !!') </script >");
                 //}
                 db.Close();
                 emptybox();

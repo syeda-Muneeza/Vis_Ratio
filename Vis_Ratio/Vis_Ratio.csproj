@@ -167,6 +167,7 @@
     <Content Include="Insert into.docx" />
     <None Include="packages.config" />
     <Content Include="RatioForm.Master" />
+    <Content Include="Vis_Ratio.bak" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
