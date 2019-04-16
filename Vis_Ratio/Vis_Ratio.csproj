@@ -70,6 +70,7 @@
     <Content Include="AMCs.aspx" />
     <Content Include="Banks.aspx" />
     <Content Include="Brokerage.aspx" />
+    <Content Include="Companyprofile.aspx" />
     <Content Include="Corporate.aspx" />
     <Content Include="css\master.css" />
     <Content Include="css\table.css" />
@@ -104,6 +105,13 @@
     </Compile>
     <Compile Include="Brokerage.aspx.designer.cs">
       <DependentUpon>Brokerage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Companyprofile.aspx.cs">
+      <DependentUpon>Companyprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Companyprofile.aspx.designer.cs">
+      <DependentUpon>Companyprofile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Corporate.aspx.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
