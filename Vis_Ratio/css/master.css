@@ -15,7 +15,7 @@ ul {
     width: 8.8%;
 }
 
-    ul li a {
+   ul li a {
         display: block;
         padding: 15px 0 15px 0;
         color: white;
@@ -24,14 +24,18 @@ ul {
 
         text-align: center;
         width: 100%;
-        /*display: block;
-        color: white;
-        text-align: center;
-        padding: 2px;
-        text-decoration: none;
-        font-size: 15px;*/
+      
     }
 
-        li a:hover {
+   li a:hover {
             background-color: #111111;
         }
+
+.center {
+    margin: auto;
+    width: 50%;
+    border:1px solid black;
+    padding: 10px;
+}
+
+   
