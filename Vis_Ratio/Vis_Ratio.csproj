@@ -106,6 +106,7 @@
     <Compile Include="Brokerage.aspx.designer.cs">
       <DependentUpon>Brokerage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Class\Clscompany.cs" />
     <Compile Include="Companyprofile.aspx.cs">
       <DependentUpon>Companyprofile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
