@@ -12,7 +12,7 @@ namespace Vis_Ratio
     public partial class Companyprofile : System.Web.UI.Page
     {
         string con = System.Configuration.ConfigurationManager.ConnectionStrings["conStr"].ToString();
-
+        DataTable dtcompany = new DataTable();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,6 +21,7 @@ namespace Vis_Ratio
 
         private void filldata()
         {
+
             SqlConnection db = new SqlConnection(con);
            
             SqlCommand com = new SqlCommand("select * FROM [Vis_Ratio].[dbo].[Sectors]", db); // table name 
@@ -29,11 +30,12 @@ namespace Vis_Ratio
            
             da.Fill(dt);  // fill dataset
             Drpsector.DataSource = dt;
-            Drpsector.DataBind();
+            //Drpsector.DataBind();
             Drpsector.DataTextField = "Sector_name";
             Drpsector.DataValueField = "Sector_id";
             Drpsector.DataBind();
-           
+            
+
 
             //Drpsector.DataTextField = ds.Tables[0].Columns["Sector_name"].ToString(); // text field name of table dispalyed in dropdown
             //Drpsector.DataValueField = ds.Tables[0].Columns["Sector_id"].ToString();             // to retrive specific  textfield name 
@@ -47,7 +49,7 @@ namespace Vis_Ratio
         {
             SqlConnection db1 = new SqlConnection(con);
             db1.Open();
-            string insert = "Insert into[Vis_Ratio].[dbo].[Company](Company_name,Sec_code) values('" + txtcompany.Text + "','" + Drpsector.SelectedValue + "')";
+            string insert = "Insert into[Vis_Ratio].[dbo].[Company](Company_name,Sec_code) values('" + txtcompany.Text + "','" + Drpsector.SelectedItem.Value + "')";
             SqlCommand cmd = new SqlCommand(insert, db1);
             cmd.ExecuteNonQuery();
             db1.Close();
@@ -58,6 +60,17 @@ namespace Vis_Ratio
             txtcompany.Text = "";
             Drpsector.SelectedIndex = 0;
 
+
+        }
+
+        protected void Drpsector_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string a;
+            a = Drpsector.SelectedValue;
+            if (Drpsector.SelectedIndex == 0)
+            {
+                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "alert", "alert('Select Driver ID then proceed.');", true);
+            }
 
         }
     }

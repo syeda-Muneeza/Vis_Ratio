@@ -5,19 +5,42 @@
 
     <link href="css/master.css" rel="stylesheet" />
 
-    <div class="center">
+        
+    
+        <div class="center">
         <label>Company Name</label>
         <asp:TextBox ID="txtcompany" runat="server"></asp:TextBox>
 
-         <label>Sector Name</label>
-        <asp:DropDownList ID="Drpsector" runat="server"></asp:DropDownList>
+        
+        
+        <label>Sector Name</label>
+        <asp:DropDownList ID="Drpsector" runat="server" AutoPostBack="false" ViewStateMode="Enabled" OnSelectedIndexChanged="Drpsector_SelectedIndexChanged"></asp:DropDownList>
         <%-- <asp:TextBox ID="txtsector" runat="server"></asp:TextBox>--%>
 
-
-        <asp:Button ID="btnsave" runat="server" Text="Save" OnClick="btnsave_Click"/>
-    </div>
-
+       <asp:Button ID="btnsave" runat="server" Text="Save" OnClick="btnsave_Click"/>
+       </div>
+     
 </asp:Content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
