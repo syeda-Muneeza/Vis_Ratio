@@ -24,12 +24,22 @@
    <caption>AMCs</caption>
    
             <tr>
+                
                 <th colspan="2">AUMs and Market position</th> 
                 <th colspan="2">AUM Profile</th>
                                           
             </tr>
-         
-         
+       
+         <tr>
+           
+                   
+             
+                <td><asp:label ID="label27" runat="server" Text="Company Name"></asp:label></td>
+                <td><asp:DropDownList ID="Drpcompany" runat="server" Visible="false"></asp:DropDownList></td>
+                <td></td>
+             <td></td>
+                    
+            </tr>
          <tr>
            
                    

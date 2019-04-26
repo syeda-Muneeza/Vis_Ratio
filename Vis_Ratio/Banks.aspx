@@ -36,7 +36,17 @@
                 <th colspan="2">Funding & Liquidity</th>
                
             </tr>
-         
+        <tr>
+              
+             <td><asp:label ID="label46" runat="server" Text="Company Name"></asp:label></td>
+                <td><asp:DropDownList ID="Drpcompany" runat="server" Visible="false"></asp:DropDownList></td>
+                <td></td>
+             <td></td>
+                      <td></td>
+             <td></td>
+                    
+            </tr> 
+
        <tr>
               
             

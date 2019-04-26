@@ -13,6 +13,24 @@ namespace Vis_Ratio {
     public partial class Banks {
         
         /// <summary>
+        /// label46 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label46;
+        
+        /// <summary>
+        /// Drpcompany control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Drpcompany;
+        
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>

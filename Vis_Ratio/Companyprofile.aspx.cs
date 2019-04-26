@@ -38,7 +38,7 @@ namespace Vis_Ratio
 
 
             //Drpsector.DataTextField = ds.Tables[0].Columns["Sector_name"].ToString(); // text field name of table dispalyed in dropdown
-            //Drpsector.DataValueField = ds.Tables[0].Columns["Sector_id"].ToString();             // to retrive specific  textfield name 
+            //Drpsector.DataValueField = ds.Tables[0].Columns["Sector_id"].oString();             // to retrive specific  textfield name 
             //Drpsector.DataSource = ds.Tables[0];      //assigning datasource to the dropdownlist
             //Drpsector.DataBind();  //binding dropdownlist
 
@@ -49,7 +49,7 @@ namespace Vis_Ratio
         {
             SqlConnection db1 = new SqlConnection(con);
             db1.Open();
-            string insert = "Insert into[Vis_Ratio].[dbo].[Company](Company_name,Sec_code) values('" + txtcompany.Text + "','" + Drpsector.SelectedItem.Value + "')";
+            string insert = "Insert into[Vis_Ratio].[dbo].[C ompany](Company_name,Sec_code) values('" + txtcompany.Text + "','" + Drpsector.SelectedItem.Value + "')";
             SqlCommand cmd = new SqlCommand(insert, db1);
             cmd.ExecuteNonQuery();
             db1.Close();

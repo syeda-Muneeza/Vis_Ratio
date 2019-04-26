@@ -29,7 +29,9 @@
                 
                
             </tr>
-    
+    <tr><td><asp:label ID="label22" runat="server" Text="Company Name"></asp:label></td>
+                <td><asp:DropDownList ID="Drpcompany" runat="server" Visible="false"></asp:DropDownList></td>
+</tr>
              
        <tr>
           <td><asp:Label ID="Label1" runat="server" Text="Return (%)" ></asp:Label></td>

@@ -33,7 +33,17 @@
                
             </tr>
     
-
+        <tr>
+           
+                   
+             
+                <td><asp:label ID="label22" runat="server" Text="Company Name"></asp:label></td>
+                <td><asp:DropDownList ID="Drpcompany" runat="server" Visible="false"></asp:DropDownList></td>
+                <td></td>
+             <td></td>
+                    <td></td>
+             <td></td>
+            </tr>
 
        <tr>
                           

@@ -31,7 +31,17 @@
                 <th colspan="2">RATIO ANALYSIS</th>
                
             </tr>
-    
+    <tr>
+           
+                   
+             
+                <td><asp:label ID="label17" runat="server" Text="Company Name"></asp:label></td>
+                <td><asp:DropDownList ID="Drpcompany" runat="server" Visible="false"></asp:DropDownList></td>
+                <td></td>
+             <td></td>
+                    <td></td>
+             <td></td>
+            </tr>
        <tr>
                           
                 <td><asp:Label ID="Label1" runat="server" Text="Total Investments"></asp:Label></td>
