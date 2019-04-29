@@ -21,7 +21,7 @@
     background-color: #EEEEEE;
     width: 100%;
     text-align: left;">
-       
+        
    <caption>Investment</caption> 
    
        <tr>
@@ -159,11 +159,7 @@
                 <td></td>
                 <td></td>
                <td></td>
-           <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" CssClass="button"/>
-
-
-           
-                 </td>             </tr>
+           <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" CssClass="button"/></td>             </tr>
       
     </table>
   

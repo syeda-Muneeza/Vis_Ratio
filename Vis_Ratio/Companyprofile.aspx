@@ -14,7 +14,11 @@
         
         
         <label>Sector Name</label>
-        <asp:DropDownList ID="Drpsector" runat="server" AutoPostBack="false" ViewStateMode="Enabled" OnSelectedIndexChanged="Drpsector_SelectedIndexChanged"></asp:DropDownList>
+        <asp:DropDownList ID="Drpsector" runat="server" AutoPostBack="false" ViewStateMode="Enabled" OnSelectedIndexChanged="Drpsector_SelectedIndexChanged">
+            <asp:ListItem>AMCs</asp:ListItem>
+            <asp:ListItem>Banks</asp:ListItem>
+            <asp:ListItem>Corporate</asp:ListItem>
+            </asp:DropDownList>
         <%-- <asp:TextBox ID="txtsector" runat="server"></asp:TextBox>--%>
 
        <asp:Button ID="btnsave" runat="server" Text="Save" OnClick="btnsave_Click"/>

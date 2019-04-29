@@ -16,34 +16,34 @@ namespace Vis_Ratio
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            filldata();
+           Drpsector.SelectedIndex = 0;
         }
 
-        private void filldata()
-        {
+        //private void filldata()
+        //{
 
-            SqlConnection db = new SqlConnection(con);
+        //    SqlConnection db = new SqlConnection(con);
            
-            SqlCommand com = new SqlCommand("select * FROM [Vis_Ratio].[dbo].[Sectors]", db); // table name 
-            SqlDataAdapter da = new SqlDataAdapter(com);
-            DataTable dt = new DataTable();
+        //    SqlCommand com = new SqlCommand("select * FROM [Vis_Ratio].[dbo].[Sectors]", db); // table name 
+        //    SqlDataAdapter da = new SqlDataAdapter(com);
+        //    DataTable dt = new DataTable();
            
-            da.Fill(dt);  // fill dataset
-            Drpsector.DataSource = dt;
-            //Drpsector.DataBind();
-            Drpsector.DataTextField = "Sector_name";
-            Drpsector.DataValueField = "Sector_id";
-            Drpsector.DataBind();
+        //    da.Fill(dt);  // fill dataset
+        //    Drpsector.DataSource = dt;
+        //    //Drpsector.DataBind();
+        //    Drpsector.DataTextField = "Sector_name";
+        //    Drpsector.DataValueField = "Sector_id";
+        //    Drpsector.DataBind();
             
 
 
-            //Drpsector.DataTextField = ds.Tables[0].Columns["Sector_name"].ToString(); // text field name of table dispalyed in dropdown
-            //Drpsector.DataValueField = ds.Tables[0].Columns["Sector_id"].oString();             // to retrive specific  textfield name 
-            //Drpsector.DataSource = ds.Tables[0];      //assigning datasource to the dropdownlist
-            //Drpsector.DataBind();  //binding dropdownlist
+        //    //Drpsector.DataTextField = ds.Tables[0].Columns["Sector_name"].ToString(); // text field name of table dispalyed in dropdown
+        //    //Drpsector.DataValueField = ds.Tables[0].Columns["Sector_id"].oString();             // to retrive specific  textfield name 
+        //    //Drpsector.DataSource = ds.Tables[0];      //assigning datasource to the dropdownlist
+        //    //Drpsector.DataBind();  //binding dropdownlist
 
 
-        }
+        //}
 
         protected void btnsave_Click(object sender, EventArgs e)
         {

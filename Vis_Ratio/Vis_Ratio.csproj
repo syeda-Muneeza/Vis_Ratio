@@ -174,6 +174,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Insert into.docx" />
+    <Content Include="AWS login.docx" />
     <None Include="packages.config" />
     <Content Include="RatioForm.Master" />
     <Content Include="Vis_Ratio.bak" />
