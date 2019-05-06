@@ -12,66 +12,49 @@ namespace Vis_Ratio
     public partial class Companyprofile : System.Web.UI.Page
     {
         string con = System.Configuration.ConfigurationManager.ConnectionStrings["conStr"].ToString();
+        //SqlConnection con = new SqlConnection(@"Data Source=visdb.c66yg152cqdw.us-west-2.rds.amazonaws.com;Persist Security Info=False;User ID=sa;Initial Catalog=jcrvis_Vista;pwd=jcrvis123");
+
+
         DataTable dtcompany = new DataTable();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-           Drpsector.SelectedIndex = 0;
+           
         }
 
-        //private void filldata()
-        //{
-
-        //    SqlConnection db = new SqlConnection(con);
-           
-        //    SqlCommand com = new SqlCommand("select * FROM [Vis_Ratio].[dbo].[Sectors]", db); // table name 
-        //    SqlDataAdapter da = new SqlDataAdapter(com);
-        //    DataTable dt = new DataTable();
-           
-        //    da.Fill(dt);  // fill dataset
-        //    Drpsector.DataSource = dt;
-        //    //Drpsector.DataBind();
-        //    Drpsector.DataTextField = "Sector_name";
-        //    Drpsector.DataValueField = "Sector_id";
-        //    Drpsector.DataBind();
-            
-
-
-        //    //Drpsector.DataTextField = ds.Tables[0].Columns["Sector_name"].ToString(); // text field name of table dispalyed in dropdown
-        //    //Drpsector.DataValueField = ds.Tables[0].Columns["Sector_id"].oString();             // to retrive specific  textfield name 
-        //    //Drpsector.DataSource = ds.Tables[0];      //assigning datasource to the dropdownlist
-        //    //Drpsector.DataBind();  //binding dropdownlist
-
-
-        //}
+        
 
         protected void btnsave_Click(object sender, EventArgs e)
         {
-            SqlConnection db1 = new SqlConnection(con);
-            db1.Open();
-            string insert = "Insert into[Vis_Ratio].[dbo].[C ompany](Company_name,Sec_code) values('" + txtcompany.Text + "','" + Drpsector.SelectedItem.Value + "')";
-            SqlCommand cmd = new SqlCommand(insert, db1);
-            cmd.ExecuteNonQuery();
-            db1.Close();
-        }
+            SqlConnection db = new SqlConnection(con);
 
-        private void emptybox()
-        {
+            string insert = "Insert into[Vis_Ratio].[dbo].[Company](Company_name,Sec_code) values (@Company_name ,@Sec_code)";
+                
+            SqlCommand cmd = new SqlCommand(insert,db);
+            cmd.Parameters.AddWithValue("@Company_name", txtcompany.Text);
+            cmd.Parameters.AddWithValue("@Sec_code", Drpsector.SelectedItem.Value);
+            db.Open();
+           int i= cmd.ExecuteNonQuery();
+            if (i != 0)
+            {
+                Lit1.Text = "Record Saved..";
+
+            }
+            else {
+
+                Lit1.Text = "Failed to insert..";
+
+
+            }
+            Lit1.Text = "";
             txtcompany.Text = "";
             Drpsector.SelectedIndex = 0;
 
-
+            
+            db.Close();
         }
 
-        protected void Drpsector_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string a;
-            a = Drpsector.SelectedValue;
-            if (Drpsector.SelectedIndex == 0)
-            {
-                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "alert", "alert('Select Driver ID then proceed.');", true);
-            }
 
-        }
+     
     }
 }

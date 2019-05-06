@@ -31,6 +31,15 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.DropDownList Drpsector;
         
         /// <summary>
+        /// Lit1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal Lit1;
+        
+        /// <summary>
         /// btnsave control.
         /// </summary>
         /// <remarks>

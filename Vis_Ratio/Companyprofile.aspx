@@ -14,13 +14,23 @@
         
         
         <label>Sector Name</label>
-        <asp:DropDownList ID="Drpsector" runat="server" AutoPostBack="false" ViewStateMode="Enabled" OnSelectedIndexChanged="Drpsector_SelectedIndexChanged">
-            <asp:ListItem>AMCs</asp:ListItem>
-            <asp:ListItem>Banks</asp:ListItem>
-            <asp:ListItem>Corporate</asp:ListItem>
+        <asp:DropDownList ID="Drpsector" runat="server" >
+            <asp:ListItem Value="0">Select Sector</asp:ListItem>
+            
+            <asp:ListItem Value="1">Corporates</asp:ListItem>
+            <asp:ListItem Value="2">Insurance</asp:ListItem>
+            <asp:ListItem Value="3">Banks/DFIs</asp:ListItem>
+            <asp:ListItem Value="4">Brokerages</asp:ListItem>
+            <asp:ListItem Value="5">Microfinance</asp:ListItem>
+            <asp:ListItem Value="6">AMCs</asp:ListItem>
+            <asp:ListItem Value="7">Funds</asp:ListItem>
+            <asp:ListItem Value="8">Leasing Companies</asp:ListItem>
+            <asp:ListItem Value="9">Modarabas</asp:ListItem>
+            <asp:ListItem Value="10">Investment Companies</asp:ListItem>
             </asp:DropDownList>
         <%-- <asp:TextBox ID="txtsector" runat="server"></asp:TextBox>--%>
-
+            <p><asp:Literal ID="Lit1" runat="server"></asp:Literal></p>
+            
        <asp:Button ID="btnsave" runat="server" Text="Save" OnClick="btnsave_Click"/>
        </div>
      
