@@ -16,7 +16,17 @@ namespace Vis_Ratio
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                SqlConnection db1 = new SqlConnection(con);
+                string com = "Select * from [Vis_Ratio].[dbo].[Company] where Sec_code='8'";
+                SqlDataAdapter adpt = new SqlDataAdapter(com, db1);
+                DataTable dt = new DataTable();
+                adpt.Fill(dt);
+                Drpcompany.DataSource = dt;
 
+                Drpcompany.DataBind();
+            }
         }
 
         private void emptybox()
@@ -50,7 +60,7 @@ namespace Vis_Ratio
             {
                 SqlConnection db = new SqlConnection(con);
                 db.Open();
-                string insert = "Insert into[Vis_Ratio].[dbo].[LeasingCompanies](TotalInvestments,NetInvestment,TotalAssets,Lease,Borrowings,COIs,TierEquity,NetWorth,NetMark,OperatingExpenses,ProfitBeforeTax,ProfitAfteTax,GrossInfection,ProvisioningCoverage,NetInfection,Efficiency,ROAA,ROAE,CurrentRatio,leasedate) values('" + TotalInvestments.Text + "','" + NetInvestment.Text + "','" + TotalAssets.Text + "','" + Leasemoney.Text + "','" + Borrowings.Text + "','" + coi.Text + "','" + Tier1.Text + "','" + networth.Text + "','" + NetMark.Text + "','" + Operating.Text + "','" + ProfitTax.Text + "','" + ProfitAfter.Text + "','" + GrossInfection.Text + "','" + Provisioning.Text + "','" + NetInfection.Text + "','" + Efficiency.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + Current.Text + "','" + txtMyDate.Text + "')";
+                string insert = "Insert into[Vis_Ratio].[dbo].[LeasingCompanies](Com_code, TotalInvestments,NetInvestment,TotalAssets,Lease,Borrowings,COIs,TierEquity,NetWorth,NetMark,OperatingExpenses,ProfitBeforeTax,ProfitAfteTax,GrossInfection,ProvisioningCoverage,NetInfection,Efficiency,ROAA,ROAE,CurrentRatio,leasedate) values('" + Drpcompany.SelectedItem.Value + "','" + TotalInvestments.Text + "','" + NetInvestment.Text + "','" + TotalAssets.Text + "','" + Leasemoney.Text + "','" + Borrowings.Text + "','" + coi.Text + "','" + Tier1.Text + "','" + networth.Text + "','" + NetMark.Text + "','" + Operating.Text + "','" + ProfitTax.Text + "','" + ProfitAfter.Text + "','" + GrossInfection.Text + "','" + Provisioning.Text + "','" + NetInfection.Text + "','" + Efficiency.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + Current.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
                  cmd.ExecuteNonQuery();
                 //if (m != 0)

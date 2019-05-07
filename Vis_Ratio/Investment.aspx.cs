@@ -15,7 +15,17 @@ namespace Vis_Ratio
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                SqlConnection db1 = new SqlConnection(con);
+                string com = "Select * from [Vis_Ratio].[dbo].[Company] where Sec_code='10'";
+                SqlDataAdapter adpt = new SqlDataAdapter(com, db1);
+                DataTable dt = new DataTable();
+                adpt.Fill(dt);
+                Drpcompany.DataSource = dt;
 
+                Drpcompany.DataBind();
+            }
         }
 
         private void emptybox()
@@ -49,7 +59,7 @@ namespace Vis_Ratio
             {
                 SqlConnection db = new SqlConnection(con);
                 db.Open();
-                string insert = "Insert into[Vis_Ratio].[dbo].[Investment](CashBank,TotaInvestments,TotaAssets,TierEquity,NetWorth,RevenueOpe,OperatingExpenses,ProfitBeforeTax,ProfitAfterTax,AveReturnEquity,DividendPayout,Efficiency,Gearing,Leverage,CurrentRatio,ROAA,ROAE,TotaLiabilities,investdate) values('" + CashbBalances.Text + "','" + TotalInvestments.Text + "','" + TotalAssets.Text + "','" + Tier.Text + "','" + networth.Text + "','" + Revenueop.Text + "','" + Operating.Text + "','" + ProfitTax.Text + "','" + ProfitAfter.Text + "','" + Average.Text + "','" + DividendPayout.Text + "','" + Efficiency.Text + "','" + Gearing.Text + "','" + Leverage.Text + "','" + currentratio.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + Liquid.Text + "','" + txtMyDate.Text + "')";
+                string insert = "Insert into[Vis_Ratio].[dbo].[Investment](Com_code,CashBank,TotaInvestments,TotaAssets,TierEquity,NetWorth,RevenueOpe,OperatingExpenses,ProfitBeforeTax,ProfitAfterTax,AveReturnEquity,DividendPayout,Efficiency,Gearing,Leverage,CurrentRatio,ROAA,ROAE,TotaLiabilities,investdate) values('" + Drpcompany.SelectedItem.Value + "','" + CashbBalances.Text + "','" + TotalInvestments.Text + "','" + TotalAssets.Text + "','" + Tier.Text + "','" + networth.Text + "','" + Revenueop.Text + "','" + Operating.Text + "','" + ProfitTax.Text + "','" + ProfitAfter.Text + "','" + Average.Text + "','" + DividendPayout.Text + "','" + Efficiency.Text + "','" + Gearing.Text + "','" + Leverage.Text + "','" + currentratio.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + Liquid.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
                 cmd.ExecuteNonQuery();
                 //if (m != 0)

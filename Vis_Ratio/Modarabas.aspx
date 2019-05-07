@@ -41,7 +41,8 @@
                    
              
                 <td><asp:label ID="label14" runat="server" Text="Company Name"></asp:label></td>
-                <td><asp:DropDownList ID="Drpcompany" runat="server" Visible="false"></asp:DropDownList></td>
+                <td><asp:DropDownList ID="Drpcompany" runat="server" AppendDataBoundItems="true" DataTextField="Company_name" DataValueField="Company_code">
+                    <asp:ListItem Value="0">-- select company--</asp:ListItem></asp:DropDownList></td>
                 <td></td>
              <td></td>
                     <td></td>

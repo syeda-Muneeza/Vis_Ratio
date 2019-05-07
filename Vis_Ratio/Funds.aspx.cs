@@ -15,7 +15,17 @@ namespace Vis_Ratio
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                SqlConnection db1 = new SqlConnection(con);
+                string com = "Select * from [Vis_Ratio].[dbo].[Company] where Sec_code='7'";
+                SqlDataAdapter adpt = new SqlDataAdapter(com, db1);
+                DataTable dt = new DataTable();
+                adpt.Fill(dt);
+                Drpcompany.DataSource = dt;
 
+                Drpcompany.DataBind();
+            }
         }
 
         private void Emptybox()
@@ -40,7 +50,7 @@ namespace Vis_Ratio
             {
                 SqlConnection db = new SqlConnection(con);
                 db.Open();
-                string insert = "Insert  into[Vis_Ratio].[dbo].[Funds](Return1,Benchmark,PeerAverage,RelativeRanking,FundSize,Retail,Associates,Numbernvestors,Investors,FundStability,funddate) values('" + Return1.Text + "','" + Benchmark.Text + "','" +PeerAverage.Text + "','" + RelativeRanking.Text + "','" + FundSize.Text + "','" + Retail.Text + "','" + Associates.Text + "','" + NumberInvestors.Text + "','" + TopInvestors.Text + "','" + FundRating.Text + "','" + txtMyDate.Text + "')";
+                string insert = "Insert  into[Vis_Ratio].[dbo].[Funds](Com_code, Return1,Benchmark,PeerAverage,RelativeRanking,FundSize,Retail,Associates,Numbernvestors,Investors,FundStability,funddate) values('" + Drpcompany.SelectedItem.Value + "','" + Return1.Text + "','" + Benchmark.Text + "','" +PeerAverage.Text + "','" + RelativeRanking.Text + "','" + FundSize.Text + "','" + Retail.Text + "','" + Associates.Text + "','" + NumberInvestors.Text + "','" + TopInvestors.Text + "','" + FundRating.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
                 cmd.ExecuteNonQuery();
                 //if (m != 0)
