@@ -41,6 +41,9 @@ namespace Vis_Ratio
             TopInvestors.Text = "";
             FundRating.Text = "";
             txtMyDate.Text = "";
+            Drpratingtype.SelectedIndex = 0;
+            Drpltrating.SelectedIndex = 0;
+            Drpst.SelectedIndex = 0;
 
         }
 
@@ -50,7 +53,7 @@ namespace Vis_Ratio
             {
                 SqlConnection db = new SqlConnection(con);
                 db.Open();
-                string insert = "Insert  into[Vis_Ratio].[dbo].[Funds](Com_code, Return1,Benchmark,PeerAverage,RelativeRanking,FundSize,Retail,Associates,Numbernvestors,Investors,FundStability,funddate) values('" + Drpcompany.SelectedItem.Value + "','" + Return1.Text + "','" + Benchmark.Text + "','" +PeerAverage.Text + "','" + RelativeRanking.Text + "','" + FundSize.Text + "','" + Retail.Text + "','" + Associates.Text + "','" + NumberInvestors.Text + "','" + TopInvestors.Text + "','" + FundRating.Text + "','" + txtMyDate.Text + "')";
+                string insert = "Insert  into[Vis_Ratio].[dbo].[Funds](Com_code,rating_type,Lt_rating,st_rating, Return1,Benchmark,PeerAverage,RelativeRanking,FundSize,Retail,Associates,Numbernvestors,Investors,FundStability,funddate) values('" + Drpcompany.SelectedItem.Value + "','" + Drpratingtype.SelectedItem + "','" + Drpltrating.SelectedItem + "','" + Drpst.SelectedItem + "','" + Return1.Text + "','" + Benchmark.Text + "','" +PeerAverage.Text + "','" + RelativeRanking.Text + "','" + FundSize.Text + "','" + Retail.Text + "','" + Associates.Text + "','" + NumberInvestors.Text + "','" + TopInvestors.Text + "','" + FundRating.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
                 cmd.ExecuteNonQuery();
                 //if (m != 0)

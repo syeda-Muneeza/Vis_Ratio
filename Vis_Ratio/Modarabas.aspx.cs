@@ -54,6 +54,9 @@ namespace Vis_Ratio
             ROAA.Text = "";
             ROAE.Text = "";
             txtMyDate.Text = "";
+            Drpratingtype.SelectedIndex = 0;
+            Drpltrating.SelectedIndex = 0;
+            Drpst.SelectedIndex = 0;
 
         }
 
@@ -62,7 +65,7 @@ namespace Vis_Ratio
             {
                 SqlConnection db = new SqlConnection(con);
                 db.Open();
-                string insert = "Insert into[Vis_Ratio].[dbo].[Modarabas](Com_code, IjarahRental,IjarahAssets,DiminishingMusharaka,LongtermPortion,TotalAssets,OtherLiabilities,Borrowings,LeaseKeyMoney,Totalliabilities,Equity,IncomeDiminMusharaka,IncomeIjarahrental,IncomeBankdep,OperatingExpenses,Otherincome,ProfitBeforeAfter,Efficiency,Gearing,Leverage,ROAA,ROAE,modarbadate) values('" + Drpcompany.SelectedItem.Value + "','" + IjarahRentals.Text + "','" + IjarahAssets.Text + "','" + Currentportion.Text + "','" + Longtermportion.Text + "','" + TotalAssets.Text + "','" + CreditorsAccrued.Text + "','" + Borrowings.Text + "','" + LeaseKeyMoney.Text + "','" + Totalliabilities.Text + "','" + Equity.Text + "','" + IncomeDiminishing.Text + "','" + IncomeIjarah.Text + "','" + IncomeBank.Text + "','" + OperatingExpenses.Text + "','" + Otherincome.Text + "','" + ProfitTax.Text + "','" + Efficiency1.Text + "','" + Gearing.Text + "','" + Leverage.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + txtMyDate.Text + "')";
+                string insert = "Insert into[Vis_Ratio].[dbo].[Modarabas](Com_code,rating_type,Lt_rating,st_rating,IjarahRental,IjarahAssets,DiminishingMusharaka,LongtermPortion,TotalAssets,OtherLiabilities,Borrowings,LeaseKeyMoney,Totalliabilities,Equity,IncomeDiminMusharaka,IncomeIjarahrental,IncomeBankdep,OperatingExpenses,Otherincome,ProfitBeforeAfter,Efficiency,Gearing,Leverage,ROAA,ROAE,modarbadate) values('" + Drpcompany.SelectedItem.Value + "','" + Drpratingtype.SelectedItem + "','" + Drpltrating.SelectedItem + "','" + Drpst.SelectedItem + "','" + IjarahRentals.Text + "','" + IjarahAssets.Text + "','" + Currentportion.Text + "','" + Longtermportion.Text + "','" + TotalAssets.Text + "','" + CreditorsAccrued.Text + "','" + Borrowings.Text + "','" + LeaseKeyMoney.Text + "','" + Totalliabilities.Text + "','" + Equity.Text + "','" + IncomeDiminishing.Text + "','" + IncomeIjarah.Text + "','" + IncomeBank.Text + "','" + OperatingExpenses.Text + "','" + Otherincome.Text + "','" + ProfitTax.Text + "','" + Efficiency1.Text + "','" + Gearing.Text + "','" + Leverage.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
                cmd.ExecuteNonQuery();
                 //if (m != 0)

@@ -24,7 +24,6 @@ namespace Vis_Ratio
                 DataTable dt = new DataTable();
                 adpt.Fill(dt);
                 Drpcompany.DataSource = dt;
-                            
                 Drpcompany.DataBind();
             }
         }
@@ -58,9 +57,11 @@ namespace Vis_Ratio
             ICComposition.Text = "";
             SharedFunctions.Text = "";
             txtMyDate.Text = "";
+            Drpratingtype.SelectedIndex = 0;
+            Drpltrating.SelectedIndex = 0;
+            Drpst.SelectedIndex = 0;
 
-
-}
+            }
 
         
 
@@ -68,7 +69,7 @@ namespace Vis_Ratio
         {
             SqlConnection db = new SqlConnection(con);
             db.Open();
-            string insert = "Insert into[Vis_Ratio].[dbo].[AMCs](Com_code,AUMs,AUMinSMAs,NoofSMAs,MarketShare,RetailAUMs,Retail,Associates,NoInvestors,ManagementFees,Corerevenue,Adminexpenses,OperatingProfit,Efficiency,TotalEquity,Longtermdebt,TotalDebt,NumberofFunds,portfolio,Assets,IndependentDirectors,BoardMembers,BoardCommittees,ManagementCommittees,ICComposition,SharedFunctions,amcdate) values('" +Drpcompany.SelectedItem.Value+ "','" + AUMs.Text + "','" + AUMinSMAs.Text + "','" + SMAs.Text + "','" + MarketShare.Text + "','" + RetailAUMs.Text + "','" + Retail.Text + "','" + Associates.Text + "','" + NumberofInvestors.Text + "','" + ManagementFees.Text + "','" + Corerevenue.Text + "','" + Adminstrative.Text + "','" + OperatingProfit.Text + "','" + Efficiency.Text + "','" + TotalEquity.Text + "','" + Longdebt.Text + "','" + TotalDebt.Text + "','" + NumberFunds.Text + "','" + portfolio.Text + "','" + TotalAssets.Text + "','" + IndependentDirectors.Text + "','" + BoardMembers.Text + "','" + BoardCommittees.Text + "','" + ManagementCommittees.Text + "','" + ICComposition.Text + "','" + SharedFunctions.Text + "','" + txtMyDate.Text + "')";
+            string insert = "Insert into[Vis_Ratio].[dbo].[AMCs](Com_code,rating_type,Lt_rating,st_rating,AUMs,AUMinSMAs,NoofSMAs,MarketShare,RetailAUMs,Retail,Associates,NoInvestors,ManagementFees,Corerevenue,Adminexpenses,OperatingProfit,Efficiency,TotalEquity,Longtermdebt,TotalDebt,NumberofFunds,portfolio,Assets,IndependentDirectors,BoardMembers,BoardCommittees,ManagementCommittees,ICComposition,SharedFunctions,amcdate) values('" + Drpcompany.SelectedItem.Value+ "','" + Drpratingtype.SelectedItem + "','"+Drpltrating.SelectedItem+"','"+Drpst.SelectedItem+"','" + AUMs.Text + "','" + AUMinSMAs.Text + "','" + SMAs.Text + "','" + MarketShare.Text + "','" + RetailAUMs.Text + "','" + Retail.Text + "','" + Associates.Text + "','" + NumberofInvestors.Text + "','" + ManagementFees.Text + "','" + Corerevenue.Text + "','" + Adminstrative.Text + "','" + OperatingProfit.Text + "','" + Efficiency.Text + "','" + TotalEquity.Text + "','" + Longdebt.Text + "','" + TotalDebt.Text + "','" + NumberFunds.Text + "','" + portfolio.Text + "','" + TotalAssets.Text + "','" + IndependentDirectors.Text + "','" + BoardMembers.Text + "','" + BoardCommittees.Text + "','" + ManagementCommittees.Text + "','" + ICComposition.Text + "','" + SharedFunctions.Text + "','" + txtMyDate.Text + "')";
             SqlCommand cmd = new SqlCommand(insert, db);
            cmd.ExecuteNonQuery();
             //if (m != 0)

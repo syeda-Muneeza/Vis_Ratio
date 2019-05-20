@@ -49,7 +49,10 @@ namespace Vis_Ratio
             GrossPremium.Text = "";
             NetRevenue.Text = "";
             txtMyDate.Text = "";
-                }
+            Drpratingtype.SelectedIndex = 0;
+            Drpltrating.SelectedIndex = 0;
+            Drpst.SelectedIndex = 0;
+        }
 
         protected void Save_Click(object sender, EventArgs e)
         {
@@ -57,7 +60,7 @@ namespace Vis_Ratio
 
                 SqlConnection db = new SqlConnection(con);
                 db.Open();
-                string insert = "Insert into[Vis_Ratio].[dbo].[Insurance](Com_code,Adjustedequity,NetFinancialLever,OperatingLeverage,InsuranceDebt,CombinedRatio,ROAE,UnderwritingExpense,GrossClaims,NetClaims,UnderwritingProfit,GrossPremium,NetProfit,MotorPremium,ReinsuranceCeded,GrossPrem,NetPremiumRevenue,insdate) values('" + Drpcompany.SelectedItem.Value + "','" + Adjustedequity.Text + "','" + NetFinancial.Text + "','" + OperatingLeverage.Text + "','" + InsurancDebt.Text + "','" + CombinedRatio.Text + "','" + ROAE.Text + "','" + UnderwritingRatio.Text + "','" + GrossClaimsRatio.Text + "','" + NetRatio.Text + "','" + Underwriting.Text + "','" + UnderwritingPremium.Text + "','" + NetProfit.Text + "','" + MotorPremium.Text + "','" + ReinsuranceCeded.Text + "','" + GrossPremium.Text + "','" + NetRevenue.Text + "','" + txtMyDate.Text + "')";
+                string insert = "Insert into[Vis_Ratio].[dbo].[Insurance](Com_code,rating_type,Lt_rating,st_rating,Adjustedequity,NetFinancialLever,OperatingLeverage,InsuranceDebt,CombinedRatio,ROAE,UnderwritingExpense,GrossClaims,NetClaims,UnderwritingProfit,GrossPremium,NetProfit,MotorPremium,ReinsuranceCeded,GrossPrem,NetPremiumRevenue,insdate) values('" + Drpcompany.SelectedItem.Value + "','" + Drpratingtype.SelectedItem + "','" + Drpltrating.SelectedItem + "','" + Drpst.SelectedItem + "','" + Adjustedequity.Text + "','" + NetFinancial.Text + "','" + OperatingLeverage.Text + "','" + InsurancDebt.Text + "','" + CombinedRatio.Text + "','" + ROAE.Text + "','" + UnderwritingRatio.Text + "','" + GrossClaimsRatio.Text + "','" + NetRatio.Text + "','" + Underwriting.Text + "','" + UnderwritingPremium.Text + "','" + NetProfit.Text + "','" + MotorPremium.Text + "','" + ReinsuranceCeded.Text + "','" + GrossPremium.Text + "','" + NetRevenue.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
                 cmd.ExecuteNonQuery();
                 //if (m != 0)
