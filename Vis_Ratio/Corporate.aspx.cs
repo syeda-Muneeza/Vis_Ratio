@@ -23,7 +23,6 @@ namespace Vis_Ratio
                 DataTable dt = new DataTable();
                 adpt.Fill(dt);
                 Drpcompany.DataSource = dt;
-
                 Drpcompany.DataBind();
             }
         }
@@ -52,8 +51,6 @@ namespace Vis_Ratio
             FFODebt.Text = "";
             FFOTermDebt.Text = "";
             Debtoverage.Text = "";
-            ROAA.Text = "";
-            ROAE.Text = ""; 
             ROAA.Text = "";
             ROAE.Text = "";
             Gearing.Text = "";

@@ -462,18 +462,16 @@
             <asp:ListItem Value="17">C (SO)</asp:ListItem>
           
                   
-                    </asp:DropDownList></td></tr>
-        
-        
-        
-        <tr>
-          <td><asp:Label ID="Label1" runat="server" Text="Return (%)" ></asp:Label></td>
-                <td><asp:TextBox ID="Return1" runat="server"></asp:TextBox></td>
+            </asp:DropDownList></td></tr>
+                      
+            <tr>
+            <td><asp:Label ID="Label1" runat="server" Text="Return (%)" ></asp:Label></td>
+            <td><asp:TextBox ID="Return1" runat="server"></asp:TextBox></td>
        
-         </tr>
-        <tr>
-          <td><asp:Label ID="Label2" runat="server" Text="Benchmark (%)"></asp:Label></td>
-                <td><asp:TextBox ID="Benchmark" runat="server"></asp:TextBox></td>
+            </tr>
+            <tr>
+            <td><asp:Label ID="Label2" runat="server" Text="Benchmark (%)"></asp:Label></td>
+            <td><asp:TextBox ID="Benchmark" runat="server"></asp:TextBox></td>
        </tr>
            <tr>
           <td><asp:Label ID="Label3" runat="server" Text=" Peer Average (%)"></asp:Label></td>

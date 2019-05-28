@@ -47,7 +47,6 @@ namespace Vis_Ratio
 
         }
 
-
         protected void Save_Click(object sender, EventArgs e)
         {
             {
