@@ -49,6 +49,9 @@ namespace Vis_Ratio
             ROAE.Text = "";
             Liquid.Text = "";
             txtMyDate.Text = "";
+            Drpratingtype.SelectedIndex = 0;
+            Drpltrating.SelectedIndex = 0;
+            Drpst.SelectedIndex = 0;
 
 
 

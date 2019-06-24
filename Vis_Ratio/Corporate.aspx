@@ -37,7 +37,8 @@
                    
              
                 <td><asp:label ID="label22" runat="server" Text="Company Name"></asp:label></td>
-                <td><asp:DropDownList ID="Drpcompany" runat="server" AppendDataBoundItems="true" DataTextField="Company_name" DataValueField="Company_code">
+                <td><asp:DropDownList ID="Drpcompany" runat="server" AppendDataBoundItems="true"
+                    DataTextField="Company_name" DataValueField="Company_code" style="overflow:auto; width:200px; height:auto">
 
                        <asp:ListItem Value="0">-- select company--</asp:ListItem>
                     </asp:DropDownList></td>
@@ -479,8 +480,35 @@
                 
                 <td><asp:Label ID="Label2" runat="server" Text="Net Sales"></asp:Label></td>
                 <td>  <asp:TextBox ID="NeSales" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label3" runat="server" Text="Gross Margin (%)"></asp:Label></td>
-                <td>  <asp:TextBox ID="GrossMargin" runat="server"></asp:TextBox></td>
+
+         <td><asp:label ID="label25" runat="server" Text="Sub Sector"></asp:label></td> 
+          <td><asp:DropDownList ID="Drpsub" runat="server" style="overflow:auto; width:200px; height:auto">
+                    <asp:ListItem Value="0">Select Sector</asp:ListItem>
+          
+            <asp:ListItem Value="1">AUTO & ALLIED</asp:ListItem>
+            <asp:ListItem Value="2">CHEMICALS & PHARMA</asp:ListItem>
+            <asp:ListItem Value="3">CEMENT & CONSTRUCTION</asp:ListItem>
+            <asp:ListItem Value="4">COMMUNICATION</asp:ListItem>
+            <asp:ListItem Value="5">CONSUMER GOODS</asp:ListItem>
+            <asp:ListItem Value="6">ENGINEERING</asp:ListItem>
+            <asp:ListItem Value="7">FERTILIZERS</asp:ListItem>
+            <asp:ListItem Value="8">MISCELLANEOUS</asp:ListItem>
+            <asp:ListItem Value="9">OIL & GAS</asp:ListItem>
+            <asp:ListItem Value="10">PAPER & PACKAGING</asp:ListItem>
+                 
+            <asp:ListItem Value="11">POWER COMPANIES</asp:ListItem>
+            <asp:ListItem Value="12">STEEL & ALLIED PRODUCTS</asp:ListItem>
+            <asp:ListItem Value="13">SUGAR</asp:ListItem>
+            <asp:ListItem Value="14">TANNERIES AND LEATHER PRODUCTS</asp:ListItem>
+            <asp:ListItem Value="15">TEXTILES</asp:ListItem>
+            <asp:ListItem Value="16">TRANSPORT</asp:ListItem>
+           
+          
+                  
+                    </asp:DropDownList></td>
+
+
+               
                     
             </tr>
 
@@ -491,8 +519,12 @@
                
                 <td><asp:Label ID="Label5" runat="server" Text="Gross Profit"></asp:Label></td>
                 <td>  <asp:TextBox ID="GrossProfit" runat="server"></asp:TextBox></td>
-             <td><asp:Label ID="Label6" runat="server" Text="Net Margin"></asp:Label></td>
-                <td>  <asp:TextBox ID="NetMargin" runat="server"></asp:TextBox></td>
+             
+            <td><asp:Label ID="Label3" runat="server" Text="Gross Margin (%)"></asp:Label></td>
+                <td>  <asp:TextBox ID="GrossMargin" runat="server"></asp:TextBox></td>
+           
+           
+          
                     
             </tr>
     
@@ -503,8 +535,10 @@
                 
                 <td><asp:Label ID="Label8" runat="server" Text="Profit Before Tax"></asp:Label></td>
                 <td>  <asp:TextBox ID="ProfitTax" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label9" runat="server" Text="FFO to Total Debt (%)"></asp:Label></td>
-                <td>  <asp:TextBox ID="FFODebt" runat="server"></asp:TextBox></td>
+                <td><asp:Label ID="Label6" runat="server" Text="Net Margin"></asp:Label></td>
+                <td>  <asp:TextBox ID="NetMargin" runat="server"></asp:TextBox></td>
+           
+          
                     
             </tr> 
 
@@ -515,9 +549,9 @@
                
                 <td><asp:Label ID="Label11" runat="server" Text="Profit After Tax"></asp:Label></td>
                 <td><asp:TextBox ID="ProfitAfter" runat="server"></asp:TextBox></td>
-               <td><asp:Label ID="Label12" runat="server" Text="FFO to Long Term Debt (%)"></asp:Label></td>
-                <td>  <asp:TextBox ID="FFOTermDebt" runat="server"></asp:TextBox></td>
-                    
+              
+                   <td><asp:Label ID="Label9" runat="server" Text="FFO to Total Debt (%)"></asp:Label></td>
+                <td>  <asp:TextBox ID="FFODebt" runat="server"></asp:TextBox></td>  
             </tr>
        
        <tr>
@@ -526,9 +560,9 @@
                
                 <td><asp:Label ID="Label14" runat="server" Text="FFO"></asp:Label></td>
                 <td><asp:TextBox ID="FFO" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label15" runat="server" Text="Debt Servicing Coverage Ratio (x)"></asp:Label></td>
-                <td><asp:TextBox ID="Debtoverage" runat="server"></asp:TextBox></td>
-                    
+                
+                 <td><asp:Label ID="Label12" runat="server" Text="FFO to Long Term Debt (%)"></asp:Label></td>
+                <td>  <asp:TextBox ID="FFOTermDebt" runat="server"></asp:TextBox></td>    
             </tr>
 
        <tr> 
@@ -538,8 +572,12 @@
                
               <td><asp:Label ID="Label19" runat="server" Text="Date"></asp:Label></td>
              <td>   <asp:TextBox ID="txtMyDate" CssClass="datepicker" runat="server"></asp:TextBox></td>
-                <td><asp:Label ID="Label18" runat="server" Text="ROAA (%)"></asp:Label></td>
-                <td><asp:TextBox ID="ROAA" runat="server"></asp:TextBox></td>
+                <td><asp:Label ID="Label15" runat="server" Text="Debt Servicing Coverage Ratio (x)"></asp:Label></td>
+                <td><asp:TextBox ID="Debtoverage" runat="server"></asp:TextBox></td>
+           
+           
+           
+          
                 </tr> 
         <tr>
                <td><asp:Label ID="Label16" runat="server" Text="Total Assets"></asp:Label></td>
@@ -548,8 +586,9 @@
                 
                 <td><asp:Label ID="Label20" runat="server" Text="ROAE (%)"></asp:Label></td>
                 <td><asp:TextBox ID="ROAE" runat="server"></asp:TextBox></td>
-                 <td></td>
-            <td></td>
+
+                 <td><asp:Label ID="Label18" runat="server" Text="ROAA (%)"></asp:Label></td>
+                <td><asp:TextBox ID="ROAA" runat="server"></asp:TextBox></td>
             </tr>
 
         

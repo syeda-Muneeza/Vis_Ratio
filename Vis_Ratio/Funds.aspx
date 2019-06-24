@@ -30,7 +30,8 @@
                
             </tr>
     <tr><td><asp:label ID="label22" runat="server" Text="Company Name"></asp:label></td>
-                <td><asp:DropDownList ID="Drpcompany" runat="server" AppendDataBoundItems="true" DataTextField="Company_name" DataValueField="Company_code">
+                <td><asp:DropDownList ID="Drpcompany" runat="server" AppendDataBoundItems="true"
+                    DataTextField="Company_name" DataValueField="Company_code" style="overflow:auto; width:200px; height:auto">
                     <asp:ListItem Value="0">-- select company--</asp:ListItem>
                     </asp:DropDownList></td>
 </tr>
