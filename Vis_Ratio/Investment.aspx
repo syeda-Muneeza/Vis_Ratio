@@ -95,8 +95,9 @@
                   
                     </asp:DropDownList></td>
                      <td><asp:label ID="label29" runat="server" Text="LT Rating"></asp:label></td>
+
             <td><asp:DropDownList ID="Drpltrating" runat="server">
-                    <asp:ListItem Value="0">-- select LT-Rating--</asp:ListItem>
+                    <asp:ListItem Value="0">--select LT-Rating--</asp:ListItem>
                     <asp:ListItem Value="1">A</asp:ListItem>
 <asp:ListItem Value="2">A(f)</asp:ListItem>
 <asp:ListItem Value="3">A(MQ)</asp:ListItem>
@@ -450,7 +451,7 @@
        <tr>
                        <td><asp:label ID="label30" runat="server" Text="ST Rating"></asp:label></td>   
                <td><asp:DropDownList ID="Drpst" runat="server">
-                    <asp:ListItem Value="0">Select ST-Rating</asp:ListItem>
+                   <asp:ListItem Value="0">Select ST-Rating</asp:ListItem>
           
             <asp:ListItem Value="1">A-1</asp:ListItem>
             <asp:ListItem Value="2">A-1+</asp:ListItem>

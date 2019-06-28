@@ -1,4 +1,4 @@
-﻿ <%@ Page Title="" Language="C#" MasterPageFile="~/RatioForm.Master" AutoEventWireup="true" CodeBehind="AMCs.aspx.cs" Inherits="Vis_Ratio.AMCs" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RatioForm.Master" AutoEventWireup="true" CodeBehind="AMCs.aspx.cs" Inherits="Vis_Ratio.AMCs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="AMC" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -18,9 +18,7 @@
 
 <div>
    <table>
-
- 
-       
+              
    <caption>AMCs</caption>
    
             <tr>
@@ -32,8 +30,6 @@
        
          <tr>
            
-                   
-             
                 <td><asp:label ID="label27" runat="server" Text="Company Name"></asp:label></td>
                 <td><asp:DropDownList ID="Drpcompany" runat="server" AppendDataBoundItems="true"
                     DataTextField="Company_name" DataValueField="Company_code" style="overflow:auto; width:200px; height:auto">
@@ -41,7 +37,7 @@
 
                     </asp:DropDownList></td>
                 <td><asp:label ID="label28" runat="server" Text="Rating Type"></asp:label></td>
-             <td><asp:DropDownList ID="Drpratingtype" runat="server">
+             <td><asp:DropDownList ID="Drpratingtype" runat="server" TabIndex="1">
                     <asp:ListItem Value="0">Select Rating Type</asp:ListItem>
             
 
@@ -98,7 +94,7 @@
                    
              
                 <td><asp:label ID="label29" runat="server" Text="LT Rating"></asp:label></td>
-                <td><asp:DropDownList ID="Drpltrating" runat="server">
+                <td><asp:DropDownList ID="Drpltrating" runat="server" TabIndex="2">
                     <asp:ListItem Value="0">-- select LT-Rating--</asp:ListItem>
                     <asp:ListItem Value="1">A</asp:ListItem>
 <asp:ListItem Value="2">A(f)</asp:ListItem>
@@ -449,7 +445,7 @@
 
                     </asp:DropDownList></td>
                 <td><asp:label ID="label30" runat="server" Text="ST Rating"></asp:label></td>
-             <td><asp:DropDownList ID="Drpst" runat="server">
+             <td><asp:DropDownList ID="Drpst" runat="server" TabIndex="3">
                     <asp:ListItem Value="0">Select ST-Rating</asp:ListItem>
           
             <asp:ListItem Value="1">A-1</asp:ListItem>
@@ -478,11 +474,9 @@
 
 
          <tr>
-           
-                   
-             
+                
                 <td><asp:label ID="label1" runat="server" Text="AUMs  (Rs. in billions)"></asp:label></td>
-                <td><asp:TextBox ID="AUMs" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="AUMs" runat="server" TabIndex="4"></asp:TextBox></td>
                 <td><asp:label ID="label2" runat="server" Text="Retail AUMs (Rs. in millions)"></asp:label></td>
                 <td>  <asp:TextBox ID="RetailAUMs" runat="server"></asp:TextBox></td>
                     
@@ -490,7 +484,7 @@
      <tr>
                 <td><asp:label ID="label3" runat="server" Text="AUM in SMAs (Rs. in billions)"></asp:label></td>
                 <td>
-                <asp:TextBox ID="AUMinSMAs" runat="server"></asp:TextBox></td>
+                <asp:TextBox ID="AUMinSMAs" runat="server" TabIndex="5"></asp:TextBox></td>
                 <td><asp:label ID="label4" runat="server" Text="Retail (%)"></asp:label></td>
                 <td>  <asp:TextBox ID="Retail" runat="server"></asp:TextBox></td>
                     
@@ -499,7 +493,7 @@
          <tr>
                 <td><asp:label ID="label5" runat="server" Text="No. of SMAs"></asp:label></td>
                 <td>
-                <asp:TextBox ID="SMAs" runat="server"></asp:TextBox></td>
+                <asp:TextBox ID="SMAs" runat="server" TabIndex="6"></asp:TextBox></td>
                 <td><asp:label ID="label6" runat="server" Text="Associates (%)"></asp:label></td>
                 <td>  <asp:TextBox ID="Associates" runat="server"></asp:TextBox></td>
                     
@@ -507,7 +501,7 @@
          <tr>
                 <td><asp:label ID="label7" runat="server" Text="Market Share"></asp:label></td>
                 <td>
-                <asp:TextBox ID="MarketShare" runat="server"></asp:TextBox></td>
+                <asp:TextBox ID="MarketShare" runat="server" TabIndex="7"></asp:TextBox></td>
                 <td><asp:label ID="label8" runat="server" Text="Number of Investors"></asp:label></td>
                 <td>  <asp:TextBox ID="NumberofInvestors" runat="server"></asp:TextBox></td>
                     
@@ -521,7 +515,7 @@
          <tr>
                 <td><asp:label ID="label9" runat="server" Text="Management Fees"></asp:label></td>
                 <td>
-                <asp:TextBox ID="ManagementFees" runat="server"></asp:TextBox></td>
+                <asp:TextBox ID="ManagementFees" runat="server" TabIndex="8"></asp:TextBox></td>
                 <td><asp:label ID="label10" runat="server" Text="Number of Independent Directors"></asp:label></td>
                 <td>  <asp:TextBox ID="IndependentDirectors" runat="server"></asp:TextBox></td>
                     
@@ -529,7 +523,7 @@
          <tr>
                 <td><asp:label ID="label11" runat="server" Text="Core revenue"></asp:label></td>
                 <td>
-                <asp:TextBox ID="Corerevenue" runat="server"></asp:TextBox></td>
+                <asp:TextBox ID="Corerevenue" runat="server" TabIndex="9"></asp:TextBox></td>
                 <td><asp:label ID="label12" runat="server" Text="Number of Board Members"></asp:label></td>
                 <td>  <asp:TextBox ID="BoardMembers" runat="server"></asp:TextBox></td>
                     
@@ -537,7 +531,7 @@
          <tr>
                 <td><asp:label ID="label13" runat="server" Text="Adminstrative expenses"></asp:label></td>
                 <td>
-                <asp:TextBox ID="Adminstrative" runat="server"></asp:TextBox></td>
+                <asp:TextBox ID="Adminstrative" runat="server" TabIndex="10"></asp:TextBox></td>
                 <td><asp:label ID="label14" runat="server" Text="Board Committees"></asp:label></td>
                 <td>  <asp:TextBox ID="BoardCommittees" runat="server"></asp:TextBox></td>
                     
@@ -545,14 +539,14 @@
                 <tr>
                 <td><asp:label ID="label15" runat="server" Text="Operating Profit"></asp:label></td>
                 <td>
-                <asp:TextBox ID="OperatingProfit" runat="server"></asp:TextBox></td>
+                <asp:TextBox ID="OperatingProfit" runat="server" TabIndex="11"></asp:TextBox></td>
                 <td><asp:label ID="label16" runat="server" Text="Management Committees"></asp:label></td>
                 <td>  <asp:TextBox ID="ManagementCommittees" runat="server"></asp:TextBox></td>
                     
                 </tr>
                 <tr>
                 <td><asp:label ID="label17" runat="server" Text="Efficiency"></asp:label></td>
-                <td><asp:TextBox ID="Efficiency" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="Efficiency" runat="server" TabIndex="12"></asp:TextBox></td>
                 <td><asp:label ID="label18" runat="server" Text="IC Composition"></asp:label></td>
                 <td><asp:TextBox ID="ICComposition" runat="server"></asp:TextBox></td>
                     
@@ -560,7 +554,7 @@
             <tr>
                 <td><asp:label ID="label19" runat="server" Text="Total Equity"></asp:label></td>
                 <td>
-                <asp:TextBox ID="TotalEquity" runat="server"></asp:TextBox></td>
+                <asp:TextBox ID="TotalEquity" runat="server" TabIndex="13"></asp:TextBox></td>
                 <td><asp:label ID="label20" runat="server" Text="Shared Functions"></asp:label></td>
                 <td>  <asp:TextBox ID="SharedFunctions" runat="server"></asp:TextBox></td>
                     
@@ -568,7 +562,7 @@
          <tr>
          
                 <td><asp:label ID="label21" runat="server" Text="Long term debt"></asp:label></td>
-                <td><asp:TextBox ID="Longdebt" runat="server"></asp:TextBox></td>
+                <td><asp:TextBox ID="Longdebt" runat="server" TabIndex="14"></asp:TextBox></td>
                <td><asp:label ID="label26" runat="server" Text="Date"></asp:label></td>
              <td>   <asp:TextBox ID="txtMyDate" CssClass="datepicker" runat="server"></asp:TextBox></td>
          </tr>
@@ -576,7 +570,7 @@
                 <td><asp:label ID="label23" runat="server" Text="Total Debt"></asp:label></td>
                 <td>
 
-                 <asp:TextBox ID="TotalDebt" runat="server"></asp:TextBox></td>
+                 <asp:TextBox ID="TotalDebt" runat="server" TabIndex="15"></asp:TextBox></td>
             <td></td>
              <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click1" />
                 
@@ -590,7 +584,7 @@
          <tr>
                 <td><asp:label ID="label25" runat="server" Text="Number of Funds"></asp:label></td>
                 <td>
-                <asp:TextBox ID="NumberFunds" runat="server"></asp:TextBox></td>
+                <asp:TextBox ID="NumberFunds" runat="server" TabIndex="16"></asp:TextBox></td>
              <td></td>
             
                 
@@ -599,14 +593,14 @@
        <tr>
                 <td><asp:label ID="label22" runat="server" Text="Types of Funds not covered in portfolio"></asp:label></td>
                 <td>
-                <asp:TextBox ID="portfolio" runat="server"></asp:TextBox></td>
+                <asp:TextBox ID="portfolio" runat="server" TabIndex="17"></asp:TextBox></td>
                 
                     
             </tr>
        <tr>
                 <td><asp:label ID="label24" runat="server" Text="Total Assets"></asp:label></td>
                 <td>
-                <asp:TextBox ID="TotalAssets" runat="server"></asp:TextBox></td>
+                <asp:TextBox ID="TotalAssets" runat="server" TabIndex="18"></asp:TextBox></td>
                 
                     
             </tr>

@@ -63,6 +63,8 @@ namespace Vis_Ratio
             Drpltrating.SelectedIndex = 0;
             Drpst.SelectedIndex = 0;
             Drpsub.SelectedIndex = 0;
+            Drpac.SelectedIndex = 0;
+            Drpoutlook.SelectedIndex = 0;
 
         }
 
@@ -71,7 +73,7 @@ namespace Vis_Ratio
             { 
                 SqlConnection db = new SqlConnection(con);  
                 db.Open();
-                string insert = "Insert into[Vis_Ratio].[dbo].[Corporates](Com_code,rating_type,Lt_rating,st_rating,sub_sector,FixedAssets,Longterm,StockTrade,TradeDebts,CashBank,TotalAssets,TradePayables,LongTermDebt,ShortTermDebt,TotalDebt,TotalLiabilities,TotalEquity,INCOMECASHFLOW,NetSales,GrossProfit,ProfitBeforeTax,ProfitafterTax,FFO,RATIOANALYSIS,GrossMargin,NetMargin,FFOTotalDebt,FFOtoLongDebt,ServicingCoverage,ROAA,ROAE,Gearing,Leverage,ShortTermBorrowings,CurrentRatio,cordate) values('" + Drpcompany.SelectedItem.Value + "','" + Drpratingtype.SelectedItem + "','" + Drpltrating.SelectedItem + "','" + Drpst.SelectedItem + "','"+ Drpsub.SelectedItem +"','" + FixedAssets.Text + "','" + LongDeposits.Text + "','" + Stocktrade.Text + "','" + TradeDebts.Text + "','" + CashBalances.Text + "','" + TotalAssets.Text + "','" + TradeDebts.Text + "','" + LongDebt.Text + "','" + ShortDebt.Text + "','" + TotalDebt.Text + "','" + TotalLiabilities.Text + "','" + TotalEquity.Text + "','" + NeSales.Text + "','" + GrossProfit.Text + "','" + ProfitTax.Text + "','" + ProfitAfter.Text + "','" + FFO.Text + "','" + GrossMargin.Text + "','" + NetMargin.Text + "','" + FFODebt.Text + "','" + FFOTermDebt.Text + "','" + Debtoverage.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + Gearing.Text + "','" + Leverage.Text + "','" + Stock.Text + "','" + CurrentRatio.Text + "','" + txtMyDate.Text + "')";
+                string insert = "Insert into[Vis_Ratio].[dbo].[Corporates](Com_code,rating_type,Lt_rating,st_rating,sub_sector,accounttype,outlook,FixedAssets,Longterm,StockTrade,TradeDebts,CashBank,TotalAssets,TradePayables,LongTermDebt,ShortTermDebt,TotalDebt,TotalLiabilities,TotalEquity,INCOMECASHFLOW,NetSales,GrossProfit,ProfitBeforeTax,ProfitafterTax,FFO,RATIOANALYSIS,GrossMargin,NetMargin,FFOTotalDebt,FFOtoLongDebt,ServicingCoverage,ROAA,ROAE,Gearing,Leverage,ShortTermBorrowings,CurrentRatio,cordate) values('" + Drpcompany.SelectedItem.Value + "','" + Drpratingtype.SelectedItem + "','" + Drpltrating.SelectedItem + "','" + Drpst.SelectedItem + "','"+ Drpsub.SelectedItem + "','" + Drpac.SelectedItem + "','" + Drpoutlook.SelectedItem + "','" + FixedAssets.Text + "','" + LongDeposits.Text + "','" + Stocktrade.Text + "','" + TradeDebts.Text + "','" + CashBalances.Text + "','" + TotalAssets.Text + "','" + TradeDebts.Text + "','" + LongDebt.Text + "','" + ShortDebt.Text + "','" + TotalDebt.Text + "','" + TotalLiabilities.Text + "','" + TotalEquity.Text + "','" + NeSales.Text + "','" + GrossProfit.Text + "','" + ProfitTax.Text + "','" + ProfitAfter.Text + "','" + FFO.Text + "','" + GrossMargin.Text + "','" + NetMargin.Text + "','" + FFODebt.Text + "','" + FFOTermDebt.Text + "','" + Debtoverage.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + Gearing.Text + "','" + Leverage.Text + "','" + Stock.Text + "','" + CurrentRatio.Text + "','" + txtMyDate.Text + "')";
                 SqlCommand cmd = new SqlCommand(insert, db);
                 cmd.ExecuteNonQuery();
                 //if (m != 0)
