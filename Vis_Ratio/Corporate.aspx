@@ -42,12 +42,12 @@
                 <td><asp:DropDownList ID="Drpcompany" runat="server" AppendDataBoundItems="true"
                     DataTextField="Company_name" DataValueField="Company_code" style="overflow:auto; width:200px; height:auto">
 
-                       <asp:ListItem Value="0">-- select company--</asp:ListItem>
+                       <asp:ListItem Value="0">0</asp:ListItem>
                     </asp:DropDownList></td>
               
           <td><asp:label ID="label48" runat="server" Text="LT Rating"></asp:label></td>
                 <td><asp:DropDownList ID="Drpltrating" runat="server" TabIndex="1">
-                    <asp:ListItem Value="0">-- select LT-Rating--</asp:ListItem>
+                    <asp:ListItem Value="0">0</asp:ListItem>
                     <asp:ListItem Value="1">A</asp:ListItem>
 <asp:ListItem Value="2">A(f)</asp:ListItem>
 <asp:ListItem Value="3">A(MQ)</asp:ListItem>
@@ -399,7 +399,7 @@
        
          <td><asp:label ID="label49" runat="server" Text="ST Rating"></asp:label></td>
              <td><asp:DropDownList ID="Drpst" runat="server" TabIndex="2">
-                    <asp:ListItem Value="0">Select ST-Rating</asp:ListItem>
+                    <asp:ListItem Value="0">0</asp:ListItem>
           
             <asp:ListItem Value="1">A-1</asp:ListItem>
             <asp:ListItem Value="2">A-1+</asp:ListItem>
@@ -429,7 +429,7 @@
               
              <td><asp:label ID="label47" runat="server" Text="Rating Type"></asp:label></td>
              <td><asp:DropDownList ID="Drpratingtype" runat="server" TabIndex="3">
-                    <asp:ListItem Value="0">Select Rating Type</asp:ListItem>
+                    <asp:ListItem Value="0">0</asp:ListItem>
             
 
 
@@ -481,7 +481,7 @@
                 
                 <td><asp:Label ID="Label2" runat="server" Text="Outlook"></asp:Label></td>
                 <td><asp:DropDownList ID="Drpoutlook" runat="server" TabIndex="4">
-                    <asp:ListItem Value="0">Select Outlook</asp:ListItem>
+                    <asp:ListItem Value="0">0</asp:ListItem>
             
 
 
@@ -499,7 +499,7 @@
 
          <td><asp:label ID="label25" runat="server" Text="Sub Sector"></asp:label></td> 
           <td><asp:DropDownList ID="Drpsub" runat="server" style="overflow:auto; width:200px; height:auto" TabIndex="5">
-                    <asp:ListItem Value="0">Select Sector</asp:ListItem>
+                    <asp:ListItem Value="0">0</asp:ListItem>
           
             <asp:ListItem Value="1">AUTO & ALLIED</asp:ListItem>
             <asp:ListItem Value="2">CHEMICALS & PHARMA</asp:ListItem>
@@ -532,7 +532,7 @@
               
             <td><asp:Label ID="Label1" runat="server" Text="Account type"></asp:Label></td>
                 <td><asp:DropDownList ID="Drpac" runat="server" TabIndex="6">
-                    <asp:ListItem Value="0">Select Ac-type</asp:ListItem>
+                    <asp:ListItem Value="0">0</asp:ListItem>
             
 
 

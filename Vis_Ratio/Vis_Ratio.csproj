@@ -74,6 +74,7 @@
     <Content Include="Corporate.aspx" />
     <Content Include="css\master.css" />
     <Content Include="css\table.css" />
+    <Content Include="edit.aspx" />
     <Content Include="Funds.aspx" />
     <Content Include="Insurance.aspx" />
     <Content Include="Investment.aspx" />
@@ -120,6 +121,13 @@
     </Compile>
     <Compile Include="Corporate.aspx.designer.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Funds.aspx.cs">
       <DependentUpon>Funds.aspx</DependentUpon>
