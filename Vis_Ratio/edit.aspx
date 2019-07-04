@@ -43,50 +43,47 @@ BorderWidth="1px" CellSpacing="1" PageIndex="5" CssClass="Gridview">
        
              <Columns> 
                   
-                        <asp:BoundField DataField="FixedAssets" HeaderText="FixedAssets" />  
-                        <asp:BoundField DataField="Longterm" HeaderText="Longterm" /> 
-                 
-                 <asp:BoundField DataField="CorID" HeaderText="S.No." />  
-                        <asp:BoundField DataField="Com_code" HeaderText="Compnay_code" />  
-                        <asp:BoundField DataField="FixedAssets" HeaderText="asset" />  
-                        <asp:BoundField DataField="Longterm" HeaderText="longterm" /> 
+                        <asp:BoundField DataField="FixedAssets" HeaderText="Fixed Assets" />  
+                        <asp:BoundField DataField="Longterm" HeaderText="Long term Deposits" /> 
+                             
+                      
 
-                 <asp:BoundField DataField="StockTrade" HeaderText="StockTrade" />  
-                        <asp:BoundField DataField="TradeDebts" HeaderText="TradeDebts" />  
-                        <asp:BoundField DataField="CashBank" HeaderText="CashBank" />  
-                        <asp:BoundField DataField="TotalAssets" HeaderText="TotalAssets" /> 
+                 <asp:BoundField DataField="StockTrade" HeaderText="Stock-in-Trade" />  
+                        <asp:BoundField DataField="TradeDebts" HeaderText="Trade Debts" />  
+                        <asp:BoundField DataField="CashBank" HeaderText="Cash & Bank Balances" />  
+                        <asp:BoundField DataField="TotalAssets" HeaderText="Total Assets" /> 
 
-                 <asp:BoundField DataField="TradePayables" HeaderText="TradePayables" />  
-                        <asp:BoundField DataField="LongTermDebt" HeaderText="LongTermDebt" />  
-                        <asp:BoundField DataField="ShortTermDebt" HeaderText="ShortTermDebt" />  
-                        <asp:BoundField DataField="TotalDebt" HeaderText="TotalDebt" /> 
+                 <asp:BoundField DataField="TradePayables" HeaderText="Trade and Other Payables" />  
+                        <asp:BoundField DataField="LongTermDebt" HeaderText="Long Term Debt" />  
+                        <asp:BoundField DataField="ShortTermDebt" HeaderText="Short Term Debt" />  
+                        <asp:BoundField DataField="TotalDebt" HeaderText="Total Debt" /> 
 
-                 <asp:BoundField DataField="TotalLiabilities" HeaderText="TotalLiabilities" />  
-                        <asp:BoundField DataField="TotalEquity" HeaderText="TotalEquity" />  
-                        <asp:BoundField DataField="INCOMECASHFLOW" HeaderText="INCOMECASHFLOW" />  
-                        <asp:BoundField DataField="NetSales" HeaderText="NetSales" /> 
+                 <asp:BoundField DataField="TotalLiabilities" HeaderText="Total Liabilities" />  
+                        <asp:BoundField DataField="TotalEquity" HeaderText="Total Equity" />  
+                       
+                        <asp:BoundField DataField="NetSales" HeaderText="Net Sales" /> 
 
-                 <asp:BoundField DataField="GrossProfit" HeaderText="GrossProfit" />  
-                        <asp:BoundField DataField="ProfitBeforeTax" HeaderText="ProfitBeforeTax" />  
-                        <asp:BoundField DataField="ProfitafterTax" HeaderText="ProfitafterTax" />  
+                 <asp:BoundField DataField="GrossProfit" HeaderText="Gross Profit" />  
+                        <asp:BoundField DataField="ProfitBeforeTax" HeaderText="Profit Before Tax" />  
+                        <asp:BoundField DataField="ProfitafterTax" HeaderText="Profit after Tax" />  
                         <asp:BoundField DataField="FFO" HeaderText="FFO" /> 
 
                  
-                 <asp:BoundField DataField="RATIOANALYSIS" HeaderText="RATIOANALYSIS" />  
-                        <asp:BoundField DataField="GrossMargin" HeaderText="GrossMargin" />  
-                        <asp:BoundField DataField="NetMargin" HeaderText="NetMargin" />  
-                        <asp:BoundField DataField="FFOTotalDebt" HeaderText="FFOTotalDebt" /> 
+              
+                        <asp:BoundField DataField="GrossMargin" HeaderText="Gross Margin" />  
+                        <asp:BoundField DataField="NetMargin" HeaderText="Net Margin" />  
+                        <asp:BoundField DataField="FFOTotalDebt" HeaderText="FFO Total Debt" /> 
 
-                 <asp:BoundField DataField="FFOtoLongDebt" HeaderText="FFOtoLongDebt" />  
-                        <asp:BoundField DataField="ServicingCoverage" HeaderText="ServicingCoverage" />  
+                 <asp:BoundField DataField="FFOtoLongDebt" HeaderText="FFO to Long Debt" />  
+                        <asp:BoundField DataField="ServicingCoverage" HeaderText="Debt Servicing Coverage" />  
                         <asp:BoundField DataField="ROAA" HeaderText="ROAA" />  
                         <asp:BoundField DataField="ROAE" HeaderText="ROAE" /> 
 
                    
                  <asp:BoundField DataField="Gearing" HeaderText="Gearing" />  
                         <asp:BoundField DataField="Leverage" HeaderText="Leverage" />  
-                        <asp:BoundField DataField="ShortTermBorrowings" HeaderText="ShortTermBorrowings" />  
-                        <asp:BoundField DataField="CurrentRatio" HeaderText="CurrentRatio" /> 
+                        <asp:BoundField DataField="ShortTermBorrowings" HeaderText="Short Term Borrowings" />  
+                        <asp:BoundField DataField="CurrentRatio" HeaderText="Current Ratio" /> 
 
                  <asp:BoundField DataField="cordate" HeaderText="Year" />  
                         <asp:BoundField DataField="rating_type" HeaderText="rating_type" />  

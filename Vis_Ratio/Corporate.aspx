@@ -18,7 +18,7 @@
 });
 </script>
     <div>
-  
+        <asp:Button ID="btn" runat="server" Text="Edit" OnClick="btn_Click" />
     <table style=" border: 1px solid #1C6EA4;
     background-color: #EEEEEE;
     width: 100%;
