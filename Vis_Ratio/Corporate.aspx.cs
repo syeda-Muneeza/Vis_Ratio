@@ -80,7 +80,7 @@ namespace Vis_Ratio
                     ",Gearing,Leverage,ShortTermBorrowings,CurrentRatio,cordate) values('" + Drpcompany.SelectedItem.Value + "','"
                     + Drpratingtype.SelectedItem + "','" + Drpltrating.SelectedItem + "','" + Drpst.SelectedItem + "','"+ Drpsub.SelectedItem + "'," +
                     "'" + Drpac.SelectedItem + "','" + Drpoutlook.SelectedItem + "','" + FixedAssets.Text + "','" + LongDeposits.Text + "','"
-                    + Stocktrade.Text + "','" + TradeDebts.Text + "','" + CashBalances.Text + "','" + TotalAssets.Text + "','" + TradeDebts.Text + "','" 
+                    + Stocktrade.Text + "','" + TradeDebts.Text + "','" + CashBalances.Text + "','" + TotalAssets.Text + "','" + Trade.Text + "','" 
                     + LongDebt.Text + "','" + ShortDebt.Text + "','" + TotalDebt.Text + "','" + TotalLiabilities.Text + "','" + TotalEquity.Text + "','" 
                     + NeSales.Text + "','" + GrossProfit.Text + "','" + ProfitTax.Text + "','" + ProfitAfter.Text + "','" + FFO.Text + "','" + GrossMargin.Text + "','"
                     + NetMargin.Text + "','" + FFODebt.Text + "','" + FFOTermDebt.Text + "','" + Debtoverage.Text + "','" + ROAA.Text + "','"

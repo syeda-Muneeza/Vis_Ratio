@@ -12,10 +12,8 @@ namespace Vis_Ratio
     public partial class edit : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conStr"].ConnectionString);
-               
 
         protected void Page_Load(object sender, EventArgs e)
-
 
         {
             if (!Page.IsPostBack)
@@ -61,11 +59,11 @@ namespace Vis_Ratio
         }
 
         protected void BindGridview(int empid)
+
         {
             DataTable dt = new DataTable();
             SqlDataAdapter adp = new SqlDataAdapter();
             try
-
 
             {
                 SqlCommand cmd = new SqlCommand("select * from Corporates where Com_code = '" + empid + "'", conn);
@@ -91,8 +89,8 @@ namespace Vis_Ratio
 
         }
 
-
         protected void ddlc_SelectedIndexChanged(object sender, EventArgs e)
+
         {
             try
             {
@@ -105,11 +103,8 @@ namespace Vis_Ratio
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "Message", "alert('Error occured : " + ex.Message.ToString() + "');", true);
             }
 
-
         }
-
-
-
+               
         protected void gvc_RowEditing(object sender, GridViewEditEventArgs e)
         {
             int empId = Convert.ToInt32(ddlc.SelectedValue);
@@ -124,7 +119,7 @@ namespace Vis_Ratio
                 int empId = Convert.ToInt32(ddlc.SelectedValue);
                 int userid = Convert.ToInt32(gvc.DataKeys[e.RowIndex].Value.ToString());
                 GridViewRow row = (GridViewRow)gvc.Rows[e.RowIndex];
-                //Label lblID = (Label)row.FindControl("lblID");
+             // Label lblID = (Label)row.FindControl("lblID");
                 TextBox FixedAssets = (TextBox)row.Cells[0].Controls[0];
                 TextBox Longterm = (TextBox)row.Cells[1].Controls[0];
                 TextBox StockTrade = (TextBox)row.Cells[2].Controls[0];
@@ -133,17 +128,18 @@ namespace Vis_Ratio
                 TextBox TotalAssets = (TextBox)row.Cells[5].Controls[0];
                 TextBox TradePayables = (TextBox)row.Cells[6].Controls[0];
                 TextBox LongTermDebt = (TextBox)row.Cells[7].Controls[0];
+
                 TextBox ShortTermDebt = (TextBox)row.Cells[8].Controls[0];
                 TextBox TotalDebt = (TextBox)row.Cells[9].Controls[0];
                 TextBox TotalLiabilities = (TextBox)row.Cells[10].Controls[0];
                 TextBox TotalEquity = (TextBox)row.Cells[11].Controls[0];
-               //  TextBox INCOMECASHFLOW = (TextBox)row.Cells[12].Controls[0];
+             // TextBox INCOMECASHFLOW = (TextBox)row.Cells[12].Controls[0];
                 TextBox NetSales = (TextBox)row.Cells[12].Controls[0];
                 TextBox GrossProfit = (TextBox)row.Cells[13].Controls[0];
                 TextBox ProfitBeforeTax = (TextBox)row.Cells[14].Controls[0];
                 TextBox ProfitafterTax = (TextBox)row.Cells[15].Controls[0];
                 TextBox FFO = (TextBox)row.Cells[16].Controls[0];
-               // TextBox RATIOANALYSIS = (TextBox)row.Cells[18].Controls[0];
+             // TextBox RATIOANALYSIS = (TextBox)row.Cells[18].Controls[0];
                 TextBox GrossMargin = (TextBox)row.Cells[17].Controls[0];
 
                 TextBox NetMargin = (TextBox)row.Cells[18].Controls[0];
@@ -167,9 +163,9 @@ namespace Vis_Ratio
                     
     
 
-        gvc.EditIndex = -1;
+                gvc.EditIndex = -1;
                 conn.Open();
-                //SqlCommand cmd = new SqlCommand("SELECT * FROM detail", conn);  
+             // SqlCommand cmd = new SqlCommand("SELECT * FROM detail", conn);  
                 SqlCommand cmd = new SqlCommand("Update Corporates set FixedAssets='"+FixedAssets.Text+"',Longterm='"+Longterm.Text+"',StockTrade='"+StockTrade.Text+"',TradeDebts='"+TradeDebts.Text+"',CashBank='"+CashBank.Text+"',TotalAssets='"+TotalAssets.Text+"',TradePayables='"+TradePayables.Text+"',LongTermDebt='"+LongTermDebt.Text+"',ShortTermDebt='"+ShortTermDebt.Text+"',TotalDebt='"+TotalDebt.Text+"',TotalLiabilities='"+TotalLiabilities.Text+"',TotalEquity='"+TotalEquity.Text+"',NetSales='"+NetSales.Text+"',GrossProfit='"+GrossProfit.Text+"',ProfitBeforeTax='"+ProfitBeforeTax.Text+"',ProfitafterTax='"+ProfitafterTax.Text+"',FFO='"+FFO.Text+"',GrossMargin='"+GrossMargin.Text+"',NetMargin='"+NetMargin.Text+"',FFOTotalDebt='"+FFOTotalDebt.Text+"',FFOtoLongDebt='"+FFOtoLongDebt.Text+"',ServicingCoverage='"+ServicingCoverage.Text+"',ROAA='"+ROAA.Text+"',ROAE='"+ROAE.Text+"',Gearing='"+Gearing.Text+"',Leverage='"+Leverage.Text+"',ShortTermBorrowings='"+ShortTermBorrowings.Text+"',CurrentRatio='"+CurrentRatio.Text+"',cordate='"+cordate.Text+"',rating_type='"+rating_type.Text+"',Lt_rating='"+Lt_rating.Text+"',st_rating='"+st_rating.Text+"',sub_sector='"+sub_sector.Text+"',outlook='"+outlook.Text+"',accounttype='"+accounttype.Text+ "'where CorID='" + userid + "'", conn);
 
                 cmd.ExecuteNonQuery();
