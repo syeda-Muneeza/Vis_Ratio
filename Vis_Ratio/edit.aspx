@@ -67,9 +67,6 @@ BorderWidth="1px" CellSpacing="1" PageIndex="5" CssClass="Gridview">
                         <asp:BoundField DataField="ProfitBeforeTax" HeaderText="Profit Before Tax" />  
                         <asp:BoundField DataField="ProfitafterTax" HeaderText="Profit after Tax" />  
                         <asp:BoundField DataField="FFO" HeaderText="FFO" /> 
-
-                 
-              
                         <asp:BoundField DataField="GrossMargin" HeaderText="Gross Margin" />  
                         <asp:BoundField DataField="NetMargin" HeaderText="Net Margin" />  
                         <asp:BoundField DataField="FFOTotalDebt" HeaderText="FFO Total Debt" /> 

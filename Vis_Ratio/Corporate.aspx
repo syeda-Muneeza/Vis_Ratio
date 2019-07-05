@@ -534,20 +534,15 @@
                 <td><asp:DropDownList ID="Drpac" runat="server" TabIndex="6">
                     <asp:ListItem Value="0">0</asp:ListItem>
             
-
-
-            <asp:ListItem Value="1">Q1</asp:ListItem>
+                    <asp:ListItem Value="1">Q1</asp:ListItem>
             <asp:ListItem Value="2">Hy</asp:ListItem>
             <asp:ListItem Value="3">Q3</asp:ListItem>
             <asp:ListItem Value="4">Fy</asp:ListItem>
-           
-          
-                 
-           
+             
                     </asp:DropDownList></td>
 
-           <td><asp:Label ID="Label19" runat="server" Text="Year"></asp:Label></td>
-             <td>   <asp:TextBox ID="txtMyDate" runat="server" TabIndex="18"></asp:TextBox></td>
+             <td><asp:Label ID="Label19" runat="server" Text="Year"></asp:Label></td>
+             <td><asp:TextBox ID="txtMyDate" runat="server" TabIndex="18"></asp:TextBox></td>
                 
                
              

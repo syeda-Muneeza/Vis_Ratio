@@ -13,6 +13,7 @@ namespace Vis_Ratio
     {
 
         string con = System.Configuration.ConfigurationManager.ConnectionStrings["conStr"].ToString();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
@@ -69,7 +70,7 @@ namespace Vis_Ratio
         }
 
         protected void Save_Click(object sender, EventArgs e)
-        {
+        
             { 
                 SqlConnection db = new SqlConnection(con);  
                 db.Open();
@@ -98,7 +99,7 @@ namespace Vis_Ratio
                 db.Close();
                 Emptybox();
             }
-        }
+        
 
         protected void btn_Click(object sender, EventArgs e)
         {

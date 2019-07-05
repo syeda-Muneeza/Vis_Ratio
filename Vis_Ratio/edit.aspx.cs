@@ -174,7 +174,7 @@ namespace Vis_Ratio
             }
 
         }
-
+            
         protected void gvc_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             int empId = Convert.ToInt32(ddlc.SelectedValue);
