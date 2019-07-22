@@ -19,7 +19,6 @@ namespace Vis_Ratio
             if (!Page.IsPostBack)
             {
                 BindDrp();
-               
             }
         }
         protected void BindDrp()
@@ -58,6 +57,7 @@ namespace Vis_Ratio
             }
         }
 
+
         protected void BindGridview(int empid)
 
         {
@@ -76,17 +76,19 @@ namespace Vis_Ratio
                     gvc.DataBind();
                 }
             }
+
             catch (Exception ex)
+
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "Message", "alert('Error occured : " + ex.Message.ToString() + "');", true);
             }
+
             finally
             {
                 dt.Clear();
                 dt.Dispose();
                 adp.Dispose();
             }
-
         }
 
         protected void ddlc_SelectedIndexChanged(object sender, EventArgs e)

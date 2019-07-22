@@ -7,11 +7,13 @@
   <link href="css/table.css" rel="stylesheet" /> 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript" language="javascript">
-    $(function () {
-        //initialise the datepicker with the date format specified
-        $(".datepicker").datepicker();
-    });
+ <script type="text/javascript" language="javascript">
+   $('form').bind("keypress", function(e) {
+  if (e.keyCode == 13) {               
+    e.preventDefault();
+    return false;
+  }
+});
 </script>
     
     <div>
@@ -87,7 +89,7 @@
           
                   
                     </asp:DropDownList></td></tr>
-        <tr> <td><asp:label ID="label29" runat="server" Text="LT Rating"></asp:label></td>
+                    <tr> <td><asp:label ID="label29" runat="server" Text="LT Rating"></asp:label></td>
                 <td><asp:DropDownList ID="Drpltrating" runat="server">
                     <asp:ListItem Value="0">-- select LT-Rating--</asp:ListItem>
                     <asp:ListItem Value="1">A</asp:ListItem>
@@ -464,7 +466,26 @@
           
                   
             </asp:DropDownList></td></tr>
-                      
+                     <tr>
+            <td><asp:Label ID="Label11" runat="server" Text="Return (%)" ></asp:Label></td>
+            <td><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+       
+            </tr> 
+        <tr>
+            <td><asp:Label ID="Label12" runat="server" Text="Return (%)" ></asp:Label></td>
+            <td><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
+       
+            </tr>
+
+        <tr>
+            <td><asp:Label ID="Label13" runat="server" Text="Return (%)" ></asp:Label></td>
+            <td><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></td>
+       
+            </tr>
+
+
+
+
             <tr>
             <td><asp:Label ID="Label1" runat="server" Text="Return (%)" ></asp:Label></td>
             <td><asp:TextBox ID="Return1" runat="server"></asp:TextBox></td>

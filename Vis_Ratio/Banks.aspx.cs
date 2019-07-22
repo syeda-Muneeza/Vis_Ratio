@@ -42,6 +42,7 @@ namespace Vis_Ratio
             Deposits.Text = "";
             MarketDepo.Text = "";
             GrossDeposit.Text = "";
+            PIBs.Text = "";
             CostDeposits.Text = "";
             CostFunding.Text = "";
             LCR.Text = "";
@@ -76,6 +77,9 @@ namespace Vis_Ratio
             Drpratingtype.SelectedIndex = 0;
             Drpltrating.SelectedIndex = 0;
             Drpst.SelectedIndex = 0;
+            Drpsub.SelectedIndex = 0;
+            Drpac.SelectedIndex = 0;
+            Drpoutlook.SelectedIndex = 0;
 
         }
 
@@ -84,7 +88,33 @@ namespace Vis_Ratio
             {
                 SqlConnection db = new SqlConnection(con);
                 db.Open();
-                string insert = "Insert into[Vis_Ratio].[dbo].[Banks](Com_code,rating_type,Lt_rating,st_rating,TotalAssets, GrossAdvances, TotalInvestments, PIBDeposits, PIBTotalInvestments, NPLs, GrossInfection, SpecificProvisioning, TotalProvisioning, NetInfection, Deposits, DomesticDeposits, GrossAdvDepositRatio, CostofDeposits, CostofFunding, LCR, NSFR, LiquidAssets, TierEquity, ShareholdersEquity, RevaluationInvestments, NetNPLs, TierCAR, CAR, Leverage, TotalShareholde, NetInterestIncome, EarningAssets, Spreads, Expenses, Efficiency, Overheads, economROAA, ROAA, ROAE, OperatingProfit, ProfitTax, StaffStrength, Branches, Employeerelated, Perbranch, Peremployee, Employeesper,bankdate) values('" + Drpcompany.SelectedItem.Value + "','" + Drpratingtype.SelectedItem + "','" + Drpltrating.SelectedItem + "','" + Drpst.SelectedItem + "','" + TotalAssets.Text + "','" + GrossAdv.Text + "','" + TotalInvest.Text + "','" + PIBsDeposits.Text + "','" + PIBsInvest.Text + "','" + NPLs.Text + "','" + GrossInfection.Text + "','" + Specific.Text + "','" + TotalCoverage.Text + "','" + NetInfection.Text + "','" + Deposits.Text + "','" + MarketDepo.Text + "','" + GrossDeposit.Text + "','" + CostDeposits.Text + "','" + CostFunding.Text + "','" + LCR.Text + "','" + NSFR.Text + "','" + LiquidBorrowings.Text + "','" + TierEquity.Text + "','" + Shareholder.Text + "','" + Revalnvestments.Text + "','" + Netcapital.Text + "','" + TTierCAR.Text + "','" + CAR.Text + "','" + Leverage.Text + "','" + TotalSharehol.Text + "','" + Net.Text + "','" + Return1.Text + "','" + Spreads.Text + "','" + Adminexpenses.Text + "','" + Efficiency.Text + "','" + Overheads.Text + "','" + PrROAA.Text + "','" + ROAA.Text + "','" + ROAE.Text + "','" + OperaLoss.Text + "','" + ProfitTax.Text + "','" + Staffoutsourced.Text + "','" + Branches.Text + "','" + Employeecosts.Text + "','" + Percost.Text + "','" + Perdeposit.Text + "','" + Emplobranch.Text + "','" + bankdate.Text + "')";
+                string insert = "Insert into[Vis_Ratio].[dbo].[Banks](Com_code,rating_type,Lt_rating," +
+                    "st_rating,sub_sector,accounttype,outlook,TotalAssets, GrossAdvances, TotalInvestments," +
+                    "PIBs, PIBDeposits," +
+                    " PIBTotalInvestments, NPLs, GrossInfection, SpecificProvisioning, " +
+                    "TotalProvisioning, NetInfection, Deposits, DomesticDeposits, GrossAdvDepositRatio," +
+                    " CostofDeposits, CostofFunding, LCR, NSFR, LiquidAssets, TierEquity, ShareholdersEquity" +
+                    ", RevaluationInvestments, NetNPLs, TierCAR, CAR, Leverage, TotalShareholde," +
+                    " NetInterestIncome, EarningAssets, Spreads, Expenses, Efficiency, Overheads," +
+                    " economROAA, ROAA, ROAE, OperatingProfit, ProfitTax, StaffStrength, Branches," +
+                    " Employeerelated,Peremployee, Perbranch, Employeesper,bankdate)" +
+                    " values('" + Drpcompany.SelectedItem.Value + "','" + Drpratingtype.SelectedItem + "'," +
+                    "'" + Drpltrating.SelectedItem + "','" + Drpst.SelectedItem + "','"+ Drpsub.SelectedItem +"','"+ Drpac.SelectedItem +"','"+ Drpoutlook.SelectedItem +"','" + TotalAssets.Text + "'," +
+                    "'" + GrossAdv.Text + "','" + TotalInvest.Text + "','"+ PIBs.Text +"','" + PIBsDeposits.Text + "'" +
+                    ",'" + PIBsInvest.Text + "','" + NPLs.Text + "','" + GrossInfection.Text + "'" +
+                    ",'" + Specific.Text + "','" + TotalCoverage.Text + "','" + NetInfection.Text + "'" +
+                    ",'" + Deposits.Text + "','" + MarketDepo.Text + "','" + GrossDeposit.Text + "'" +
+                    ",'" + CostDeposits.Text + "','" + CostFunding.Text + "','" + LCR.Text + "'" +
+                    ",'" + NSFR.Text + "','" + LiquidBorrowings.Text + "','" + TierEquity.Text + "'" +
+                    ",'" + Shareholder.Text + "','" + Revalnvestments.Text + "','" + Netcapital.Text + "'" +
+                    ",'" + TTierCAR.Text + "','" + CAR.Text + "','" + Leverage.Text + "'" +
+                    ",'" + TotalSharehol.Text + "','" + Net.Text + "','" + Return1.Text + "'" +
+                    ",'" + Spreads.Text + "','" + Adminexpenses.Text + "','" + Efficiency.Text + "'" +
+                    ",'" + Overheads.Text + "','" + PrROAA.Text + "','" + ROAA.Text + "','" + ROAE.Text + "'" +
+                    ",'" + OperaLoss.Text + "','" + ProfitTax.Text + "','" + Staffoutsourced.Text + "'" +
+                    ",'" + Branches.Text + "','" + Employeecosts.Text + "','" + Percost.Text + "'" +
+                    ",'" + Perdeposit.Text + "','" + Emplobranch.Text + "','" + bankdate.Text + "')";
+
                 SqlCommand cmd = new SqlCommand(insert, db);
                 cmd.ExecuteNonQuery();
                 //if (m != 0)

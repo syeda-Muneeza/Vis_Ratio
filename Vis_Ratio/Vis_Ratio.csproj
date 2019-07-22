@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AMCedit.aspx" />
     <Content Include="AMCs.aspx" />
     <Content Include="Banks.aspx" />
     <Content Include="Brokerage.aspx" />
@@ -86,6 +87,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AMCedit.aspx.cs">
+      <DependentUpon>AMCedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMCedit.aspx.designer.cs">
+      <DependentUpon>AMCedit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AMCs.aspx.cs">
       <DependentUpon>AMCs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

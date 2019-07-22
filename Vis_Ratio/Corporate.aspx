@@ -26,7 +26,8 @@
        
    <caption>Corporates</caption>
    
-       <tr>
+            <tr>
+               
                 <th colspan="2">BALANCE SHEET</th>
        
                 <th colspan="2">INCOME STATEMENT AND CASH FLOW</th>
@@ -523,9 +524,6 @@
                   
                     </asp:DropDownList></td>
 
-
-               
-                    
             </tr>
 
        <tr>
@@ -534,40 +532,38 @@
                 <td><asp:DropDownList ID="Drpac" runat="server" TabIndex="6">
                     <asp:ListItem Value="0">0</asp:ListItem>
             
-                    <asp:ListItem Value="1">Q1</asp:ListItem>
-            <asp:ListItem Value="2">Hy</asp:ListItem>
-            <asp:ListItem Value="3">Q3</asp:ListItem>
-            <asp:ListItem Value="4">Fy</asp:ListItem>
+             <asp:ListItem Value="1">Q1</asp:ListItem>
+             <asp:ListItem Value="2">Hy</asp:ListItem>
+             <asp:ListItem Value="3">Q3</asp:ListItem>
+             <asp:ListItem Value="4">Fy</asp:ListItem>
              
-                    </asp:DropDownList></td>
+             </asp:DropDownList></td>
 
              <td><asp:Label ID="Label19" runat="server" Text="Year"></asp:Label></td>
              <td><asp:TextBox ID="txtMyDate" runat="server" TabIndex="18"></asp:TextBox></td>
-                
-               
-             
-            <td><asp:Label ID="Label3" runat="server" Text="Gross Margin (%)"></asp:Label></td>
-                <td>  <asp:TextBox ID="GrossMargin" runat="server" TabIndex="30"></asp:TextBox></td>
+             <td><asp:Label ID="Label3" runat="server" Text="Gross Margin (%)"></asp:Label></td>
+             <td><asp:TextBox ID="GrossMargin" runat="server" TabIndex="30"></asp:TextBox></td>
            
-            </tr>
+       </tr>
     
        <tr>
+          
              <td><asp:Label ID="Label31" runat="server" Text="Fixed Assets"></asp:Label></td>
-                <td><asp:TextBox ID="FixedAssets" runat="server" TabIndex="7"></asp:TextBox></td>
-                <td><asp:Label ID="Label28" runat="server" Text="Net Sales"></asp:Label></td>
-                <td>  <asp:TextBox ID="NeSales" runat="server" TabIndex="19"></asp:TextBox></td>
+             <td><asp:TextBox ID="FixedAssets" runat="server" TabIndex="7"></asp:TextBox></td>
+             <td><asp:Label ID="Label28" runat="server" Text="Net Sales"></asp:Label></td>
+             <td>  <asp:TextBox ID="NeSales" runat="server" TabIndex="19"></asp:TextBox></td>
             
                 
-                 <td><asp:Label ID="Label6" runat="server" Text="Net Margin"></asp:Label></td>
-                <td>  <asp:TextBox ID="NetMargin" runat="server" TabIndex="31"></asp:TextBox></td>
+              <td><asp:Label ID="Label6" runat="server" Text="Net Margin"></asp:Label></td>
+              <td><asp:TextBox ID="NetMargin" runat="server" TabIndex="31"></asp:TextBox></td>
            
-            </tr> 
+       </tr> 
 
        <tr>
               <td><asp:Label ID="Label4" runat="server" Text="Long term Deposits"></asp:Label></td>
-                <td><asp:TextBox ID="LongDeposits" runat="server" TabIndex="8"></asp:TextBox></td>
-            <td><asp:Label ID="Label5" runat="server" Text="Gross Profit"></asp:Label></td>
-                <td>  <asp:TextBox ID="GrossProfit" runat="server" TabIndex="20"></asp:TextBox></td>
+              <td><asp:TextBox ID="LongDeposits" runat="server" TabIndex="8"></asp:TextBox></td>
+              <td><asp:Label ID="Label5" runat="server" Text="Gross Profit"></asp:Label></td>
+              <td><asp:TextBox ID="GrossProfit" runat="server" TabIndex="20"></asp:TextBox></td>
                              
               
                    <td><asp:Label ID="Label9" runat="server" Text="FFO to Total Debt (%)"></asp:Label></td>

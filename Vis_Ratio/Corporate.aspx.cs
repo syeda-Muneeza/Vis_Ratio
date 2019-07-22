@@ -47,6 +47,7 @@ namespace Vis_Ratio
             ProfitTax.Text = "";
             ProfitAfter.Text = "";
             FFO.Text = "";
+
             GrossMargin.Text = "";
             NetMargin.Text = "";
             FFODebt.Text = "";
@@ -70,11 +71,12 @@ namespace Vis_Ratio
         }
 
         protected void Save_Click(object sender, EventArgs e)
-        
+         
             { 
                 SqlConnection db = new SqlConnection(con);  
                 db.Open();
-                string insert = "Insert into[Vis_Ratio].[dbo].[Corporates](Com_code,rating_type,Lt_rating,st_rating,sub_sector" +
+
+            string insert = "Insert into[Vis_Ratio].[dbo].[Corporates](Com_code,rating_type,Lt_rating,st_rating,sub_sector" +
                     ",accounttype,outlook,FixedAssets,Longterm,StockTrade,TradeDebts,CashBank,TotalAssets,TradePayables,LongTermDebt" +
                     ",ShortTermDebt,TotalDebt,TotalLiabilities,TotalEquity,NetSales,GrossProfit,ProfitBeforeTax," +
                     "ProfitafterTax,FFO,GrossMargin,NetMargin,FFOTotalDebt,FFOtoLongDebt,ServicingCoverage,ROAA,ROAE" +
@@ -86,7 +88,8 @@ namespace Vis_Ratio
                     + NeSales.Text + "','" + GrossProfit.Text + "','" + ProfitTax.Text + "','" + ProfitAfter.Text + "','" + FFO.Text + "','" + GrossMargin.Text + "','"
                     + NetMargin.Text + "','" + FFODebt.Text + "','" + FFOTermDebt.Text + "','" + Debtoverage.Text + "','" + ROAA.Text + "','"
                     + ROAE.Text + "','" + Gearing.Text + "','" + Leverage.Text + "','" + Stock.Text + "','" + CurrentRatio.Text + "','" + txtMyDate.Text + "')";
-                SqlCommand cmd = new SqlCommand(insert, db);
+
+            SqlCommand cmd = new SqlCommand(insert, db);
                 cmd.ExecuteNonQuery();
                 //if (m != 0)
                 //{

@@ -27,8 +27,7 @@ namespace Vis_Ratio
                 Drpcompany.DataBind();
             }
         }
-
-
+        
         private void emptybox()
         {
             AUMs.Text = "";
@@ -62,10 +61,8 @@ namespace Vis_Ratio
             Drpst.SelectedIndex = 0;
 
             }
-
-        
-
         protected void Save_Click1(object sender, EventArgs e)
+
         {
             SqlConnection db = new SqlConnection(con);
             db.Open();

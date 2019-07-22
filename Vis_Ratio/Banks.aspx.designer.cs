@@ -85,40 +85,40 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.DropDownList Drpst;
         
         /// <summary>
-        /// Label2 control.
+        /// Label50 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label Label50;
         
         /// <summary>
-        /// NPLs control.
+        /// Drpoutlook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NPLs;
+        protected global::System.Web.UI.WebControls.DropDownList Drpoutlook;
         
         /// <summary>
-        /// Label3 control.
+        /// label51 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label label51;
         
         /// <summary>
-        /// Deposits control.
+        /// Drpsub control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Deposits;
+        protected global::System.Web.UI.WebControls.DropDownList Drpsub;
         
         /// <summary>
         /// Label1 control.
@@ -139,22 +139,22 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox TotalAssets;
         
         /// <summary>
-        /// Label5 control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// GrossInfection control.
+        /// Drpac control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox GrossInfection;
+        protected global::System.Web.UI.WebControls.DropDownList Drpac;
         
         /// <summary>
         /// Label6 control.
@@ -166,13 +166,13 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// MarketDepo control.
+        /// Deposits control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MarketDepo;
+        protected global::System.Web.UI.WebControls.TextBox Deposits;
         
         /// <summary>
         /// Label4 control.
@@ -193,40 +193,40 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox GrossAdv;
         
         /// <summary>
-        /// Label8 control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label8;
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Specific control.
+        /// NPLs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Specific;
+        protected global::System.Web.UI.WebControls.TextBox NPLs;
         
         /// <summary>
-        /// Label9 control.
+        /// Label52 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
+        protected global::System.Web.UI.WebControls.Label Label52;
         
         /// <summary>
-        /// GrossDeposit control.
+        /// MarketDepo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox GrossDeposit;
+        protected global::System.Web.UI.WebControls.TextBox MarketDepo;
         
         /// <summary>
         /// Label7 control.
@@ -247,40 +247,40 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox TotalInvest;
         
         /// <summary>
-        /// Label11 control.
+        /// Label5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label11;
+        protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// TotalCoverage control.
+        /// GrossInfection control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TotalCoverage;
+        protected global::System.Web.UI.WebControls.TextBox GrossInfection;
         
         /// <summary>
-        /// Label12 control.
+        /// Label9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label12;
+        protected global::System.Web.UI.WebControls.Label Label9;
         
         /// <summary>
-        /// CostDeposits control.
+        /// GrossDeposit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CostDeposits;
+        protected global::System.Web.UI.WebControls.TextBox GrossDeposit;
         
         /// <summary>
         /// Label10 control.
@@ -301,40 +301,40 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox PIBs;
         
         /// <summary>
-        /// Label14 control.
+        /// Label8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label14;
+        protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// NetInfection control.
+        /// Specific control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NetInfection;
+        protected global::System.Web.UI.WebControls.TextBox Specific;
         
         /// <summary>
-        /// Label15 control.
+        /// Label12 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label15;
+        protected global::System.Web.UI.WebControls.Label Label12;
         
         /// <summary>
-        /// CostFunding control.
+        /// CostDeposits control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CostFunding;
+        protected global::System.Web.UI.WebControls.TextBox CostDeposits;
         
         /// <summary>
         /// Label13 control.
@@ -355,22 +355,40 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox PIBsDeposits;
         
         /// <summary>
-        /// Label18 control.
+        /// Label11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label18;
+        protected global::System.Web.UI.WebControls.Label Label11;
         
         /// <summary>
-        /// LCR control.
+        /// TotalCoverage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LCR;
+        protected global::System.Web.UI.WebControls.TextBox TotalCoverage;
+        
+        /// <summary>
+        /// Label15 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label15;
+        
+        /// <summary>
+        /// CostFunding control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CostFunding;
         
         /// <summary>
         /// Label16 control.
@@ -391,6 +409,42 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox PIBsInvest;
         
         /// <summary>
+        /// Label14 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label14;
+        
+        /// <summary>
+        /// NetInfection control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox NetInfection;
+        
+        /// <summary>
+        /// Label18 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label18;
+        
+        /// <summary>
+        /// LCR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox LCR;
+        
+        /// <summary>
         /// Label19 control.
         /// </summary>
         /// <remarks>
@@ -407,6 +461,24 @@ namespace Vis_Ratio {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox NSFR;
+        
+        /// <summary>
+        /// Label21 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label21;
+        
+        /// <summary>
+        /// Net control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Net;
         
         /// <summary>
         /// Label17 control.
@@ -445,22 +517,22 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox LiquidBorrowings;
         
         /// <summary>
-        /// Label21 control.
+        /// Label22 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label21;
+        protected global::System.Web.UI.WebControls.Label Label22;
         
         /// <summary>
-        /// Net control.
+        /// Return1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Net;
+        protected global::System.Web.UI.WebControls.TextBox Return1;
         
         /// <summary>
         /// Label23 control.
@@ -481,42 +553,6 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox Shareholder;
         
         /// <summary>
-        /// Label22 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label22;
-        
-        /// <summary>
-        /// Return1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Return1;
-        
-        /// <summary>
-        /// Label24 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label24;
-        
-        /// <summary>
-        /// Revalnvestments control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Revalnvestments;
-        
-        /// <summary>
         /// Label25 control.
         /// </summary>
         /// <remarks>
@@ -535,22 +571,22 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox Spreads;
         
         /// <summary>
-        /// Label26 control.
+        /// Label24 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label26;
+        protected global::System.Web.UI.WebControls.Label Label24;
         
         /// <summary>
-        /// Netcapital control.
+        /// Revalnvestments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Netcapital;
+        protected global::System.Web.UI.WebControls.TextBox Revalnvestments;
         
         /// <summary>
         /// Label27 control.
@@ -589,22 +625,22 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox Adminexpenses;
         
         /// <summary>
-        /// Label30 control.
+        /// Label26 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label30;
+        protected global::System.Web.UI.WebControls.Label Label26;
         
         /// <summary>
-        /// Branches control.
+        /// Netcapital control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Branches;
+        protected global::System.Web.UI.WebControls.TextBox Netcapital;
         
         /// <summary>
         /// Label29 control.
@@ -643,22 +679,22 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox Efficiency;
         
         /// <summary>
-        /// Label32 control.
+        /// Label30 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label32;
+        protected global::System.Web.UI.WebControls.Label Label30;
         
         /// <summary>
-        /// CAR control.
+        /// Branches control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CAR;
+        protected global::System.Web.UI.WebControls.TextBox Branches;
         
         /// <summary>
         /// Label33 control.
@@ -697,22 +733,22 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox Overheads;
         
         /// <summary>
-        /// Label35 control.
+        /// Label32 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label35;
+        protected global::System.Web.UI.WebControls.Label Label32;
         
         /// <summary>
-        /// Leverage control.
+        /// CAR control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Leverage;
+        protected global::System.Web.UI.WebControls.TextBox CAR;
         
         /// <summary>
         /// Label36 control.
@@ -751,22 +787,22 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox PrROAA;
         
         /// <summary>
-        /// Label38 control.
+        /// Label35 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label38;
+        protected global::System.Web.UI.WebControls.Label Label35;
         
         /// <summary>
-        /// TotalSharehol control.
+        /// Leverage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TotalSharehol;
+        protected global::System.Web.UI.WebControls.TextBox Leverage;
         
         /// <summary>
         /// Label39 control.
@@ -805,22 +841,22 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox ROAA;
         
         /// <summary>
-        /// Label45 control.
+        /// Label38 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label45;
+        protected global::System.Web.UI.WebControls.Label Label38;
         
         /// <summary>
-        /// bankdate control.
+        /// TotalSharehol control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox bankdate;
+        protected global::System.Web.UI.WebControls.TextBox TotalSharehol;
         
         /// <summary>
         /// Label42 control.
@@ -857,6 +893,24 @@ namespace Vis_Ratio {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ROAE;
+        
+        /// <summary>
+        /// Label45 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label45;
+        
+        /// <summary>
+        /// bankdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox bankdate;
         
         /// <summary>
         /// Save control.

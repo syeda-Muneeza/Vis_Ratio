@@ -20,6 +20,7 @@ Table.Gridview{border:solid 1px Black;}
 .label{font-size:large;}
     </style>
 
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
@@ -38,61 +39,60 @@ Table.Gridview{border:solid 1px Black;}
           <br />
 
          <asp:GridView ID="gvc" runat="server" AutoGenerateColumns="false" DataKeyNames="CorID" OnPageIndexChanging="gvc_PageIndexChanging" OnRowCancelingEdit="gvc_RowCancelingEdit" OnRowDeleting="gvc_RowDeleting" OnRowEditing="gvc_RowEditing" OnRowUpdating="gvc_RowUpdating"
-            AllowPaging="True" CellPadding="2" PageSize="5" BackColor="#ffffff" BorderColor="#ffffff"
-BorderWidth="1px" CellSpacing="1" PageIndex="5" CssClass="Gridview">
+         AllowPaging="True" CellPadding="2" PageSize="5" BackColor="#ffffff" BorderColor="#ffffff"
+   BorderWidth="1px" CellSpacing="1" PageIndex="5" CssClass="Gridview">
        
              <Columns> 
                   
                         <asp:BoundField DataField="FixedAssets" HeaderText="Fixed Assets" />  
                         <asp:BoundField DataField="Longterm" HeaderText="Long term Deposits" /> 
-                             
-                      
-
-                 <asp:BoundField DataField="StockTrade" HeaderText="Stock-in-Trade" />  
+                        <asp:BoundField DataField="StockTrade" HeaderText="Stock-in-Trade" />  
+                
                         <asp:BoundField DataField="TradeDebts" HeaderText="Trade Debts" />  
                         <asp:BoundField DataField="CashBank" HeaderText="Cash & Bank Balances" />  
                         <asp:BoundField DataField="TotalAssets" HeaderText="Total Assets" /> 
 
-                 <asp:BoundField DataField="TradePayables" HeaderText="Trade and Other Payables" />  
+                        <asp:BoundField DataField="TradePayables" HeaderText="Trade and Other Payables" />  
                         <asp:BoundField DataField="LongTermDebt" HeaderText="Long Term Debt" />  
                         <asp:BoundField DataField="ShortTermDebt" HeaderText="Short Term Debt" />  
                         <asp:BoundField DataField="TotalDebt" HeaderText="Total Debt" /> 
 
-                 <asp:BoundField DataField="TotalLiabilities" HeaderText="Total Liabilities" />  
+                        <asp:BoundField DataField="TotalLiabilities" HeaderText="Total Liabilities" />  
                         <asp:BoundField DataField="TotalEquity" HeaderText="Total Equity" />  
-                       
                         <asp:BoundField DataField="NetSales" HeaderText="Net Sales" /> 
 
-                 <asp:BoundField DataField="GrossProfit" HeaderText="Gross Profit" />  
+                        <asp:BoundField DataField="GrossProfit" HeaderText="Gross Profit" />  
                         <asp:BoundField DataField="ProfitBeforeTax" HeaderText="Profit Before Tax" />  
-                        <asp:BoundField DataField="ProfitafterTax" HeaderText="Profit after Tax" />  
+                        <asp:BoundField DataField="ProfitafterTax" HeaderText="Profit after Tax" />
+                 
                         <asp:BoundField DataField="FFO" HeaderText="FFO" /> 
                         <asp:BoundField DataField="GrossMargin" HeaderText="Gross Margin" />  
                         <asp:BoundField DataField="NetMargin" HeaderText="Net Margin" />  
+
                         <asp:BoundField DataField="FFOTotalDebt" HeaderText="FFO Total Debt" /> 
-
-                 <asp:BoundField DataField="FFOtoLongDebt" HeaderText="FFO to Long Debt" />  
+                        <asp:BoundField DataField="FFOtoLongDebt" HeaderText="FFO to Long Debt" />  
                         <asp:BoundField DataField="ServicingCoverage" HeaderText="Debt Servicing Coverage" />  
-                        <asp:BoundField DataField="ROAA" HeaderText="ROAA" />  
-                        <asp:BoundField DataField="ROAE" HeaderText="ROAE" /> 
-
-                   
+                     
+                 <asp:BoundField DataField="ROAA" HeaderText="ROAA" />  
+                 <asp:BoundField DataField="ROAE" HeaderText="ROAE" /> 
                  <asp:BoundField DataField="Gearing" HeaderText="Gearing" />  
-                        <asp:BoundField DataField="Leverage" HeaderText="Leverage" />  
-                        <asp:BoundField DataField="ShortTermBorrowings" HeaderText="Short Term Borrowings" />  
-                        <asp:BoundField DataField="CurrentRatio" HeaderText="Current Ratio" /> 
-
+                 
+                 <asp:BoundField DataField="Leverage" HeaderText="Leverage" />  
+                 <asp:BoundField DataField="ShortTermBorrowings" HeaderText="Short Term Borrowings" />  
+                 <asp:BoundField DataField="CurrentRatio" HeaderText="Current Ratio" /> 
+                
                  <asp:BoundField DataField="cordate" HeaderText="Year" />  
-                        <asp:BoundField DataField="rating_type" HeaderText="rating_type" />  
-                        <asp:BoundField DataField="Lt_rating" HeaderText="Lt_rating" />  
-                        <asp:BoundField DataField="st_rating" HeaderText="st_rating" /> 
-
-                  <asp:BoundField DataField="sub_sector" HeaderText="sub_sector" />  
-                        <asp:BoundField DataField="outlook" HeaderText="outlook" />  
-                        <asp:BoundField DataField="accounttype" HeaderText="accounttype" /> 
-              
+                 <asp:BoundField DataField="rating_type" HeaderText="rating_type" />  
+                 <asp:BoundField DataField="Lt_rating" HeaderText="Lt_rating" />  
+                 
+                 <asp:BoundField DataField="st_rating" HeaderText="st_rating" /> 
+                 <asp:BoundField DataField="sub_sector" HeaderText="sub_sector" />  
+                 <asp:BoundField DataField="outlook" HeaderText="outlook" />  
+                        
+                 <asp:BoundField DataField="accounttype" HeaderText="accounttype" /> 
                  <asp:CommandField ShowEditButton="true" />  
-                        <asp:CommandField ShowDeleteButton="true" />
+                 <asp:CommandField ShowDeleteButton="true" />
+              
                  </Columns>
              <RowStyle BackColor="#FFF7E7" ForeColor="Black" />
 
