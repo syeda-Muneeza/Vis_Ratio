@@ -77,7 +77,7 @@ namespace Vis_Ratio
             Drpratingtype.SelectedIndex = 0;
             Drpltrating.SelectedIndex = 0;
             Drpst.SelectedIndex = 0;
-            Drpsub.SelectedIndex = 0;
+           // Drpsub.SelectedIndex = 0;
             Drpac.SelectedIndex = 0;
             Drpoutlook.SelectedIndex = 0;
 
@@ -89,7 +89,7 @@ namespace Vis_Ratio
                 SqlConnection db = new SqlConnection(con);
                 db.Open();
                 string insert = "Insert into[Vis_Ratio].[dbo].[Banks](Com_code,rating_type,Lt_rating," +
-                    "st_rating,sub_sector,accounttype,outlook,TotalAssets, GrossAdvances, TotalInvestments," +
+                    "st_rating,accounttype,outlook,TotalAssets, GrossAdvances, TotalInvestments," +
                     "PIBs, PIBDeposits," +
                     " PIBTotalInvestments, NPLs, GrossInfection, SpecificProvisioning, " +
                     "TotalProvisioning, NetInfection, Deposits, DomesticDeposits, GrossAdvDepositRatio," +
@@ -99,7 +99,7 @@ namespace Vis_Ratio
                     " economROAA, ROAA, ROAE, OperatingProfit, ProfitTax, StaffStrength, Branches," +
                     " Employeerelated,Peremployee, Perbranch, Employeesper,bankdate)" +
                     " values('" + Drpcompany.SelectedItem.Value + "','" + Drpratingtype.SelectedItem + "'," +
-                    "'" + Drpltrating.SelectedItem + "','" + Drpst.SelectedItem + "','"+ Drpsub.SelectedItem +"','"+ Drpac.SelectedItem +"','"+ Drpoutlook.SelectedItem +"','" + TotalAssets.Text + "'," +
+                    "'" + Drpltrating.SelectedItem + "','" + Drpst.SelectedItem + "','"+ Drpac.SelectedItem +"','"+ Drpoutlook.SelectedItem +"','" + TotalAssets.Text + "'," +
                     "'" + GrossAdv.Text + "','" + TotalInvest.Text + "','"+ PIBs.Text +"','" + PIBsDeposits.Text + "'" +
                     ",'" + PIBsInvest.Text + "','" + NPLs.Text + "','" + GrossInfection.Text + "'" +
                     ",'" + Specific.Text + "','" + TotalCoverage.Text + "','" + NetInfection.Text + "'" +
@@ -128,6 +128,11 @@ namespace Vis_Ratio
                 db.Close();
                 Emptybox();
             }
+        }
+
+        protected void btnedit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Bankedit.aspx");
         }
     }
 }

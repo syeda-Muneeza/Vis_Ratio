@@ -32,13 +32,13 @@
            
              <td><asp:label ID="label27" runat="server" Text="Company Name"></asp:label></td>
              <td><asp:DropDownList ID="Drpcompany" runat="server" AppendDataBoundItems="true"
-              DataTextField="Company_name" DataValueField="Company_code" style="overflow:auto; width:200px; height:auto" TabIndex="11">
-              <asp:ListItem Value="0">0</asp:ListItem>
+             DataTextField="Company_name" DataValueField="Company_code" style="overflow:auto; width:200px; height:auto" TabIndex="11">
+             <asp:ListItem Value="0">0</asp:ListItem>
 
-            </asp:DropDownList>       
-            </td>
+             </asp:DropDownList>       
+             </td>
             
-             <td><asp:label ID="label28" runat="server" Text="Rating Type"></asp:label></td>
+            <td><asp:label ID="label28" runat="server" Text="Rating Type"></asp:label></td>
             <td><asp:DropDownList ID="Drpratingtype" runat="server" TabIndex="12">
             <asp:ListItem Value="0">0</asp:ListItem>
             <asp:ListItem Value="1">Entity</asp:ListItem>
@@ -51,7 +51,6 @@
             <asp:ListItem Value="8">Management Quality</asp:ListItem>
             <asp:ListItem Value="9">MF Performance</asp:ListItem>
             <asp:ListItem Value="10">MFP Ranking</asp:ListItem>
-                 
             <asp:ListItem Value="11">NPO-GR</asp:ListItem>
             <asp:ListItem Value="12">PTC 1</asp:ListItem>
             <asp:ListItem Value="13">Secured Debt</asp:ListItem>
@@ -62,7 +61,6 @@
             <asp:ListItem Value="18">TFC-3</asp:ListItem>
             <asp:ListItem Value="19">TFC-4</asp:ListItem>
             <asp:ListItem Value="20">PICG (CG)</asp:ListItem>
-                 
             <asp:ListItem Value="21">BFR</asp:ListItem>
             <asp:ListItem Value="22">BLR</asp:ListItem>
             <asp:ListItem Value="23">COI</asp:ListItem>
@@ -73,7 +71,6 @@
             <asp:ListItem Value="28">Pref Share</asp:ListItem>
             <asp:ListItem Value="29">Fiduciary Ratings</asp:ListItem>
             <asp:ListItem Value="30">Govt. Guaranteed Obligations</asp:ListItem>
-                     
             <asp:ListItem Value="31">Sukuk 2</asp:ListItem>
             <asp:ListItem Value="32">Sukuk 3</asp:ListItem>
             <asp:ListItem Value="33">PTC 2</asp:ListItem>
@@ -85,10 +82,10 @@
             <asp:ListItem Value="39">CP-3</asp:ListItem>
           
                   
-                    </asp:DropDownList></td>
+            </asp:DropDownList></td>
                     
             </tr>
-       <tr>
+            <tr>
                
                 <td><asp:label ID="label29" runat="server" Text="LT Rating"></asp:label></td>
                 <td><asp:DropDownList ID="Drpltrating" runat="server" TabIndex="13">

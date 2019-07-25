@@ -536,6 +536,8 @@
              <asp:ListItem Value="2">Hy</asp:ListItem>
              <asp:ListItem Value="3">Q3</asp:ListItem>
              <asp:ListItem Value="4">Fy</asp:ListItem>
+             <asp:ListItem Value="5">Cy</asp:ListItem>
+             <asp:ListItem Value="6">My</asp:ListItem>
              
              </asp:DropDownList></td>
 

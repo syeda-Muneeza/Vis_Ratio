@@ -27,7 +27,7 @@
 </script>--%>
 
     <div>
-  
+       <asp:Button ID="btnedit" runat="server" Text="Edit" OnClick="btnedit_Click" />
     <table style=" border: 1px solid #1C6EA4;
     background-color: #EEEEEE;
     width: 100%;
@@ -503,8 +503,8 @@
                  
            
                     </asp:DropDownList></td>
-               <td><asp:label ID="label51" runat="server" Text="Sub Sector"></asp:label></td> 
-          <td><asp:DropDownList ID="Drpsub" runat="server" style="overflow:auto; width:200px; height:auto" TabIndex="16">
+              <%-- <td><asp:label ID="label51" runat="server" Text="Sub Sector"></asp:label></td> --%>
+          <%--<td><asp:DropDownList ID="Drpsub" runat="server" style="overflow:auto; width:200px; height:auto" TabIndex="16">
                     <asp:ListItem Value="0">0</asp:ListItem>
           
             <asp:ListItem Value="1">AUTO & ALLIED</asp:ListItem>
@@ -527,9 +527,10 @@
            
           
                   
-                    </asp:DropDownList></td>
+                    </asp:DropDownList></td>--%>
 
-
+             <td><asp:Label ID="Label6" runat="server" Text="Deposits"></asp:Label></td>
+                <td>  <asp:TextBox ID="Deposits" runat="server" TabIndex="49"></asp:TextBox></td>
                     
             </tr>
 
@@ -545,11 +546,13 @@
              <asp:ListItem Value="2">Hy</asp:ListItem>
              <asp:ListItem Value="3">Q3</asp:ListItem>
              <asp:ListItem Value="4">Fy</asp:ListItem>
+                     <asp:ListItem Value="5">Cy</asp:ListItem>
+             <asp:ListItem Value="6">My</asp:ListItem>
              
              </asp:DropDownList></td>
                
-               <td><asp:Label ID="Label6" runat="server" Text="Deposits"></asp:Label></td>
-                <td>  <asp:TextBox ID="Deposits" runat="server" TabIndex="49"></asp:TextBox></td>
+              <td><asp:Label ID="Label52" runat="server" Text="Market Share-Domestic Deposits"></asp:Label></td>
+                <td>  <asp:TextBox ID="MarketDepo" runat="server" TabIndex="50"></asp:TextBox></td>
 
                     
             </tr>
@@ -562,8 +565,8 @@
                 
                 <td><asp:Label ID="Label2" runat="server" Text="NPLs"></asp:Label></td>
                 <td>  <asp:TextBox ID="NPLs" runat="server" TabIndex="35"></asp:TextBox></td>
-                 <td><asp:Label ID="Label52" runat="server" Text="Market - Deposits"></asp:Label></td>
-                <td>  <asp:TextBox ID="MarketDepo" runat="server" TabIndex="50"></asp:TextBox></td>
+                 <td><asp:Label ID="Label9" runat="server" Text="Gross Advances to Deposit Ratio"></asp:Label></td>
+                <td>  <asp:TextBox ID="GrossDeposit" runat="server" TabIndex="51"></asp:TextBox></td>
         
                     
             </tr> 
@@ -575,8 +578,8 @@
                 <td><asp:Label ID="Label5" runat="server" Text="Gross Infection"></asp:Label></td>
                 <td>  <asp:TextBox ID="GrossInfection" runat="server" TabIndex="36"></asp:TextBox></td>
            
-             <td><asp:Label ID="Label9" runat="server" Text="Gross Advances to Deposit Ratio"></asp:Label></td>
-                <td>  <asp:TextBox ID="GrossDeposit" runat="server" TabIndex="51"></asp:TextBox></td>
+             <td><asp:Label ID="Label12" runat="server" Text="Cost of Deposits"></asp:Label></td>
+                <td>  <asp:TextBox ID="CostDeposits" runat="server" TabIndex="52"></asp:TextBox></td>     
               
                     
             </tr>
@@ -587,9 +590,9 @@
                
                 <td><asp:Label ID="Label8" runat="server" Text="Specific Provisioning Coverage"></asp:Label></td>
                 <td>  <asp:TextBox ID="Specific" runat="server" TabIndex="37"></asp:TextBox></td>
-               
-               <td><asp:Label ID="Label12" runat="server" Text="Cost of Deposits"></asp:Label></td>
-                <td>  <asp:TextBox ID="CostDeposits" runat="server" TabIndex="52"></asp:TextBox></td>     
+                <td><asp:Label ID="Label15" runat="server" Text="Cost of Funding"></asp:Label></td>
+                <td><asp:TextBox ID="CostFunding" runat="server" TabIndex="53"></asp:TextBox></td>
+              
             </tr>
 
        <tr> 
@@ -598,8 +601,8 @@
                 <td><asp:TextBox ID="PIBsDeposits" runat="server" TabIndex="22"></asp:TextBox></td>  
                 <td><asp:Label ID="Label11" runat="server" Text="Total Provisioning Coverage"></asp:Label></td>
                 <td><asp:TextBox ID="TotalCoverage" runat="server" TabIndex="38"></asp:TextBox></td>
-                 <td><asp:Label ID="Label15" runat="server" Text="Cost of Funding"></asp:Label></td>
-                <td><asp:TextBox ID="CostFunding" runat="server" TabIndex="53"></asp:TextBox></td>
+                 <td><asp:Label ID="Label18" runat="server" Text="LCR"></asp:Label></td>
+                <td><asp:TextBox ID="LCR" runat="server" TabIndex="54"></asp:TextBox></td>
                 
                
                 </tr> 
@@ -610,45 +613,52 @@
                 <td><asp:TextBox ID="PIBsInvest" runat="server" TabIndex="23"></asp:TextBox></td>
              <td><asp:Label ID="Label14" runat="server" Text="Net Infection"></asp:Label></td>
                 <td><asp:TextBox ID="NetInfection" runat="server" TabIndex="39"></asp:TextBox></td>
-             <td><asp:Label ID="Label18" runat="server" Text="LCR"></asp:Label></td>
-                <td><asp:TextBox ID="LCR" runat="server" TabIndex="54"></asp:TextBox></td>
+            <td><asp:Label ID="Label19" runat="server" Text="NSFR"></asp:Label></td>
+                <td><asp:TextBox ID="NSFR" runat="server" TabIndex="55"></asp:TextBox></td>
           
 
                 </tr>
+        <tr>
+            <td><asp:Label ID="Label37" runat="server" Text="Market Share - advances(Domestic only)"></asp:Label></td>
+                <td><asp:TextBox ID="PrROAA" runat="server" TabIndex="24"></asp:TextBox></td>
+           
+            <td colspan="2"></td>
+              <td><asp:Label ID="Label20" runat="server" Text="Liquid Assets to Total Deposits & Borrowings"></asp:Label></td>
+                <td><asp:TextBox ID="LiquidBorrowings" runat="server" TabIndex="56"></asp:TextBox></td>
+        </tr>
 
         <tr> 
               
             <th colspan="2">Profitability </th>
                   <th colspan="2">Capitalization</th>
             
+       <th colspan="2">Others </th>
            
-                <td><asp:Label ID="Label19" runat="server" Text="NSFR"></asp:Label></td>
-                <td><asp:TextBox ID="NSFR" runat="server" TabIndex="55"></asp:TextBox></td>
+               
                
                 </tr>
   <tr> 
               
             
                 <td><asp:Label ID="Label21" runat="server" Text="Net Interest Income"></asp:Label></td>
-                <td><asp:TextBox ID="Net" runat="server" TabIndex="24"></asp:TextBox></td>
+                <td><asp:TextBox ID="Net" runat="server" TabIndex="25"></asp:TextBox></td>
                   <td><asp:Label ID="Label17" runat="server" Text="Tier-1 Equity"></asp:Label></td>
                 <td><asp:TextBox ID="TierEquity" runat="server" TabIndex="40"></asp:TextBox></td>
-      
-     <td><asp:Label ID="Label20" runat="server" Text="Liquid Assets to Total Deposits & Borrowings"></asp:Label></td>
-                <td><asp:TextBox ID="LiquidBorrowings" runat="server" TabIndex="56"></asp:TextBox></td>
-      
+         <td><asp:Label ID="Label27" runat="server" Text="Staff Strength (including outsourced)"></asp:Label></td>
+                <td>  <asp:TextBox ID="Staffoutsourced" runat="server" TabIndex="57"></asp:TextBox></td>
     <%--  <th colspan="2">Others</th>--%>
                 </tr>
       <tr> 
               
            
                 <td><asp:Label ID="Label22" runat="server" Text="Return on Earning Assets"></asp:Label></td>
-                <td><asp:TextBox ID="Return1" runat="server" TabIndex="25"></asp:TextBox></td>
+                <td><asp:TextBox ID="Return1" runat="server" TabIndex="26"></asp:TextBox></td>
                  <td><asp:Label ID="Label23" runat="server" Text="Shareholder's Equity"></asp:Label></td>
                 <td><asp:TextBox ID="Shareholder" runat="server" TabIndex="41"></asp:TextBox></td>
-          
+           <td><asp:Label ID="Label29" runat="server" Text="Tier-1 CAR"></asp:Label></td>
+                <td><asp:TextBox ID="TTierCAR" runat="server" TabIndex="58"></asp:TextBox></td>
          
-                 <th colspan="2">Others </th>
+                
       </tr>
         
             
@@ -658,13 +668,13 @@
               
             
                 <td><asp:Label ID="Label25" runat="server" Text="Spreads"></asp:Label></td>
-                <td><asp:TextBox ID="Spreads" runat="server" TabIndex="26"></asp:TextBox></td>
+                <td><asp:TextBox ID="Spreads" runat="server" TabIndex="27"></asp:TextBox></td>
                 <td><asp:Label ID="Label24" runat="server" Text="Revaluation Surplus on Investments"></asp:Label></td>
                 <td><asp:TextBox ID="Revalnvestments" runat="server" TabIndex="42"></asp:TextBox></td>
-                
+                 <td><asp:Label ID="Label33" runat="server" Text="Employee related costs"></asp:Label></td>
+                <td>  <asp:TextBox ID="Employeecosts" runat="server" TabIndex="59"></asp:TextBox></td>
                
-               <td><asp:Label ID="Label27" runat="server" Text="Staff Strength (including outsourced)"></asp:Label></td>
-                <td>  <asp:TextBox ID="Staffoutsourced" runat="server" TabIndex="57"></asp:TextBox></td>
+            
                     
             </tr>
     
@@ -672,13 +682,13 @@
               
             
                 <td><asp:Label ID="Label28" runat="server" Text="Administrative Expenses"></asp:Label></td>
-                <td><asp:TextBox ID="Adminexpenses" runat="server" TabIndex="27"></asp:TextBox></td>
+                <td><asp:TextBox ID="Adminexpenses" runat="server" TabIndex="28"></asp:TextBox></td>
        <td><asp:Label ID="Label26" runat="server" Text="Net NPLs to Tier 1 capital"></asp:Label></td>
                 <td><asp:TextBox ID="Netcapital" runat="server" TabIndex="43"></asp:TextBox></td>
-        
+         <td><asp:Label ID="Label36" runat="server" Text="Per branch deposit"></asp:Label></td>
+                <td>  <asp:TextBox ID="Perdeposit" runat="server" TabIndex="60"></asp:TextBox></td>
   
-                <td><asp:Label ID="Label29" runat="server" Text="Tier-1 CAR"></asp:Label></td>
-                <td><asp:TextBox ID="TTierCAR" runat="server" TabIndex="58"></asp:TextBox></td>
+               
                
                     
             </tr>
@@ -686,86 +696,76 @@
               
             
                 <td><asp:Label ID="Label31" runat="server" Text="Efficiency"></asp:Label></td>
-                <td><asp:TextBox ID="Efficiency" runat="server" TabIndex="28"></asp:TextBox></td>
+                <td><asp:TextBox ID="Efficiency" runat="server" TabIndex="29"></asp:TextBox></td>
                      <td><asp:Label ID="Label30" runat="server" Text="Branches"></asp:Label></td>
                 <td>  <asp:TextBox ID="Branches" runat="server" TabIndex="44"></asp:TextBox></td>
         
-        
-               <td><asp:Label ID="Label33" runat="server" Text="Employee related costs"></asp:Label></td>
-                <td>  <asp:TextBox ID="Employeecosts" runat="server" TabIndex="59"></asp:TextBox></td>
+         <td><asp:Label ID="Label39" runat="server" Text="Per employee cost"></asp:Label></td>
+                <td>  <asp:TextBox ID="Percost" runat="server" TabIndex="61"></asp:TextBox></td>
+              
                     
             </tr>
         <tr>
               
             
                 <td><asp:Label ID="Label34" runat="server" Text="Overheads"></asp:Label></td>
-                <td><asp:TextBox ID="Overheads" runat="server" TabIndex="29"></asp:TextBox></td>
+                <td><asp:TextBox ID="Overheads" runat="server" TabIndex="30"></asp:TextBox></td>
                <td><asp:Label ID="Label32" runat="server" Text="CAR"></asp:Label></td>
                 <td><asp:TextBox ID="CAR" runat="server" TabIndex="45"></asp:TextBox></td>
             
-          
-               <td><asp:Label ID="Label36" runat="server" Text="Per branch deposit"></asp:Label></td>
-                <td>  <asp:TextBox ID="Perdeposit" runat="server" TabIndex="60"></asp:TextBox></td>
+           <td><asp:Label ID="Label42" runat="server" Text="Employees per branch"></asp:Label></td>
+                <td>  <asp:TextBox ID="Emplobranch" runat="server" TabIndex="62"></asp:TextBox></td>
+              
                     
             </tr>
     <tr>
               
             
-                <td><asp:Label ID="Label37" runat="server" Text="Pre tax economic ROAA"></asp:Label></td>
-                <td><asp:TextBox ID="PrROAA" runat="server" TabIndex="30"></asp:TextBox></td>
+             <td><asp:Label ID="Label41" runat="server" Text="ROAA"></asp:Label></td>
+                <td><asp:TextBox ID="ROAA" runat="server" TabIndex="31"></asp:TextBox></td>
                  <td><asp:Label ID="Label35" runat="server" Text="Leverage"></asp:Label></td>
                 <td><asp:TextBox ID="Leverage" runat="server" TabIndex="46"></asp:TextBox></td>
-      
-               <td><asp:Label ID="Label39" runat="server" Text="Per employee cost"></asp:Label></td>
-                <td>  <asp:TextBox ID="Percost" runat="server" TabIndex="61"></asp:TextBox></td>
+       <td></td>
+         <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" CssClass="button" TabIndex="63" />
+              </td>
                     
             </tr>
         <tr>
               
    
-
-                <td><asp:Label ID="Label41" runat="server" Text="ROAA"></asp:Label></td>
-                <td><asp:TextBox ID="ROAA" runat="server" TabIndex="31"></asp:TextBox></td>
+             <td><asp:Label ID="Label40" runat="server" Text="ROAE"></asp:Label></td>
+                <td><asp:TextBox ID="ROAE" runat="server" TabIndex="32"></asp:TextBox></td>
+               
            <td><asp:Label ID="Label38" runat="server" Text="Total Shareholders' Equity/ Total Assets"></asp:Label></td>
                 <td><asp:TextBox ID="TotalSharehol" runat="server" TabIndex="47"></asp:TextBox></td>
             
-               <td><asp:Label ID="Label42" runat="server" Text="Employees per branch"></asp:Label></td>
-                <td>  <asp:TextBox ID="Emplobranch" runat="server" TabIndex="62"></asp:TextBox></td>
+              
                     
             </tr>
     
     <tr>
               
+        <td><asp:Label ID="Label43" runat="server" Text="Operating Profit / (Loss)"></asp:Label></td>
+                <td><asp:TextBox ID="OperaLoss" runat="server" TabIndex="33"></asp:TextBox></td>
 
-
-                <td><asp:Label ID="Label40" runat="server" Text="ROAE"></asp:Label></td>
-                <td><asp:TextBox ID="ROAE" runat="server" TabIndex="32"></asp:TextBox></td>
+               
                       <td><asp:Label ID="Label45" runat="server" Text="Year"></asp:Label></td>
              <td><asp:TextBox ID="bankdate" CssClass="datepicker" runat="server" TabIndex="48"></asp:TextBox></td>
       
-        <td></td>
-         <td><asp:Button ID="Save" runat="server" Text="Save" OnClick="Save_Click" CssClass="button" TabIndex="63" />
+       
        
 
            
-                 </td>
-    </tr>
+                   </tr>
     <tr>
               
-       
-          
-                <td><asp:Label ID="Label43" runat="server" Text="Operating Profit / (Loss)"></asp:Label></td>
-                <td><asp:TextBox ID="OperaLoss" runat="server" TabIndex="33"></asp:TextBox></td>
-          
-    </tr>
-        <tr>
-              
-        
-                <td><asp:Label ID="Label44" runat="server" Text="Profit/ (loss) after Tax"></asp:Label></td>
+       <td><asp:Label ID="Label44" runat="server" Text="Profit/ (loss) after Tax"></asp:Label></td>
                 <td><asp:TextBox ID="ProfitTax" runat="server" TabIndex="34"></asp:TextBox></td>
+          
                 
-       
+          
     </tr>
+       
     </table>
   
 
