@@ -556,7 +556,7 @@
              <td>  <asp:TextBox ID="NeSales" runat="server" TabIndex="19"></asp:TextBox></td>
             
                 
-              <td><asp:Label ID="Label6" runat="server" Text="Net Margin"></asp:Label></td>
+              <td><asp:Label ID="Label6" runat="server" Text="Net Margin(%)"></asp:Label></td>
               <td><asp:TextBox ID="NetMargin" runat="server" TabIndex="31"></asp:TextBox></td>
            
        </tr> 
@@ -627,7 +627,7 @@
                 <td><asp:TextBox ID="Trade" runat="server" TabIndex="13"></asp:TextBox></td>  
              
                
-                 <td><asp:Label ID="Label23" runat="server" Text="Gearing"></asp:Label></td>
+                 <td><asp:Label ID="Label23" runat="server" Text="Gearing(X)"></asp:Label></td>
                 <td><asp:TextBox ID="Gearing" runat="server" TabIndex="25"></asp:TextBox></td>
                 
                     
@@ -637,7 +637,7 @@
                 <td><asp:TextBox ID="LongDebt" runat="server" TabIndex="14"></asp:TextBox></td>  
                
                
-                 <td><asp:Label ID="Label26" runat="server" Text="Leverage"></asp:Label></td>
+                 <td><asp:Label ID="Label26" runat="server" Text="Leverage(X)"></asp:Label></td>
                 <td><asp:TextBox ID="Leverage" runat="server" TabIndex="26"></asp:TextBox></td>
                
                     
@@ -656,7 +656,7 @@
              <td><asp:Label ID="Label27" runat="server" Text="Total Debt"></asp:Label></td>
                 <td><asp:TextBox ID="TotalDebt" runat="server" TabIndex="16"></asp:TextBox></td>  
                
-                 <td><asp:Label ID="Label32" runat="server" Text="Current Ratio"></asp:Label></td>
+                 <td><asp:Label ID="Label32" runat="server" Text="Current Ratio(X)"></asp:Label></td>
                 <td><asp:TextBox ID="CurrentRatio" runat="server" TabIndex="28"></asp:TextBox></td>
             
             
