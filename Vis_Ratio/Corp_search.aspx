@@ -8,7 +8,7 @@
      <style>
 
        
-.GridviewDiv {font-size: 80%; color: #303933;overflow:scroll; width: 98%; margin: 0 auto; height: 650px; }
+.GridviewDiv {font-size: 80%; color: #303933;overflow:scroll; width: 98%; margin: 0 auto; height: 600px; }
 Table.Gridview{border:solid 1px Black;}
 /*.GridviewTable{border:none}*/
 .GridviewTable td{margin-top:0;padding: 0; vertical-align:middle }
@@ -84,23 +84,29 @@ Table.Gridview{border:solid 1px Black;}
 
               </asp:DropDownList></td>
 </tr>
+            <tr>
+               <td colspan="3"><strong>Range:</strong></td> 
+            </tr>
                <tr>
-               <td><strong>Range:</strong></td>
+               <td><strong>Min-Range:</strong></td>
                <td> <asp:TextBox ID="txtno1" runat="server"></asp:TextBox></td>
-               <td><strong>Between:</strong></td>
+               <td><strong>Max-Range:</strong></td>
                <td> <asp:TextBox ID="txtno2" runat="server"></asp:TextBox></td>
                  
                
            
             
             </tr>
-
+            <tr>
+               <td colspan="3"><strong>Long-Term Rating</strong></td> 
+            </tr>
                <tr>
-                    <td><strong>Lt Rating:</strong></td>
+
+                    <td><strong>Min-LtRating:</strong></td>
                    <td><asp:DropDownList ID="Ddlrating" runat="server" AutoPostBack="True" AppendDataBoundItems="true">
         </asp:DropDownList>
     </td>
-                   <td><strong>Between:</strong></td>
+                   <td><strong>Max-LtRating:</strong></td>
                    <td><asp:DropDownList ID="Ddlrating2" runat="server" AutoPostBack="True" AppendDataBoundItems="true">
         </asp:DropDownList>
                        <asp:Button ID="btnsave" runat="server" Text="go" cssclass="go" OnClick="btnsave_Click" />
