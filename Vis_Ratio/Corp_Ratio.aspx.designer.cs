@@ -10,52 +10,79 @@
 namespace Vis_Ratio {
     
     
-    public partial class edit {
+    public partial class Corp_Ratio {
         
         /// <summary>
-        /// lblid control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblid;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Txtuser control.
+        /// ddlsector control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtuser;
+        protected global::System.Web.UI.WebControls.DropDownList ddlsector;
         
         /// <summary>
-        /// btnlogout control.
+        /// Ddlfix control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnlogout;
+        protected global::System.Web.UI.WebControls.DropDownList Ddlfix;
         
         /// <summary>
-        /// ddlc control.
+        /// txtno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlc;
+        protected global::System.Web.UI.WebControls.TextBox txtno1;
         
         /// <summary>
-        /// lblcom control.
+        /// txtno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblcom;
+        protected global::System.Web.UI.WebControls.TextBox txtno2;
+        
+        /// <summary>
+        /// Ddlrating control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Ddlrating;
+        
+        /// <summary>
+        /// Ddlrating2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Ddlrating2;
+        
+        /// <summary>
+        /// btnsave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnsave;
         
         /// <summary>
         /// gvc control.
@@ -65,14 +92,5 @@ namespace Vis_Ratio {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvc;
-        
-        /// <summary>
-        /// gv2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gv2;
     }
 }

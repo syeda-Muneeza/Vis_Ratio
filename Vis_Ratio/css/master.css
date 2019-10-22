@@ -38,4 +38,31 @@ ul {
     padding: 10px;
 }
 
-   
+.search {
+    width: 98%;
+    margin: 0 auto;
+}
+.log {
+    background-color: #353835;
+    border: none;
+    color: white;
+    padding: 7px 12px 7px 12px;
+    font-size: 20px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 8px;
+    float: right;
+}
+
+.go {
+    background-color: #353835;
+    border: none;
+    color: white;
+    padding: 18px 7px -2px 12px;
+    font-size: 20px;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 4px;
+    float: right;
+    padding: 0 11px 0px 11px;
+}

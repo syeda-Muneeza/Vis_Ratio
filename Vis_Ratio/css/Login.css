@@ -1,0 +1,29 @@
+﻿
+
+body {
+    background: #e6e2e2;
+}
+
+.formclass {
+    padding: 53px;
+    margin:15% auto;
+    background: #fff;
+    width: 280px;
+}
+.txtbox
+{
+    padding:8px;
+    width:100%;
+
+}
+
+h2 {
+
+text-align:center;
+}
+
+.search {
+    width: 98%;
+    margin: 0 auto;
+}
+

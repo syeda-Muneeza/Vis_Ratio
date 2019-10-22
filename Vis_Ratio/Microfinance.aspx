@@ -30,21 +30,16 @@
                 
                 <th colspan="2">Profitability</th>
                
-            </tr>
-        
-        
-
-        <tr>
-           
-                   
-             
+         </tr>
+         <tr>
+              
                 <td><asp:label ID="label33" runat="server" Text="Company Name"></asp:label></td>
                 <td><asp:DropDownList ID="Drpcompany" runat="server" AppendDataBoundItems="true"
-                    DataTextField="Company_name" DataValueField="Company_code" style="overflow:auto; width:200px; height:auto">
-                    <asp:ListItem Value="0">-- select company--</asp:ListItem></asp:DropDownList></td>
+                DataTextField="Company_name" DataValueField="Company_code" style="overflow:auto; width:200px; height:auto">
+                <asp:ListItem Value="0">-- select company--</asp:ListItem></asp:DropDownList></td>
                 <td><asp:label ID="label35" runat="server" Text="Rating Type"></asp:label></td>
-             <td><asp:DropDownList ID="Drpratingtype" runat="server">
-                    <asp:ListItem Value="0">Select Rating Type</asp:ListItem>
+                <td><asp:DropDownList ID="Drpratingtype" runat="server">
+                <asp:ListItem Value="0">Select Rating Type</asp:ListItem>
             
 
 
@@ -58,7 +53,6 @@
             <asp:ListItem Value="8">Management Quality</asp:ListItem>
             <asp:ListItem Value="9">MF Performance</asp:ListItem>
             <asp:ListItem Value="10">MFP Ranking</asp:ListItem>
-                 
             <asp:ListItem Value="11">NPO-GR</asp:ListItem>
             <asp:ListItem Value="12">PTC 1</asp:ListItem>
             <asp:ListItem Value="13">Secured Debt</asp:ListItem>
@@ -69,7 +63,6 @@
             <asp:ListItem Value="18">TFC-3</asp:ListItem>
             <asp:ListItem Value="19">TFC-4</asp:ListItem>
             <asp:ListItem Value="20">PICG (CG)</asp:ListItem>
-                 
             <asp:ListItem Value="21">BFR</asp:ListItem>
             <asp:ListItem Value="22">BLR</asp:ListItem>
             <asp:ListItem Value="23">COI</asp:ListItem>
@@ -446,16 +439,12 @@
                     </asp:DropDownList></td>
             </tr>
 
-
-
        <tr>
-              
-            
                 <td><asp:Label ID="Label1" runat="server" Text="Total Assets"></asp:Label></td>
                 <td><asp:TextBox ID="TotalAssets" runat="server"></asp:TextBox></td>
-                 <td><asp:label ID="label38" runat="server" Text="ST Rating"></asp:label></td>
-             <td><asp:DropDownList ID="Drpst" runat="server">
-                    <asp:ListItem Value="0">Select ST-Rating</asp:ListItem>
+                <td><asp:label ID="label38" runat="server" Text="ST Rating"></asp:label></td>
+                <td><asp:DropDownList ID="Drpst" runat="server">
+                <asp:ListItem Value="0">Select ST-Rating</asp:ListItem>
           
             <asp:ListItem Value="1">A-1</asp:ListItem>
             <asp:ListItem Value="2">A-1+</asp:ListItem>
@@ -467,7 +456,7 @@
             <asp:ListItem Value="8">MFR 2-Star</asp:ListItem>
             <asp:ListItem Value="9">MFR 3-Star</asp:ListItem>
             <asp:ListItem Value="10">MFR 4-Star</asp:ListItem>
-                 
+                
             <asp:ListItem Value="11">MFR 5-Star</asp:ListItem>
             <asp:ListItem Value="12">A-1+ (SO)</asp:ListItem>
             <asp:ListItem Value="13">A-1 (SO)</asp:ListItem>
@@ -484,8 +473,7 @@
             </tr>
 
        <tr>
-              
-            
+                         
                 <td><asp:Label ID="Label4" runat="server" Text="Gross Advances"></asp:Label></td>
                 <td><asp:TextBox ID="GrossAdv" runat="server"></asp:TextBox></td>
                 <td><asp:Label ID="Label2" runat="server" Text="Net worth"></asp:Label></td>
@@ -525,9 +513,6 @@
                     
             </tr>
        
-
-
-
        <tr>
               
                 <td><asp:Label ID="Label13" runat="server" Text="Incremental infection"></asp:Label></td>
@@ -543,8 +528,7 @@
             </tr>
 
        <tr> 
-              
-            
+                  
                 <td><asp:Label ID="Label16" runat="server" Text="Net Infection (adjusted for specific provisioning only and includes rescheduled loans)"></asp:Label></td>
                 <td><asp:TextBox ID="NetInfection" runat="server"></asp:TextBox></td>
                <td><asp:Label ID="Label11" runat="server" Text="Equity as a % of GLP"></asp:Label></td>

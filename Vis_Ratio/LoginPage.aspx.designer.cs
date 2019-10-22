@@ -10,69 +10,60 @@
 namespace Vis_Ratio {
     
     
-    public partial class edit {
+    public partial class LoginPage {
         
         /// <summary>
-        /// lblid control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblid;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Txtuser control.
+        /// lbluser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtuser;
+        protected global::System.Web.UI.WebControls.Label lbluser;
         
         /// <summary>
-        /// btnlogout control.
+        /// txtuser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnlogout;
+        protected global::System.Web.UI.WebControls.TextBox txtuser;
         
         /// <summary>
-        /// ddlc control.
+        /// lblpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlc;
+        protected global::System.Web.UI.WebControls.Label lblpassword;
         
         /// <summary>
-        /// lblcom control.
+        /// txtpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblcom;
+        protected global::System.Web.UI.WebControls.TextBox txtpassword;
         
         /// <summary>
-        /// gvc control.
+        /// btnsave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvc;
-        
-        /// <summary>
-        /// gv2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gv2;
+        protected global::System.Web.UI.WebControls.Button btnsave;
     }
 }

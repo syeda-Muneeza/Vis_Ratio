@@ -74,6 +74,8 @@
     <Content Include="Brokerage.aspx" />
     <Content Include="Companyprofile.aspx" />
     <Content Include="Corporate.aspx" />
+    <Content Include="Corp_search.aspx" />
+    <Content Include="css\Login.css" />
     <Content Include="css\master.css" />
     <Content Include="css\table.css" />
     <Content Include="edit.aspx" />
@@ -81,6 +83,7 @@
     <Content Include="Insurance.aspx" />
     <Content Include="Investment.aspx" />
     <Content Include="Leasing.aspx" />
+    <Content Include="LoginPage.aspx" />
     <Content Include="Microfinance.aspx" />
     <Content Include="Modarabas.aspx" />
     <Content Include="Web.config">
@@ -123,7 +126,6 @@
     <Compile Include="Brokerage.aspx.designer.cs">
       <DependentUpon>Brokerage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Class\Clscompany.cs" />
     <Compile Include="Companyprofile.aspx.cs">
       <DependentUpon>Companyprofile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -137,6 +139,13 @@
     </Compile>
     <Compile Include="Corporate.aspx.designer.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Corp_search.aspx.cs">
+      <DependentUpon>Corp_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Corp_search.aspx.designer.cs">
+      <DependentUpon>Corp_search.aspx</DependentUpon>
     </Compile>
     <Compile Include="edit.aspx.cs">
       <DependentUpon>edit.aspx</DependentUpon>
@@ -172,6 +181,13 @@
     </Compile>
     <Compile Include="Leasing.aspx.designer.cs">
       <DependentUpon>Leasing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Microfinance.aspx.cs">
       <DependentUpon>Microfinance.aspx</DependentUpon>
@@ -209,7 +225,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Class\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

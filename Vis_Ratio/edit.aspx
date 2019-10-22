@@ -2,9 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <%--  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">--%>
+    <%--  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">--%>
   <%--<link rel="stylesheet" href="/resources/demos/style.css">--%>
- <%-- <link href="css/table.css" rel="stylesheet" /> --%>
+ <%--<link href="css/table.css" rel="stylesheet" /> --%>
 
     <style>
 
@@ -18,8 +18,13 @@ Table.Gridview{border:solid 1px Black;}
 .Gridview td{border-bottom-color:black;border-right-color:black;padding:0.5em 0.5em 0.5em 0.5em;}
 .Gridview tr{color: Black; background-color: White; text-align:left}
 .label{font-size:large;}
+        .txtbox {background-color: #353835;border: none;color: white;padding: 7px 12px 7px 12px;font-size: 20px;margin: 4px 4px;cursor: pointer;border-radius: 8px;float: right;}
     </style>
-
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -29,6 +34,9 @@ Table.Gridview{border:solid 1px Black;}
         
          <%--  <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click1" Style="height: 26px" />  --%>
           <br />
+    <asp:Label ID="lblid" runat="server" Text="" Visible="false"></asp:Label>
+    <asp:TextBox ID="Txtuser" runat="server" style="width: auto;margin: 5px auto;margin: 6px 0 0 12px;border: none;font-size: larger;font-family: sans-serif;font-weight: 600;"></asp:TextBox>
+                <asp:Button ID="btnlogout" runat="server" text="Logout" CssClass="txtbox" OnClick="btnlogout_Click" />
     <div class="GridviewDiv">
         
            <asp:DropDownList ID="ddlc" runat="server" AppendDataBoundItems="true" AutoPostBack="true" Font-Size="10pt" Height="17px" 
@@ -37,10 +45,9 @@ Table.Gridview{border:solid 1px Black;}
         <asp:Label ID="lblcom" runat="server" Text="" CssClass="label"></asp:Label>
           <br />
           <br />
-
+        
          <asp:GridView ID="gvc" runat="server" AutoGenerateColumns="false" DataKeyNames="CorID" OnPageIndexChanging="gvc_PageIndexChanging" OnRowCancelingEdit="gvc_RowCancelingEdit" OnRowDeleting="gvc_RowDeleting" OnRowEditing="gvc_RowEditing" OnRowUpdating="gvc_RowUpdating"
-         AllowPaging="True" CellPadding="2" PageSize="5" BackColor="#ffffff" BorderColor="#ffffff"
-   BorderWidth="1px" CellSpacing="1" PageIndex="5" CssClass="Gridview">
+         AllowPaging="True" CellPadding="2" PageSize="5" BackColor="#ffffff" BorderColor="#ffffff" BorderWidth="1px" CellSpacing="1" PageIndex="5" CssClass="Gridview">
        
              <Columns> 
                   
@@ -102,8 +109,11 @@ Table.Gridview{border:solid 1px Black;}
 
 <HeaderStyle BackColor="#222229" Font-Bold="True" ForeColor="White" />
          </asp:GridView>
-         
-     
+       
+        <br />
+
+        <asp:GridView ID="gv2" runat="server" ShowHeader="false"></asp:GridView>
+
     </div>
 
 
