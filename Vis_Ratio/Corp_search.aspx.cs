@@ -86,7 +86,7 @@ namespace Vis_Ratio
 
             {
                 // con.Open();
-                cmd = new SqlCommand("select LT_id, Lt_ratingName from LT_Rat", conn);
+                cmd = new SqlCommand("select LT_id, Lt_ratingName from LT_Rat order by LT_id asc", conn);
                 adp = new SqlDataAdapter(cmd);
                 adp.Fill(dt);
                 // con.Close();
@@ -119,7 +119,7 @@ namespace Vis_Ratio
             {
 
                 // con.Open();
-                cmd = new SqlCommand("select LT_id, Lt_ratingName from LT_Rat", conn);
+                cmd = new SqlCommand("select LT_id, Lt_ratingName from LT_Rat order by LT_id asc", conn);
                 adp = new SqlDataAdapter(cmd);
                 adp.Fill(dt);
                 // con.Close();

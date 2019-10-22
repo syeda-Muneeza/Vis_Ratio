@@ -9,7 +9,7 @@
     <style>
 
        
-.GridviewDiv {font-size: 80%; color: #303933;overflow:scroll; width: 96%; margin: 0 auto; }
+.GridviewDiv {font-size: 80%; color: #303933;overflow:scroll; width: 96%; margin: 0 auto; height: 700px;}
 Table.Gridview{border:solid 1px Black;}
 /*.GridviewTable{border:none}*/
 .GridviewTable td{margin-top:0;padding: 0; vertical-align:middle }
