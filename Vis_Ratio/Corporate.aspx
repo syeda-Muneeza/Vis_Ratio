@@ -17,9 +17,7 @@
   }
 }); 
 </script>
-
-
-
+       
     <div>
 
         <asp:TextBox ID="Txtuser" runat="server" style="width: auto;margin: 5px auto;margin: 6px 0 0 12px;border: none;font-size: larger;font-family: sans-serif;font-weight: 600;"></asp:TextBox> 
@@ -50,8 +48,6 @@
        
         <tr>
            
-                   
-             
                 <td><asp:label ID="label22" runat="server" Text="Company Name"></asp:label></td>
                 <td><asp:DropDownList ID="Drpcompany" runat="server" AppendDataBoundItems="true"
                     DataTextField="Company_name" DataValueField="Company_code" style="overflow:auto; width:200px; height:auto">

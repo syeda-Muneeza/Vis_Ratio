@@ -19,6 +19,19 @@
 </script>
 
 <div>
+
+    <asp:TextBox ID="Txtuser" runat="server" style="width: auto;margin: 5px auto;margin: 6px 0 0 12px;border: none;font-size: larger;font-family: sans-serif;font-weight: 600;"></asp:TextBox> 
+                <asp:Button ID="btnlogout" runat="server" Text="Logout" />
+
+        <asp:Button ID="btn" runat="server" Text="Edit" />
+        <asp:Button ID="btnsearch" runat="server" Text="Search" />
+   <%-- <table style=" border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: left;">--%>
+        <asp:Label ID="lblid" runat="server" Text="" Visible="False"></asp:Label>
+
+
    <table>
               
    <caption>AMCs</caption>

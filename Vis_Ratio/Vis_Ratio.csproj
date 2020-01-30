@@ -74,6 +74,7 @@
     <Content Include="Brokerage.aspx" />
     <Content Include="Companyprofile.aspx" />
     <Content Include="Corporate.aspx" />
+    <Content Include="Corporate_search.aspx" />
     <Content Include="Corp_search.aspx" />
     <Content Include="css\Login.css" />
     <Content Include="css\master.css" />
@@ -139,6 +140,13 @@
     </Compile>
     <Compile Include="Corporate.aspx.designer.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Corporate_search.aspx.cs">
+      <DependentUpon>Corporate_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Corporate_search.aspx.designer.cs">
+      <DependentUpon>Corporate_search.aspx</DependentUpon>
     </Compile>
     <Compile Include="Corp_search.aspx.cs">
       <DependentUpon>Corp_search.aspx</DependentUpon>

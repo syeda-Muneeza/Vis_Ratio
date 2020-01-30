@@ -38,7 +38,8 @@ namespace Vis_Ratio
             adpt.Fill(dt);
 
             if (dt.Rows.Count > 0)
-            {
+           
+ {
 
                 Session["uid"] = ds.Tables[0].Rows[0]["User_code"];
                 
@@ -46,7 +47,9 @@ namespace Vis_Ratio
                 Response.Redirect("~/Corporate.aspx");
                 //Session.RemoveAll();
             }
+
             else
+
             {
                 Response.Write("username or password is incorrect!");
             }

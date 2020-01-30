@@ -27,14 +27,14 @@ Table.Gridview{border:solid 1px Black;}
         
            <asp:DropDownList ID="ddlc" runat="server" AppendDataBoundItems="true" AutoPostBack="true" Font-Size="10pt" Height="17px" 
             onselectedindexchanged="ddlc_SelectedIndexChanged" Width="162px">  
+
         </asp:DropDownList>  &nbsp;&nbsp;
         <asp:Label ID="lblcom" runat="server" Text="" CssClass="label"></asp:Label>
           <br />
           <br />
 
          <asp:GridView ID="gvc" runat="server" AutoGenerateColumns="false" DataKeyNames="CorID" OnPageIndexChanging="gvc_PageIndexChanging" OnRowCancelingEdit="gvc_RowCancelingEdit" OnRowDeleting="gvc_RowDeleting" OnRowEditing="gvc_RowEditing" OnRowUpdating="gvc_RowUpdating"
-         AllowPaging="True" CellPadding="2" PageSize="5" BackColor="#ffffff" BorderColor="#ffffff"
-         BorderWidth="1px" CellSpacing="1" PageIndex="5" CssClass="Gridview">
+         AllowPaging="True" CellPadding="2" PageSize="5" BackColor="#ffffff" BorderColor="#ffffff" BorderWidth="1px" CellSpacing="1" PageIndex="5" CssClass="Gridview">
        
              <Columns> 
           
@@ -50,26 +50,24 @@ Table.Gridview{border:solid 1px Black;}
                   <asp:BoundField DataField="NoInvestors" HeaderText="Number of Investors" />  
                   <asp:BoundField DataField="ManagementFees" HeaderText="Management Fees" />
                  
-                  <asp:BoundField DataField="Corerevenue" HeaderText="Core revenue" /> 
-                  <asp:BoundField DataField="Adminexpenses" HeaderText="Adminstrative expenses" />  
-                  <asp:BoundField DataField="OperatingProfit" HeaderText="Operating Profit" />  
+                 <asp:BoundField DataField="Corerevenue" HeaderText="Core revenue" /> 
+                 <asp:BoundField DataField="Adminexpenses" HeaderText="Adminstrative expenses" />  
+                 <asp:BoundField DataField="OperatingProfit" HeaderText="Operating Profit" />  
                  
-                  <asp:BoundField DataField="Efficiency" HeaderText="Efficiency" /> 
-                  <asp:BoundField DataField="TotalEquity" HeaderText="Total Equity" />  
-                  <asp:BoundField DataField="Longtermdebt" HeaderText="Long term debt" />  
+                 <asp:BoundField DataField="Efficiency" HeaderText="Efficiency" /> 
+                 <asp:BoundField DataField="TotalEquity" HeaderText="Total Equity" />  
+                 <asp:BoundField DataField="Longtermdebt" HeaderText="Long term debt" />  
                         
-                  <asp:BoundField DataField="TotalDebt" HeaderText="Total Debt" />
-                  <asp:BoundField DataField="NumberofFunds" HeaderText="Number of Funds" /> 
-                  <asp:BoundField DataField="portfolio" HeaderText="Types of Funds not covered in portfolio" />  
+                 <asp:BoundField DataField="TotalDebt" HeaderText="Total Debt" />
+                 <asp:BoundField DataField="NumberofFunds" HeaderText="Number of Funds" /> 
+                 <asp:BoundField DataField="portfolio" HeaderText="Types of Funds not covered in portfolio" />  
                  
                  <asp:BoundField DataField="Assets" HeaderText="Total Assets" />  
                  <asp:BoundField DataField="IndependentDirectors" HeaderText="Number of Independent Directors" /> 
                  <asp:BoundField DataField="BoardMembers" HeaderText="Number of Board Members" /> 
-                 
                  <asp:BoundField DataField="BoardCommittees" HeaderText="Board Committees" />  
                  <asp:BoundField DataField="ManagementCommittees" HeaderText="Management Committees" />  
                  <asp:BoundField DataField="ICComposition" HeaderText="IC Composition" /> 
-                
                  <asp:BoundField DataField="SharedFunctions" HeaderText="Shared Functions" />  
                  <asp:BoundField DataField="amcdate" HeaderText="Year" />  
                  <asp:BoundField DataField="rating_type" HeaderText="rating_type" />  

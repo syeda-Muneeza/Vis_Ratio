@@ -1,14 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RatioForm.Master" AutoEventWireup="true" CodeBehind="Corp_search.aspx.cs" Inherits="Vis_Ratio.Corp_search" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RatioForm.Master" AutoEventWireup="true" CodeBehind="Corporate_search.aspx.cs" Inherits="Vis_Ratio.Corporate_search" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/master.css" rel="stylesheet" />
-    
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
      <style>
 
        
-.GridviewDiv {font-size: 80%; color: #303933;overflow:scroll; width: 98%; margin: 0 auto; height: 600px; }
+.GridviewDiv {font-size: 80%; color: #303933;overflow:scroll; width: 98%; margin: 0 auto; height: 400px; }
 Table.Gridview{border:solid 1px Black;}
 /*.GridviewTable{border:none}*/
 .GridviewTable td{margin-top:0;padding: 0; vertical-align:middle }
@@ -18,7 +18,29 @@ Table.Gridview{border:solid 1px Black;}
 .Gridview tr{color: Black; background-color: White; text-align:left}
 .label{font-size:large;}
         .txtbox {background-color: #353835;border: none;color: white;padding: 7px 12px 7px 12px;font-size: 20px;margin: 4px 4px;cursor: pointer;border-radius: 8px;float: right;}
-    </style>
+     .Grid td
+    {
+        background-color: #eee;
+        color: black;
+        font-family: Arial;
+        font-size: 10pt;
+        line-height: 200%;
+        cursor: pointer;
+        width: 100px;
+    }
+    .header
+    {
+        background-color: #6C6C6C !important;
+        color: White !important;
+        font-family: Arial;
+        font-size: 10pt;
+        line-height: 200%;
+        width: 100px;
+        text-align: center;
+    }
+        
+        
+        </style>
     <script type="text/javascript">
         function preventBack() { window.history.forward(); }
         setTimeout("preventBack()", 0);
@@ -30,12 +52,12 @@ Table.Gridview{border:solid 1px Black;}
     <asp:TextBox ID="Txtuser" runat="server" style="width: auto;margin: 5px auto;border: none;font-size: larger;font-family: sans-serif;font-weight: 600;"></asp:TextBox>
 
 
-        <asp:Button ID="btnlogout" runat="server" Text="Logout" CssClass="log" OnClick="btnlogout_Click" />
+       <%-- <asp:Button ID="btnlogout" runat="server" Text="Logout" CssClass="log" OnClick="btnlogout_Click" />--%>
         <br />
         <table>
                 <tr>
      <td><strong>Sectors :</strong></td>
-     <td><asp:DropDownList ID="ddlsector" runat="server" AutoPostBack="True" AppendDataBoundItems="true" OnSelectedIndexChanged="ddlsector_SelectedIndexChanged">
+     <td><asp:DropDownList ID="ddlsector" runat="server" AutoPostBack="True" AppendDataBoundItems="true">
         </asp:DropDownList>
     </td>
      
@@ -99,14 +121,14 @@ Table.Gridview{border:solid 1px Black;}
                <td><strong>Max-LtRating:</strong></td>
                <td><asp:DropDownList ID="Ddlrating2" runat="server" AutoPostBack="True" AppendDataBoundItems="true">
                </asp:DropDownList>
-               <asp:Button ID="btnsave" runat="server" Text="go" cssclass="go" OnClick="btnsave_Click" />
+             <asp:Button ID="btnsave" runat="server" Text="go" cssclass="go" OnClick="btnsave_Click" />
                </td>
                </tr>
    
    </table>
             <br />
         <div class="GridviewDiv">
-            <asp:GridView ID="gvc" runat="server" AutoGenerateColumns="false" CellPadding="2" BackColor="#ffffff" BorderColor="#ffffff" BorderWidth="1px" CellSpacing="1" PageIndex="5" CssClass="Gridview">
+            <asp:GridView ID="gvc" runat="server" AutoGenerateColumns="False" CellPadding="2" BackColor="White" BorderColor="Black" BorderWidth="1px" CellSpacing="1" PageIndex="20" CssClass="Gridview" AllowPaging="True" OnPageIndexChanging="gvc_PageIndexChanging">
        
              <Columns> 
                          
@@ -151,8 +173,9 @@ Table.Gridview{border:solid 1px Black;}
                    <asp:BoundField DataField="st_rating" HeaderText="st_rating" /> 
                  <asp:BoundField DataField="Lt_ratingName" HeaderText="Lt_rating" />  
                  
-               
+              <%-- 
                  <asp:BoundField DataField="Sub_sectorid" HeaderText="sub_sector" />
+               <asp:BoundField DataField="LT_id" HeaderText="LtRating_ID" />--%>
                 
               
                  </Columns>
@@ -160,11 +183,26 @@ Table.Gridview{border:solid 1px Black;}
 
 <FooterStyle BackColor="#F7DFB5" ForeColor="black" />
 
+                <PagerSettings FirstPageText="1" LastPageText="Last" Mode="NumericFirstLast" PreviousPageText="1" />
+
 <PagerStyle ForeColor="Black" HorizontalAlign="Center" />
 
 <HeaderStyle BackColor="#222229" Font-Bold="True" ForeColor="White" />
          </asp:GridView>
+
+           
+
+            
             </div>
+
+         <br />
+        <br />
+        <div class="GridviewDiv">
+
+             <asp:GridView ID="gv2" runat="server" ShowHeader="false" OnRowCreated="gv2_RowCreated" CssClass="Grid" HeaderStyle-CssClass="header"></asp:GridView>
+
+        </div>
+        
         </div>
 
 

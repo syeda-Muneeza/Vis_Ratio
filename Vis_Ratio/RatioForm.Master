@@ -18,7 +18,7 @@
 
 
 <ul>
-<li><a href="AMCs.aspx">AMCs</a></li>
+     <li><a href="AMCs.aspx">AMCs</a></li>
      <li><a href="Banks.aspx">Banks/DFIs</a></li>
      <li><a href="Brokerage.aspx">Brokerages</a></li>
      <li><a href="Corporate.aspx">Corporates</a></li>
@@ -28,7 +28,7 @@
      <li><a href="Leasing.aspx">Leasing Companies</a></li> 
      <li><a href="Microfinance.aspx">Microfinance</a></li>
      <li><a href="Modarabas.aspx">Modarabas</a></li>
-    <li><a href="Companyprofile.aspx">Company Profile</a></li>
+     <li><a href="Companyprofile.aspx">Company Profile</a></li>
    
 </ul>
 

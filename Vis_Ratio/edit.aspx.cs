@@ -43,7 +43,7 @@ namespace Vis_Ratio
             {
                 // con.Open();
 
-                cmd = new SqlCommand("Select * from Company where Sec_code='1'", conn);
+                cmd = new SqlCommand("Select * from Company where Sec_code='1' order by Company_name asc", conn);
                 adp = new SqlDataAdapter(cmd);
 
                 adp.Fill(dt);
@@ -94,24 +94,26 @@ namespace Vis_Ratio
                     gv2.DataSource = pivotedTable;
 
                     gv2.DataBind();
-                   
-
+                    
                 }
+
             }
 
             catch (Exception ex)
 
             {
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "Message", "alert('Error occured : " + ex.Message.ToString() + "');", true);
+
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "Message", "alert('Error occured : " + ex.Message.ToString() + "');", true);
+
             }
 
             finally
             { 
-                origTable.Clear();
-                origTable.Dispose();
-               // gv2.Clear();
-                gv2.Dispose();
-                adp.Dispose();
+            origTable.Clear();
+            origTable.Dispose();
+            // gv2.Clear();
+            gv2.Dispose();
+            adp.Dispose();
             }
         }
 

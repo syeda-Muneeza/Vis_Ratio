@@ -59,11 +59,12 @@ namespace Vis_Ratio
             Drpratingtype.SelectedIndex = 0;
             Drpltrating.SelectedIndex = 0;
             Drpst.SelectedIndex = 0;
-
             }
+
         protected void Save_Click1(object sender, EventArgs e)
 
         {
+
             SqlConnection db = new SqlConnection(con);
             db.Open();
             string insert = "Insert into[Vis_Ratio].[dbo].[AMCs](Com_code,rating_type,Lt_rating,st_rating,AUMs,AUMinSMAs,NoofSMAs,MarketShare,RetailAUMs,Retail,Associates,NoInvestors,ManagementFees,Corerevenue,Adminexpenses,OperatingProfit,Efficiency,TotalEquity,Longtermdebt,TotalDebt,NumberofFunds,portfolio,Assets,IndependentDirectors,BoardMembers,BoardCommittees,ManagementCommittees,ICComposition,SharedFunctions,amcdate) values('" + Drpcompany.SelectedItem.Value+ "','" + Drpratingtype.SelectedItem + "','"+Drpltrating.SelectedItem+"','"+Drpst.SelectedItem+"','" + AUMs.Text + "','" + AUMinSMAs.Text + "','" + SMAs.Text + "','" + MarketShare.Text + "','" + RetailAUMs.Text + "','" + Retail.Text + "','" + Associates.Text + "','" + NumberofInvestors.Text + "','" + ManagementFees.Text + "','" + Corerevenue.Text + "','" + Adminstrative.Text + "','" + OperatingProfit.Text + "','" + Efficiency.Text + "','" + TotalEquity.Text + "','" + Longdebt.Text + "','" + TotalDebt.Text + "','" + NumberFunds.Text + "','" + portfolio.Text + "','" + TotalAssets.Text + "','" + IndependentDirectors.Text + "','" + BoardMembers.Text + "','" + BoardCommittees.Text + "','" + ManagementCommittees.Text + "','" + ICComposition.Text + "','" + SharedFunctions.Text + "','" + txtMyDate.Text + "')";
