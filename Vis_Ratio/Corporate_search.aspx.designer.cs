@@ -31,6 +31,15 @@ namespace Vis_Ratio {
         protected global::System.Web.UI.WebControls.TextBox Txtuser;
         
         /// <summary>
+        /// btnlogout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnlogout;
+        
+        /// <summary>
         /// ddlsector control.
         /// </summary>
         /// <remarks>

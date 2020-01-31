@@ -158,7 +158,7 @@ namespace Vis_Ratio
 
         protected void btnsearch_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Corp_search.aspx");
+            Response.Redirect("Corporate_search.aspx");
         }
     }
 }

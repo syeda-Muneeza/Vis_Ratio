@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RatioForm.Master" AutoEventWireup="true" CodeBehind="Corporate_search.aspx.cs" Inherits="Vis_Ratio.Corporate_search" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RatioForm.Master" AutoEventWireup="true" CodeBehind="Corporate_search.aspx.cs" Inherits="Vis_Ratio.Corporate_search" EnableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/master.css" rel="stylesheet" />
 
@@ -46,13 +46,71 @@ Table.Gridview{border:solid 1px Black;}
         setTimeout("preventBack()", 0);
         window.onunload = function () { null };
     </script>
+
+    
+
+<%--    <script type="text/javascript">
+       function printGrid() {
+               var gridData = document.getElementById('<%= gvc.ClientID %>');
+               var windowUrl = 'about:blank';
+               //set print document name for gridview
+               var uniqueName = new Date();
+               var windowName = 'Print_' + uniqueName.getTime();
+
+               var prtWindow = window.open(windowUrl, windowName,
+               'left=100,top=100,right=100,bottom=100,width=700,height=500');
+               prtWindow.document.write('<html><head></head>');
+               prtWindow.document.write('<body style="background:none !important">');
+               prtWindow.document.write(gridData.outerHTML);
+               prtWindow.document.write('</body></html>');
+               prtWindow.document.close();
+               prtWindow.focus();
+               prtWindow.print();
+               prtWindow.close();
+       }
+</script>
+
+
+      <script type="text/javascript">
+               function printGrid() {
+                       var gridData = document.getElementById('<%= gvc.ClientID %>');
+                       var windowUrl = 'about:blank';
+                       //set print document name for gridview
+                       var uniqueName = new Date();
+                       var windowName = 'Print_' + uniqueName.getTime();
+
+                       var prtWindow = window.open(windowUrl, windowName,
+                       'left=100,top=100,right=100,bottom=100,width=700,height=500');
+                       prtWindow.document.write('<html><head></head>');
+                       prtWindow.document.write('<body style="background:none !important">');
+                       prtWindow.document.write(gridData.outerHTML);
+                       prtWindow.document.write('</body></html>');
+                       prtWindow.document.close();
+                       prtWindow.focus();
+                       prtWindow.print();
+                       prtWindow.close();
+               }
+       </script>--%>
+   <%--<script>
+        function doPrint()
+        {
+            var prtContent = document.getElementById('<%= gvc.ClientID %>');
+            prtContent.border = 0; //set no border here
+            var WinPrint = window.open('','','left=100,top=100,width=1000,height=1000,toolbar=0,scrollbars=1,status=0,resizable=1');
+            WinPrint.document.write(prtContent.outerHTML);
+            WinPrint.document.close();
+            WinPrint.focus();
+            WinPrint.print();
+            WinPrint.close();
+        }
+</script>--%>
        
     <div class="search">
          <asp:Label ID="lblid" runat="server" Text="" Visible="false"></asp:Label>
     <asp:TextBox ID="Txtuser" runat="server" style="width: auto;margin: 5px auto;border: none;font-size: larger;font-family: sans-serif;font-weight: 600;"></asp:TextBox>
 
 
-       <%-- <asp:Button ID="btnlogout" runat="server" Text="Logout" CssClass="log" OnClick="btnlogout_Click" />--%>
+       <asp:Button ID="btnlogout" runat="server" Text="Logout" CssClass="log" OnClick="btnlogout_Click" />
         <br />
         <table>
                 <tr>
@@ -183,7 +241,7 @@ Table.Gridview{border:solid 1px Black;}
 
 <FooterStyle BackColor="#F7DFB5" ForeColor="black" />
 
-                <PagerSettings FirstPageText="1" LastPageText="Last" Mode="NumericFirstLast" PreviousPageText="1" />
+                <PagerSettings FirstPageText="1" LastPageText="Last" Mode="NumericFirstLast" PreviousPageText="1"/>
 
 <PagerStyle ForeColor="Black" HorizontalAlign="Center" />
 
@@ -202,6 +260,14 @@ Table.Gridview{border:solid 1px Black;}
              <asp:GridView ID="gv2" runat="server" ShowHeader="false" OnRowCreated="gv2_RowCreated" CssClass="Grid" HeaderStyle-CssClass="header"></asp:GridView>
 
         </div>
+
+
+        <br />
+        <div>
+
+        <%--<asp:Button ID="btnPrint" runat="server" Text="Print From Client-side" OnClick="btnPrint_Click"  />--%>   
+          <%--<asp:Button ID="btnPrintFromCodeBehind" runat="server" Text="Print From Code-behind" OnClick="btnPrintFromCodeBehind_Click" />
+        </div>--%>
         
         </div>
 
